@@ -1,0 +1,1 @@
+# JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell
