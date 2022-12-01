@@ -1,0 +1,2991 @@
+    232      16     3656      12124       0.31   2960   2 dllhost
+  10404   11850   130444     128228       0.70   3300   0 dns
+    537      22    16552      38932       0.27    840   1 dwm
+    656      37    32096     104188      48.69   1584   2 dwm
+   1848      89    43540      84332      22.00   1132   2 explorer
+     53       7     2692       5936       0.63    952   2 fontdrvhost
+     53       6     1432       4408       0.03   4180   0 fontdrvhost
+     53       6     1372       4364       0.03   4664   1 fontdrvhost
+      0       0       56          8                 0   0 Idle
+    134      12     1916       5688       0.03   3332   0 ismserv
+    478      26    11172      44000       0.98    476   1 LogonUI
+  12154     165    48744      95752      63.59    708   0 lsass
+    528      30    36920     140484       0.55   3412   0 Microsoft.ActiveDirectory.WebServices
+    222      13     2828      10256       0.06   6340   0 msdtc
+   1908      64    66424      48608      34.03   1304   2 msedge
+    250      15     8816       5032       0.22   1692   2 msedge
+    362      17    49692      10044       4.50   2700   2 msedge
+    209      10     2192       3072       0.03   6176   2 msedge
+    342      17    99372      24928      12.38   6180   2 msedge
+    337      19    17596      17284       7.19   6708   2 msedge
+    373      35    43776      24656     207.67   6748   2 msedge
+    265      16    25604       4532       0.59   7020   2 msedge
+    420      24    56976       8836      41.75   7180   2 msedge
+    227      16    19204       6796       0.06   7324   2 msedge
+    360      26    60956      49632       5.50   7512   2 msedge
+    375      17    54344      11128       4.72   7604   2 msedge
+    272      16     8180       4324       0.13   7948   2 msedge
+    293      17    30284       5192       1.69   8152   2 msedge
+    350      27    46192       6708       2.59   9180   2 msedge
+    933      90   275180     234708     530.45   3488   0 MsMpEng
+    220      12     4640      11464       1.45   5248   0 NisSrv
+    413      26    60088       4168       0.75   1912   2 powershell
+    837      62   209772       4204       8.52   5208   2 powershell
+   1084      55   222180      63988      85.56   5924   2 powershell
+    584      44   116016      11000      49.42   8340   2 powershell_ise
+    336      15     2740      12972       7.02   6008   2 rdpclip
+      0       8     1548      61564       0.77     88   0 Registry
+    279      14     4096      15816       0.19   6224   2 RuntimeBroker
+    526      25    12212      36588       1.38   6492   2 RuntimeBroker
+    349      17     5736      22936       0.94   6756   2 RuntimeBroker
+   1617      80   106244      83564      11.36   6168   2 SearchUI
+    562      35   105348     103420       8.44   6200   2 ServerManager
+    661      14     5948      13768      17.13    700   0 services
+    806      33    25808      49300       1.45   4172   2 ShellExperienceHost
+    478      18     5324      26864       1.25   5376   2 sihost
+    442      23     8800      27272       1.48   6964   2 smartscreen
+     56       3      488       1184       0.17    368   0 smss
+    578      27     8084      24508       0.83   3220   0 spoolsv
+    346      11     2544      19972       0.58     68   0 svchost
+     89       5      892      11076       0.03    920   0 svchost
+    901      29    82864     130096     112.75    936   0 svchost
+    949      20     7172      35812       2.19    940   0 svchost
+    964      21     6008      23188       7.69    984   0 svchost
+    158       9     1904      16840       0.08   1060   0 svchost
+    210      12     1732      16668       0.41   1068   0 svchost
+    139      20     4360      16756       0.16   1080   0 svchost
+    212      12     1928      19824       0.09   1160   0 svchost
+    178       9     1724      19664       0.06   1184   0 svchost
+    227       9     2124      17616       0.31   1220   0 svchost
+    454      14    14908      30360      31.88   1248   0 svchost
+    253      14     3380      19156       0.66   1292   0 svchost
+    219      15     4652      26120       5.55   1388   0 svchost
+    354      14     4176      23536       0.11   1404   0 svchost
+    137       8     1488      16448       1.91   1420   0 svchost
+    125       8     1432      16376       0.02   1472   0 svchost
+    129       8     1460      16408       0.44   1480   0 svchost
+    282      16     3152      23964       1.44   1592   0 svchost
+    390      32     9744      32212       0.63   1660   0 svchost
+    234      12     2528      32260       0.13   1732   0 svchost
+    224      11     2024      21492       0.13   1740   0 svchost
+    172       9     1848      17860       0.05   1748   0 svchost
+    209       7     1284      14276       0.09   1772   0 svchost
+    387      18     5496      36836       1.38   1804   0 svchost
+    332      10     2404      18996       0.14   1840   0 svchost
+    201       9     1588      16984       0.05   1852   0 svchost
+    163       9     1692      15836       0.05   1964   0 svchost
+    320      11     2152      19224       0.05   2084   0 svchost
+    190      12     1948      24168       0.06   2116   0 svchost
+    216      11     2128      20796       0.44   2136   0 svchost
+    176       9     1780      17120       0.22   2200   0 svchost
+    168      10     1980      20516       0.20   2276   0 svchost
+    220      10     2536      20824       0.28   2312   0 svchost
+    291      17     2652      36568       0.06   2364   0 svchost
+    137       9     1484      20012       0.03   2392   0 svchost
+    390      15    10700      32996      14.13   2484   0 svchost
+    398      19     5196      44560       0.50   2496   0 svchost
+    460      16     3056      25412       0.13   2608   0 svchost
+    263      15     2644      21752       0.09   2656   0 svchost
+    283      19     7616      13584       0.19   2664   0 svchost
+    274    1273    45432      67676       9.73   3256   0 svchost
+    566      25    18708      54228       3.61   3284   0 svchost
+    162       7     1436      14564       0.06   3308   0 svchost
+    335      28   184060     126228       4.14   3324   0 svchost
+    103       6     1152      13648       0.03   3360   0 svchost
+    138       8     1500      16200       0.03   3372   0 svchost
+    241      14     2852      36388       0.08   3448   0 svchost
+    177      10     2176      37304       0.05   3472   0 svchost
+    171       9     4640      13112       0.72   4316   0 svchost
+    205      15     6300      10616       0.06   4340   0 svchost
+    255      14     3036      13924       0.16   4368   0 svchost
+    154       8     1708      19792       0.08   4588   0 svchost
+    325      16    19160      20804      17.47   4732   0 svchost
+    172       8     1480       7232       0.05   5296   0 svchost
+    237      12     3260      18392       0.67   5552   0 svchost
+    121       8     4708       8328       0.05   5784   0 svchost
+    273      13     3072      13996       0.09   6040   2 svchost
+    343      17     5016      25376       0.11   6044   2 svchost
+    211      10     3496       8564       0.23   6840   0 svchost
+    127       7     1236       6080       0.03   7060   0 svchost
+    182      10     1936       9004       0.02   7196   0 svchost
+    144       9     1640      10660       0.03   8256   0 svchost
+    272      15     3612      18028       0.08   8824   0 svchost
+   2731       0      192        156      49.14      4   0 System
+    522      31    18604      27228       0.98    880   0 taskhostw
+    251      24     5432      15956       0.23   2172   2 taskhostw
+    215      15     2456      10616       0.08   3972   0 vds
+   1001      45    63220      81732       9.77   3340   0 WaAppAgent
+     68       5     1052       3688       0.00    760   0 WaSecAgentProv
+    604      38    47048      60552      10.50   3424   0 WindowsAzureGuestAgent
+    172      12     1388       7000       0.30    560   0 wininit
+    262      13     3040      12984       0.25    588   2 winlogon
+    228      11     2192      10716       0.05    632   1 winlogon
+    135       8     2692       2604       0.77   5448   2 winpty-agent
+    135       8     2296       2692       0.73   6000   2 winpty-agent
+    306      15    10988      19768       1.72   4452   0 WmiPrvSE
+
+
+PS C:\Users\jsystemuser1\Application Data> get-help get-process
+
+NAME
+    Get-Process
+
+SYNOPSIS
+    Gets the processes that are running on the local computer or a remote computer.
+
+
+SYNTAX
+
+    Get-Process [-ComputerName <System.String[]>] [-FileVersionInfo] -Id <System.Int32[]> [-Module] [<CommonParameters>]
+
+    Get-Process [-ComputerName <System.String[]>] [-FileVersionInfo] -InputObject <System.Diagnostics.Process[]> [-Module] [<CommonParameters>]
+
+    Get-Process -Id <System.Int32[]> -IncludeUserName [<CommonParameters>]
+
+
+    Get-Process -IncludeUserName -InputObject <System.Diagnostics.Process[]> [<CommonParameters>]
+
+
+DESCRIPTION
+    The `Get-Process` cmdlet gets the processes on a local or remote computer.
+
+    Without parameters, this cmdlet gets all of the processes on the local computer. You can also specify a particular process by process name or process ID
+    (PID) or pass a process object through the pipeline to this cmdlet.
+
+    By default, this cmdlet returns a process object that has detailed information about the process and supports methods that let you start and stop the
+    process. You can also use the parameters of the `Get-Process` cmdlet to get file version information for the program that runs in the process and to get
+    the modules that the process loaded.
+
+
+    Online Version: https://learn.microsoft.com/powershell/module/microsoft.powershell.management/get-process?view=powershell-5.1&WT.mc_id=ps-gethelp
+    Debug-Process
+    Get-Process
+    Start-Process
+    Stop-Process
+    Wait-Process
+
+REMARKS
+    To see the examples, type: "get-help Get-Process -examples".
+    For more information, type: "get-help Get-Process -detailed".
+    For technical information, type: "get-help Get-Process -full".
+    For online help, type: "get-help Get-Process -online"
+
+
+PS C:\Users\jsystemuser1\Application Data> get-process pwsh
+At line:1 char:1
++ get-process pwsh
++ ~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (pwsh:String) [Get-Process], ProcessCommandException
+    + FullyQualifiedErrorId : NoProcessFoundForGivenName,Microsoft.PowerShell.Commands.GetProcessCommand
+
+PS C:\Users\jsystemuser1\Application Data> get-process code
+
+Handles  NPM(K)    PM(K)      WS(K)     CPU(s)     Id  SI ProcessName
+-------  ------    -----      -----     ------     --  -- -----------
+    275      17    43764       4232       1.50   1104   2 Code
+    491      35   191940      24308     203.14   1364   2 Code
+    377      33   172120       4204      88.47   1828   2 Code
+    313      16    13116       4208       0.88   2500   2 Code
+    395      18    56352      14436      17.80   6208   2 Code
+    225      13    50832       4228       0.98   7740   2 Code
+    351      39    84264       6272       6.28   8704   2 Code
+    227      14    23640       4208       0.47   8708   2 Code
+    264      13    10872       3576       0.06   8848   2 Code
+
+
+PS C:\Users\jsystemuser1\Application Data> get-process -Name code
+
+Handles  NPM(K)    PM(K)      WS(K)     CPU(s)     Id  SI ProcessName
+-------  ------    -----      -----     ------     --  -- -----------
+    275      17    43764       4240       1.50   1104   2 Code
+    491      35   191940      23880     203.14   1364   2 Code
+    377      33   172120       4204      88.47   1828   2 Code
+    313      16    13116       4208       0.88   2500   2 Code
+   1057      47    46424       5748      26.39   5328   2 Code
+    395      18    56352      12480      17.80   6208   2 Code
+    225      13    50832       4184       0.98   7740   2 Code
+    351      39    84264       5780       6.28   8704   2 Code
+    227      14    23640       4208       0.47   8708   2 Code
+    264      13    10872       3576       0.06   8848   2 Code
+
+
+PS C:\Users\jsystemuser1\Application Data> get-help Get-Process -Parameter Name
+
+-Name <System.String[]>
+    Specifies one or more processes by process name. You can type multiple process names (separated by commas) and use wildcard characters. The parameter
+    name (`Name`) is optional.
+
+    Required?                    false
+    Position?                    0
+    Default value                None
+    Accept pipeline input?       True (ByPropertyName)
+    Accept wildcard characters?  true
+
+
+
+
+PS C:\Users\jsystemuser1\Application Data> get-process -Name code,svchost
+
+Handles  NPM(K)    PM(K)      WS(K)     CPU(s)     Id  SI ProcessName
+-------  ------    -----      -----     ------     --  -- -----------
+    275      17    43764       4240       1.50   1104   2 Code
+    488      35   191508      27580     203.16   1364   2 Code
+    377      33   172120       4204      88.47   1828   2 Code
+    313      16    13116       5312       0.88   2500   2 Code
+   1057      47    46424      11848      26.39   5328   2 Code
+    395      18    56596      21840      17.81   6208   2 Code
+    225      13    50832       4188       0.98   7740   2 Code
+    351      39    84264       5808       6.30   8704   2 Code
+    227      14    23640       4212       0.47   8708   2 Code
+    264      13    10872       3576       0.06   8848   2 Code
+    349      11     2544      19980       0.58     68   0 svchost
+     89       5      944      11088       0.03    920   0 svchost
+    901      29    83704     130372     114.75    936   0 svchost
+    941      20     7116      35792       2.19    940   0 svchost
+    971      22     6008      23192       7.73    984   0 svchost
+    160      10     1988      16852       0.08   1060   0 svchost
+    210      12     1732      16668       0.41   1068   0 svchost
+    141      20     4360      16760       0.16   1080   0 svchost
+    212      12     1980      19836       0.09   1160   0 svchost
+    178       9     1812      19680       0.06   1184   0 svchost
+    220       9     2040      17604       0.31   1220   0 svchost
+    450      14    14800      30360      31.88   1248   0 svchost
+    247      14     3380      19152       0.66   1292   0 svchost
+    219      15     4652      26124       5.66   1388   0 svchost
+    354      14     4176      23536       0.11   1404   0 svchost
+    137       8     1540      16464       1.95   1420   0 svchost
+    125       8     1484      16388       0.02   1472   0 svchost
+    129       8     1544      16424       0.44   1480   0 svchost
+    284      16     3204      23984       1.45   1592   0 svchost
+    387      32     9744      32200       0.63   1660   0 svchost
+    234      12     2580      32276       0.13   1732   0 svchost
+    224      11     2076      21504       0.13   1740   0 svchost
+    172       9     1904      17872       0.05   1748   0 svchost
+    209       7     1336      14292       0.09   1772   0 svchost
+    391      18     5652      36920       1.41   1804   0 svchost
+    332      10     2456      19012       0.14   1840   0 svchost
+    201       9     1588      16984       0.05   1852   0 svchost
+    163       9     1692      15836       0.05   1964   0 svchost
+    190      12     2000      24180       0.06   2116   0 svchost
+    220      12     2128      20804       0.44   2136   0 svchost
+    179       9     1948      17148       0.22   2200   0 svchost
+    168      10     2032      20528       0.20   2276   0 svchost
+    220      10     2484      20808       0.28   2312   0 svchost
+    291      17     2704      36580       0.06   2364   0 svchost
+    137       9     1540      20024       0.03   2392   0 svchost
+    395      15    11096      33144      14.13   2484   0 svchost
+    398      19     5248      44576       0.50   2496   0 svchost
+    460      16     3056      25412       0.13   2608   0 svchost
+    263      16     2696      21764       0.09   2656   0 svchost
+    283      19     7636      13592       0.19   2664   0 svchost
+    202      10     2392      19128       0.20   3140   0 svchost
+    274    1273    45432      67684       9.73   3256   0 svchost
+    528      24    18548      54148       3.61   3284   0 svchost
+    103       7     1204      13660       0.03   3360   0 svchost
+    138       8     1552      16216       0.03   3372   0 svchost
+    241      14     2852      36392       0.08   3448   0 svchost
+    177      10     2228      37316       0.05   3472   0 svchost
+    205      15     6244      10604       0.06   4340   0 svchost
+    253      14     2932      13876       0.16   4368   0 svchost
+    154       9     1760      19808       0.08   4588   0 svchost
+    325      16    19508      21016      17.72   4732   0 svchost
+    172       8     1480       7232       0.05   5296   0 svchost
+    235      12     3204      18376       0.67   5552   0 svchost
+    117       8     4656       8312       0.05   5784   0 svchost
+    271      13     2968      13964       0.09   6040   2 svchost
+    343      17     5016      25376       0.11   6044   2 svchost
+    211      10     3496       8564       0.23   6840   0 svchost
+    127       7     1236       6080       0.03   7060   0 svchost
+    182      10     1936       9004       0.02   7196   0 svchost
+    142       9     1640      10660       0.03   8256   0 svchost
+
+
+PS C:\Users\jsystemuser1\Application Data> Get-Help Set-Location -Parameter Path
+
+-Path <System.String>
+    Specify the path of a new working location. If no path is provided, `Set-Location` defaults to the current user's home directory. When wildcards are
+    used, the cmdlet chooses the container (directory, registry key, certificate store) that matches the wildcard pattern. If the wildcard pattern matches
+    more than one container, the cmdlet returns an error.
+
+    Required?                    false
+    Position?                    0
+    Default value                None
+    Accept pipeline input?       True (ByPropertyName, ByValue)
+    Accept wildcard characters?  true
+
+
+
+
+PS C:\Users\jsystemuser1\Application Data> set-location
+PS C:\Users\jsystemuser1\Application Data> get-wmiobject
+
+cmdlet Get-WmiObject at command pipeline position 1
+Supply values for the following parameters:
+Class:
+PS C:\Users\jsystemuser1\Application Data> get-help Get-WmiObject -Parameter Class
+
+-Class <System.String>
+    Specifies the name of a WMI class. When this parameter is used, the cmdlet retrieves instances of the WMI class.
+
+    Required?                    false
+    Position?                    1
+    Default value                None
+    Accept pipeline input?       False
+    Accept wildcard characters?  false
+
+
+
+
+PS C:\Users\jsystemuser1\Application Data> get-help Get-WmiObject
+
+NAME
+    Get-WmiObject
+
+SYNOPSIS
+    Gets instances of Windows Management Instrumentation (WMI) classes or information about the available classes.
+
+
+SYNTAX
+    Get-WmiObject [[-Class] <System.String>] [[-Property] <System.String[]>] [-Amended] [-AsJob] [-Authentication {Default | None | Connect | Call | Packet
+    | PacketIntegrity | PacketPrivacy | Unchanged}] [-Authority <System.String>] [-ComputerName <System.String[]>] [-Credential
+    <System.Management.Automation.PSCredential>] [-DirectRead] [-EnableAllPrivileges] [-Filter <System.String>] [-Impersonation {Default | Anonymous |
+    Identify | Impersonate | Delegate}] [-Locale <System.String>] [-Namespace <System.String>] [-ThrottleLimit <System.Int32>] [<CommonParameters>]
+
+    Get-WmiObject [[-Class] <System.String>] [-Amended] [-AsJob] [-Authentication {Default | None | Connect | Call | Packet | PacketIntegrity |
+    PacketPrivacy | Unchanged}] [-Authority <System.String>] [-ComputerName <System.String[]>] [-Credential <System.Management.Automation.PSCredential>]
+    [-EnableAllPrivileges] [-Impersonation {Default | Anonymous | Identify | Impersonate | Delegate}] [-List] [-Locale <System.String>] [-Namespace
+    <System.String>] [-Recurse] [-ThrottleLimit <System.Int32>] [<CommonParameters>]
+    Get-WmiObject [-Amended] [-AsJob] [-Authentication {Default | None | Connect | Call | Packet | PacketIntegrity | PacketPrivacy | Unchanged}] [-Authority
+    <System.String>] [-ComputerName <System.String[]>] [-Credential <System.Management.Automation.PSCredential>] [-DirectRead] [-EnableAllPrivileges]
+    [-Impersonation {Default | Anonymous | Identify | Impersonate | Delegate}] [-Locale <System.String>] [-Namespace <System.String>] -Query <System.String>
+    [-ThrottleLimit <System.Int32>] [<CommonParameters>]
+
+
+DESCRIPTION
+    Starting in PowerShell 3.0, this cmdlet has been superseded by `Get-CimInstance`.
+
+    The `Get-WmiObject` cmdlet gets instances of WMI classes or information about the available WMI classes. To specify a remote computer, use the
+    ComputerName parameter. If the List parameter is specified, the cmdlet gets information about the WMI classes that are available in a specified
+    namespace. If the Query parameter is specified, the cmdlet runs a WMI query language (WQL) statement.
+
+    The `Get-WmiObject` cmdlet does not use Windows PowerShell remoting to perform remote operations. You can use the ComputerName parameter of the
+    `Get-WmiObject` cmdlet even if your computer does not meet the requirements for Windows PowerShell remoting or is not configured for remoting in Windows
+    PowerShell.
+
+    Beginning in Windows PowerShell 3.0, the __Server property of the object that `Get-WmiObject` returns has a PSComputerName alias. This makes it easier
+    to include the source computer name in output and reports.
+
+    Invoke-WmiMethod
+    Set-WmiInstance
+    Invoke-WSManAction
+    Remove-WSManInstance
+REMARKS
+    To see the examples, type: "get-help Get-WmiObject -examples".
+    For more information, type: "get-help Get-WmiObject -detailed".
+    For technical information, type: "get-help Get-WmiObject -full".
+
+
+PS C:\Users\jsystemuser1\Application Data> get-help Get-WmiObject -Parameter Authentication
+
+-Authentication <System.Management.AuthenticationLevel>
+    Specifies the authentication level to be used with the WMI connection. Valid values are:
+
+    - `-1`: Unchanged - `0`: Default - `1`: None (No authentication in performed.) - `2`: Connect (Authentication is performed only when the client
+    receives the request.) - `4`: Packet (Authentication is performed on all the data that is received from the client.) - `5`: PacketIntegrity (All the
+    data that is transferred between the client and the application   is authenticated and verified.) - `6`: PacketPrivacy (The properties of the other
+    authentication levels are used, and all the   data is encrypted.)
+
+    Required?                    false
+    Position?                    named
+    Default value                None
+    Accept pipeline input?       False
+    Accept wildcard characters?  false
+
+
+
+
+PS C:\Users\jsystemuser1\Application Data> Save-Help -Module Microsoft.Powershell.Management -DestinationPath C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\01_FUNDAMENTALS\
+PS C:\Users\jsystemuser1\Application Data> cd ..
+PS C:\Users\jsystemuser1> cd .\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell> Save-Help -Module Microsoft.Powershell.Management -DestinationPath C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\01_FUNDAMENTALS\ -UICulture pl-pl
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell> Save-Help -Module Microsoft.Powershell.Management -DestinationPath C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\01_FUNDAMENTALS\ -UICulture pl-PL
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell> Save-Help -Module Microsoft.Powershell.Management -DestinationPath C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\01_FUNDAMENTALS\ -UICulture en-US
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell> Save-Help -Module Microsoft.Powershell.Management -DestinationPath C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\01_FUNDAMENTALS\ -UICulture en-US -Verbose
+VERBOSE: Help was not saved for the module Microsoft.PowerShell.Management, because the Save-Help command was run on this computer within the last 24 hours.
+
+To save help again, add the Force parameter to your command.
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell> Save-Help -Module Microsoft.Powershell.Management -DestinationPath C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\01_FUNDAMENTALS\ -UICulture pl-PL -Force
+Save-Help : Failed to save Help for the module(s) 'Microsoft.PowerShell.Management' with UI culture(s) {pl-PL} : The specified culture is not supported:
+pl-PL. Specify a culture from the following list: {en-US}.
+At line:1 char:1
++ Save-Help -Module Microsoft.Powershell.Management -DestinationPath C: ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Save-Help], Exception
+    + FullyQualifiedErrorId : HelpCultureNotSupported,Microsoft.PowerShell.Commands.SaveHelpCommand
+
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell> Get-Command Get-AD*
+
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Cmdlet          Get-ADAccountAuthorizationGroup                    1.0.1.0    ActiveDirectory
+Cmdlet          Get-ADAccountResultantPasswordReplicationPolicy    1.0.1.0    ActiveDirectory
+Cmdlet          Get-ADAuthenticationPolicy                         1.0.1.0    ActiveDirectory
+Cmdlet          Get-ADAuthenticationPolicySilo                     1.0.1.0    ActiveDirectory
+Cmdlet          Get-ADCentralAccessPolicy                          1.0.1.0    ActiveDirectory
+Cmdlet          Get-ADCentralAccessRule                            1.0.1.0    ActiveDirectory
+Cmdlet          Get-ADClaimTransformPolicy                         1.0.1.0    ActiveDirectory
+Cmdlet          Get-ADClaimType                                    1.0.1.0    ActiveDirectory
+Cmdlet          Get-ADComputer                                     1.0.1.0    ActiveDirectory
+Cmdlet          Get-ADComputerServiceAccount                       1.0.1.0    ActiveDirectory
+Cmdlet          Get-ADDCCloningExcludedApplicationList             1.0.1.0    ActiveDirectory
+Cmdlet          Get-ADDefaultDomainPasswordPolicy                  1.0.1.0    ActiveDirectory
+Cmdlet          Get-ADDomain                                       1.0.1.0    ActiveDirectory
+Cmdlet          Get-ADDomainController                             1.0.1.0    ActiveDirectory
+Cmdlet          Get-ADDomainControllerPasswordReplicationPolicy    1.0.1.0    ActiveDirectory
+Cmdlet          Get-ADDomainControllerPasswordReplicationPolicy... 1.0.1.0    ActiveDirectory
+Cmdlet          Get-ADFineGrainedPasswordPolicy                    1.0.1.0    ActiveDirectory
+Cmdlet          Get-ADFineGrainedPasswordPolicySubject             1.0.1.0    ActiveDirectory
+Cmdlet          Get-ADForest                                       1.0.1.0    ActiveDirectory
+Cmdlet          Get-AdfsAccessControlPolicy                        1.0.0.0    ADFS
+Cmdlet          Get-AdfsAccountActivity                            1.0.0.0    ADFS
+Cmdlet          Get-AdfsAdditionalAuthenticationRule               1.0.0.0    ADFS
+Cmdlet          Get-AdfsApplicationGroup                           1.0.0.0    ADFS
+Cmdlet          Get-AdfsApplicationPermission                      1.0.0.0    ADFS
+Cmdlet          Get-AdfsAttributeStore                             1.0.0.0    ADFS
+Cmdlet          Get-AdfsAuthenticationProvider                     1.0.0.0    ADFS
+Cmdlet          Get-AdfsAuthenticationProviderWebContent           1.0.0.0    ADFS
+Cmdlet          Get-AdfsAzureMfaConfigured                         1.0.0.0    ADFS
+Cmdlet          Get-AdfsCertificate                                1.0.0.0    ADFS
+Cmdlet          Get-AdfsCertificateAuthority                       1.0.0.0    ADFS
+Cmdlet          Get-AdfsClaimDescription                           1.0.0.0    ADFS
+Cmdlet          Get-AdfsClaimsProviderTrust                        1.0.0.0    ADFS
+Cmdlet          Get-AdfsClaimsProviderTrustsGroup                  1.0.0.0    ADFS
+Cmdlet          Get-AdfsClient                                     1.0.0.0    ADFS
+Cmdlet          Get-AdfsDebugLogConsumersConfiguration             1.0.0.0    ADFS
+Cmdlet          Get-AdfsDeviceRegistration                         1.0.0.0    ADFS
+Cmdlet          Get-AdfsDeviceRegistrationUpnSuffix                1.0.0.0    ADFS
+Cmdlet          Get-AdfsDirectoryProperties                        1.0.0.0    ADFS
+Cmdlet          Get-AdfsEndpoint                                   1.0.0.0    ADFS
+Cmdlet          Get-AdfsFarmInformation                            1.0.0.0    ADFS
+Cmdlet          Get-AdfsGlobalAuthenticationPolicy                 1.0.0.0    ADFS
+Cmdlet          Get-AdfsGlobalWebContent                           1.0.0.0    ADFS
+Cmdlet          Get-AdfsLocalClaimsProviderTrust                   1.0.0.0    ADFS
+Cmdlet          Get-AdfsNativeClientApplication                    1.0.0.0    ADFS
+Cmdlet          Get-AdfsNonClaimsAwareRelyingPartyTrust            1.0.0.0    ADFS
+Cmdlet          Get-AdfsProperties                                 1.0.0.0    ADFS
+Cmdlet          Get-AdfsRegistrationHosts                          1.0.0.0    ADFS
+Cmdlet          Get-AdfsRelyingPartyTrust                          1.0.0.0    ADFS
+Cmdlet          Get-AdfsRelyingPartyTrustsGroup                    1.0.0.0    ADFS
+Cmdlet          Get-AdfsRelyingPartyWebTheme                       1.0.0.0    ADFS
+Cmdlet          Get-AdfsResponseHeaders                            1.0.0.0    ADFS
+Cmdlet          Get-AdfsScopeDescription                           1.0.0.0    ADFS
+Cmdlet          Get-AdfsServerApplication                          1.0.0.0    ADFS
+Cmdlet          Get-AdfsSslCertificate                             1.0.0.0    ADFS
+Cmdlet          Get-AdfsSyncProperties                             1.0.0.0    ADFS
+Cmdlet          Get-AdfsThreatDetectionModule                      1.0.0.0    ADFS
+Cmdlet          Get-AdfsTrustedFederationPartner                   1.0.0.0    ADFS
+Cmdlet          Get-AdfsWebApiApplication                          1.0.0.0    ADFS
+Cmdlet          Get-AdfsWebApplicationProxyRelyingPartyTrust       1.0.0.0    ADFS
+Cmdlet          Get-AdfsWebConfig                                  1.0.0.0    ADFS
+Cmdlet          Get-AdfsWebTheme                                   1.0.0.0    ADFS
+Cmdlet          Get-ADGroup                                        1.0.1.0    ActiveDirectory
+Cmdlet          Get-ADGroupMember                                  1.0.1.0    ActiveDirectory
+Cmdlet          Get-ADObject                                       1.0.1.0    ActiveDirectory
+Cmdlet          Get-ADOptionalFeature                              1.0.1.0    ActiveDirectory
+Cmdlet          Get-ADOrganizationalUnit                           1.0.1.0    ActiveDirectory
+Cmdlet          Get-ADPrincipalGroupMembership                     1.0.1.0    ActiveDirectory
+Cmdlet          Get-ADReplicationAttributeMetadata                 1.0.1.0    ActiveDirectory
+Cmdlet          Get-ADReplicationConnection                        1.0.1.0    ActiveDirectory
+Cmdlet          Get-ADReplicationFailure                           1.0.1.0    ActiveDirectory
+Cmdlet          Get-ADReplicationPartnerMetadata                   1.0.1.0    ActiveDirectory
+Cmdlet          Get-ADReplicationQueueOperation                    1.0.1.0    ActiveDirectory
+Cmdlet          Get-ADReplicationSite                              1.0.1.0    ActiveDirectory
+Cmdlet          Get-ADReplicationSiteLink                          1.0.1.0    ActiveDirectory
+Cmdlet          Get-ADReplicationSiteLinkBridge                    1.0.1.0    ActiveDirectory
+Cmdlet          Get-ADReplicationSubnet                            1.0.1.0    ActiveDirectory
+Cmdlet          Get-ADReplicationUpToDatenessVectorTable           1.0.1.0    ActiveDirectory
+Cmdlet          Get-ADResourceProperty                             1.0.1.0    ActiveDirectory
+Cmdlet          Get-ADResourcePropertyList                         1.0.1.0    ActiveDirectory
+Cmdlet          Get-ADResourcePropertyValueType                    1.0.1.0    ActiveDirectory
+Cmdlet          Get-ADRootDSE                                      1.0.1.0    ActiveDirectory
+Cmdlet          Get-ADServiceAccount                               1.0.1.0    ActiveDirectory
+Cmdlet          Get-ADTrust                                        1.0.1.0    ActiveDirectory
+Cmdlet          Get-ADUser                                         1.0.1.0    ActiveDirectory
+Cmdlet          Get-ADUserResultantPasswordPolicy                  1.0.1.0    ActiveDirectory
+
+
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell> Get-Command *-Net*
+
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Function        Add-NetEventNetworkAdapter                         1.0.0.0    NetEventPacketCapture
+Function        Add-NetEventPacketCaptureProvider                  1.0.0.0    NetEventPacketCapture
+Function        Add-NetEventProvider                               1.0.0.0    NetEventPacketCapture
+Function        Add-NetEventVFPProvider                            1.0.0.0    NetEventPacketCapture
+Function        Add-NetEventVmNetworkAdapter                       1.0.0.0    NetEventPacketCapture
+Function        Add-NetEventVmSwitch                               1.0.0.0    NetEventPacketCapture
+Function        Add-NetEventVmSwitchProvider                       1.0.0.0    NetEventPacketCapture
+Function        Add-NetEventWFPCaptureProvider                     1.0.0.0    NetEventPacketCapture
+Function        Add-NetIPHttpsCertBinding                          1.0.0.0    NetworkTransition
+Function        Add-NetLbfoTeamMember                              2.0.0.0    NetLbfo
+Function        Add-NetLbfoTeamNic                                 2.0.0.0    NetLbfo
+Function        Add-NetNatExternalAddress                          1.0.0.0    NetNat
+Function        Add-NetNatStaticMapping                            1.0.0.0    NetNat
+Function        Add-NetSwitchTeamMember                            1.0.0.0    NetSwitchTeam
+Function        Copy-NetFirewallRule                               2.0.0.0    NetSecurity
+Function        Copy-NetIPsecMainModeCryptoSet                     2.0.0.0    NetSecurity
+Function        Copy-NetIPsecMainModeRule                          2.0.0.0    NetSecurity
+Function        Copy-NetIPsecPhase1AuthSet                         2.0.0.0    NetSecurity
+Function        Copy-NetIPsecPhase2AuthSet                         2.0.0.0    NetSecurity
+Function        Copy-NetIPsecQuickModeCryptoSet                    2.0.0.0    NetSecurity
+Function        Copy-NetIPsecRule                                  2.0.0.0    NetSecurity
+Function        Disable-NetAdapter                                 2.0.0.0    NetAdapter
+Function        Disable-NetAdapterBinding                          2.0.0.0    NetAdapter
+Function        Disable-NetAdapterChecksumOffload                  2.0.0.0    NetAdapter
+Function        Disable-NetAdapterEncapsulatedPacketTaskOffload    2.0.0.0    NetAdapter
+Function        Disable-NetAdapterIPsecOffload                     2.0.0.0    NetAdapter
+Function        Disable-NetAdapterLso                              2.0.0.0    NetAdapter
+Function        Disable-NetAdapterPacketDirect                     2.0.0.0    NetAdapter
+Function        Disable-NetAdapterPowerManagement                  2.0.0.0    NetAdapter
+Function        Disable-NetAdapterQos                              2.0.0.0    NetAdapter
+Function        Disable-NetAdapterRdma                             2.0.0.0    NetAdapter
+Function        Disable-NetAdapterRsc                              2.0.0.0    NetAdapter
+Function        Disable-NetAdapterRss                              2.0.0.0    NetAdapter
+Function        Disable-NetAdapterSriov                            2.0.0.0    NetAdapter
+Function        Disable-NetAdapterVmq                              2.0.0.0    NetAdapter
+Function        Disable-NetDnsTransitionConfiguration              1.0.0.0    NetworkTransition
+Function        Disable-NetFirewallRule                            2.0.0.0    NetSecurity
+Function        Disable-NetIPHttpsProfile                          1.0.0.0    NetworkTransition
+Function        Disable-NetIPsecMainModeRule                       2.0.0.0    NetSecurity
+Function        Disable-NetIPsecRule                               2.0.0.0    NetSecurity
+Function        Disable-NetNatTransitionConfiguration              1.0.0.0    NetworkTransition
+Function        Disable-NetworkSwitchEthernetPort                  1.0.0.0    NetworkSwitchManager
+Function        Disable-NetworkSwitchFeature                       1.0.0.0    NetworkSwitchManager
+Function        Disable-NetworkSwitchVlan                          1.0.0.0    NetworkSwitchManager
+Function        Enable-NetAdapter                                  2.0.0.0    NetAdapter
+Function        Enable-NetAdapterBinding                           2.0.0.0    NetAdapter
+Function        Enable-NetAdapterChecksumOffload                   2.0.0.0    NetAdapter
+Function        Enable-NetAdapterEncapsulatedPacketTaskOffload     2.0.0.0    NetAdapter
+Function        Enable-NetAdapterIPsecOffload                      2.0.0.0    NetAdapter
+Function        Enable-NetAdapterLso                               2.0.0.0    NetAdapter
+Function        Enable-NetAdapterPacketDirect                      2.0.0.0    NetAdapter
+Function        Enable-NetAdapterPowerManagement                   2.0.0.0    NetAdapter
+Function        Enable-NetAdapterQos                               2.0.0.0    NetAdapter
+Function        Enable-NetAdapterRdma                              2.0.0.0    NetAdapter
+Function        Enable-NetAdapterRsc                               2.0.0.0    NetAdapter
+Function        Enable-NetAdapterRss                               2.0.0.0    NetAdapter
+Function        Enable-NetAdapterSriov                             2.0.0.0    NetAdapter
+Function        Enable-NetAdapterVmq                               2.0.0.0    NetAdapter
+Function        Enable-NetDnsTransitionConfiguration               1.0.0.0    NetworkTransition
+Function        Enable-NetFirewallRule                             2.0.0.0    NetSecurity
+Function        Enable-NetIPHttpsProfile                           1.0.0.0    NetworkTransition
+Function        Enable-NetIPsecMainModeRule                        2.0.0.0    NetSecurity
+Function        Enable-NetIPsecRule                                2.0.0.0    NetSecurity
+Function        Enable-NetNatTransitionConfiguration               1.0.0.0    NetworkTransition
+Function        Enable-NetworkSwitchEthernetPort                   1.0.0.0    NetworkSwitchManager
+Function        Enable-NetworkSwitchFeature                        1.0.0.0    NetworkSwitchManager
+Function        Enable-NetworkSwitchVlan                           1.0.0.0    NetworkSwitchManager
+Function        Find-NetIPsecRule                                  2.0.0.0    NetSecurity
+Function        Find-NetRoute                                      1.0.0.0    NetTCPIP
+Function        Get-Net6to4Configuration                           1.0.0.0    NetworkTransition
+Function        Get-NetAdapter                                     2.0.0.0    NetAdapter
+Function        Get-NetAdapterAdvancedProperty                     2.0.0.0    NetAdapter
+Function        Get-NetAdapterBinding                              2.0.0.0    NetAdapter
+Function        Get-NetAdapterChecksumOffload                      2.0.0.0    NetAdapter
+Function        Get-NetAdapterEncapsulatedPacketTaskOffload        2.0.0.0    NetAdapter
+Function        Get-NetAdapterHardwareInfo                         2.0.0.0    NetAdapter
+Function        Get-NetAdapterIPsecOffload                         2.0.0.0    NetAdapter
+Function        Get-NetAdapterLso                                  2.0.0.0    NetAdapter
+Function        Get-NetAdapterPacketDirect                         2.0.0.0    NetAdapter
+Function        Get-NetAdapterPowerManagement                      2.0.0.0    NetAdapter
+Function        Get-NetAdapterQos                                  2.0.0.0    NetAdapter
+Function        Get-NetAdapterRdma                                 2.0.0.0    NetAdapter
+Function        Get-NetAdapterRsc                                  2.0.0.0    NetAdapter
+Function        Get-NetAdapterRss                                  2.0.0.0    NetAdapter
+Function        Get-NetAdapterSriov                                2.0.0.0    NetAdapter
+Function        Get-NetAdapterSriovVf                              2.0.0.0    NetAdapter
+Function        Get-NetAdapterStatistics                           2.0.0.0    NetAdapter
+Function        Get-NetAdapterVmq                                  2.0.0.0    NetAdapter
+Function        Get-NetAdapterVMQQueue                             2.0.0.0    NetAdapter
+Function        Get-NetAdapterVPort                                2.0.0.0    NetAdapter
+Function        Get-NetCompartment                                 1.0.0.0    NetTCPIP
+Function        Get-NetConnectionProfile                           1.0.0.0    NetConnection
+Function        Get-NetDnsTransitionConfiguration                  1.0.0.0    NetworkTransition
+Function        Get-NetDnsTransitionMonitoring                     1.0.0.0    NetworkTransition
+Function        Get-NetEventNetworkAdapter                         1.0.0.0    NetEventPacketCapture
+Function        Get-NetEventPacketCaptureProvider                  1.0.0.0    NetEventPacketCapture
+Function        Get-NetEventProvider                               1.0.0.0    NetEventPacketCapture
+Function        Get-NetEventSession                                1.0.0.0    NetEventPacketCapture
+Function        Get-NetEventVFPProvider                            1.0.0.0    NetEventPacketCapture
+Function        Get-NetEventVmNetworkAdapter                       1.0.0.0    NetEventPacketCapture
+Function        Get-NetEventVmSwitch                               1.0.0.0    NetEventPacketCapture
+Function        Get-NetEventVmSwitchProvider                       1.0.0.0    NetEventPacketCapture
+Function        Get-NetEventWFPCaptureProvider                     1.0.0.0    NetEventPacketCapture
+Function        Get-NetFirewallAddressFilter                       2.0.0.0    NetSecurity
+Function        Get-NetFirewallApplicationFilter                   2.0.0.0    NetSecurity
+Function        Get-NetFirewallInterfaceFilter                     2.0.0.0    NetSecurity
+Function        Get-NetFirewallInterfaceTypeFilter                 2.0.0.0    NetSecurity
+Function        Get-NetFirewallPortFilter                          2.0.0.0    NetSecurity
+Function        Get-NetFirewallProfile                             2.0.0.0    NetSecurity
+Function        Get-NetFirewallRule                                2.0.0.0    NetSecurity
+Function        Get-NetFirewallSecurityFilter                      2.0.0.0    NetSecurity
+Function        Get-NetFirewallServiceFilter                       2.0.0.0    NetSecurity
+Function        Get-NetFirewallSetting                             2.0.0.0    NetSecurity
+Function        Get-NetIPAddress                                   1.0.0.0    NetTCPIP
+Function        Get-NetIPConfiguration                             1.0.0.0    NetTCPIP
+Function        Get-NetIPHttpsConfiguration                        1.0.0.0    NetworkTransition
+Function        Get-NetIPHttpsState                                1.0.0.0    NetworkTransition
+Function        Get-NetIPInterface                                 1.0.0.0    NetTCPIP
+Function        Get-NetIPsecDospSetting                            2.0.0.0    NetSecurity
+Function        Get-NetIPsecMainModeCryptoSet                      2.0.0.0    NetSecurity
+Function        Get-NetIPsecMainModeRule                           2.0.0.0    NetSecurity
+Function        Get-NetIPsecMainModeSA                             2.0.0.0    NetSecurity
+Function        Get-NetIPsecPhase1AuthSet                          2.0.0.0    NetSecurity
+Function        Get-NetIPsecPhase2AuthSet                          2.0.0.0    NetSecurity
+Function        Get-NetIPsecQuickModeCryptoSet                     2.0.0.0    NetSecurity
+Function        Get-NetIPsecQuickModeSA                            2.0.0.0    NetSecurity
+Function        Get-NetIPsecRule                                   2.0.0.0    NetSecurity
+Function        Get-NetIPv4Protocol                                1.0.0.0    NetTCPIP
+Function        Get-NetIPv6Protocol                                1.0.0.0    NetTCPIP
+Function        Get-NetIsatapConfiguration                         1.0.0.0    NetworkTransition
+Function        Get-NetLbfoTeam                                    2.0.0.0    NetLbfo
+Function        Get-NetLbfoTeamMember                              2.0.0.0    NetLbfo
+Function        Get-NetLbfoTeamNic                                 2.0.0.0    NetLbfo
+Function        Get-NetNat                                         1.0.0.0    NetNat
+Function        Get-NetNatExternalAddress                          1.0.0.0    NetNat
+Function        Get-NetNatGlobal                                   1.0.0.0    NetNat
+Function        Get-NetNatSession                                  1.0.0.0    NetNat
+Function        Get-NetNatStaticMapping                            1.0.0.0    NetNat
+Function        Get-NetNatTransitionConfiguration                  1.0.0.0    NetworkTransition
+Function        Get-NetNatTransitionMonitoring                     1.0.0.0    NetworkTransition
+Function        Get-NetNeighbor                                    1.0.0.0    NetTCPIP
+Function        Get-NetOffloadGlobalSetting                        1.0.0.0    NetTCPIP
+Function        Get-NetPrefixPolicy                                1.0.0.0    NetTCPIP
+Function        Get-NetQosPolicy                                   2.0.0.0    NetQos
+Function        Get-NetRoute                                       1.0.0.0    NetTCPIP
+Function        Get-NetSwitchTeam                                  1.0.0.0    NetSwitchTeam
+Function        Get-NetSwitchTeamMember                            1.0.0.0    NetSwitchTeam
+Function        Get-NetTCPConnection                               1.0.0.0    NetTCPIP
+Function        Get-NetTCPSetting                                  1.0.0.0    NetTCPIP
+Function        Get-NetTeredoConfiguration                         1.0.0.0    NetworkTransition
+Function        Get-NetTeredoState                                 1.0.0.0    NetworkTransition
+Function        Get-NetTransportFilter                             1.0.0.0    NetTCPIP
+Function        Get-NetUDPEndpoint                                 1.0.0.0    NetTCPIP
+Function        Get-NetUDPSetting                                  1.0.0.0    NetTCPIP
+Function        Get-NetView                                        1.0.0.0    NetDiagnostics
+Function        Get-NetworkSwitchEthernetPort                      1.0.0.0    NetworkSwitchManager
+Function        Get-NetworkSwitchFeature                           1.0.0.0    NetworkSwitchManager
+Function        Get-NetworkSwitchGlobalData                        1.0.0.0    NetworkSwitchManager
+Function        Get-NetworkSwitchVlan                              1.0.0.0    NetworkSwitchManager
+Function        New-NetAdapterAdvancedProperty                     2.0.0.0    NetAdapter
+Function        New-NetEventSession                                1.0.0.0    NetEventPacketCapture
+Function        New-NetFirewallRule                                2.0.0.0    NetSecurity
+Function        New-NetIPAddress                                   1.0.0.0    NetTCPIP
+Function        New-NetIPHttpsConfiguration                        1.0.0.0    NetworkTransition
+Function        New-NetIPsecDospSetting                            2.0.0.0    NetSecurity
+Function        New-NetIPsecMainModeCryptoSet                      2.0.0.0    NetSecurity
+Function        New-NetIPsecMainModeRule                           2.0.0.0    NetSecurity
+Function        New-NetIPsecPhase1AuthSet                          2.0.0.0    NetSecurity
+Function        New-NetIPsecPhase2AuthSet                          2.0.0.0    NetSecurity
+Function        New-NetIPsecQuickModeCryptoSet                     2.0.0.0    NetSecurity
+Function        New-NetIPsecRule                                   2.0.0.0    NetSecurity
+Function        New-NetLbfoTeam                                    2.0.0.0    NetLbfo
+Function        New-NetNat                                         1.0.0.0    NetNat
+Function        New-NetNatTransitionConfiguration                  1.0.0.0    NetworkTransition
+Function        New-NetNeighbor                                    1.0.0.0    NetTCPIP
+Function        New-NetQosPolicy                                   2.0.0.0    NetQos
+Function        New-NetRoute                                       1.0.0.0    NetTCPIP
+Function        New-NetSwitchTeam                                  1.0.0.0    NetSwitchTeam
+Function        New-NetTransportFilter                             1.0.0.0    NetTCPIP
+Function        New-NetworkSwitchVlan                              1.0.0.0    NetworkSwitchManager
+Function        Open-NetGPO                                        2.0.0.0    NetSecurity
+Function        Remove-NetAdapterAdvancedProperty                  2.0.0.0    NetAdapter
+Function        Remove-NetEventNetworkAdapter                      1.0.0.0    NetEventPacketCapture
+Function        Remove-NetEventPacketCaptureProvider               1.0.0.0    NetEventPacketCapture
+Function        Remove-NetEventProvider                            1.0.0.0    NetEventPacketCapture
+Function        Remove-NetEventSession                             1.0.0.0    NetEventPacketCapture
+Function        Remove-NetEventVFPProvider                         1.0.0.0    NetEventPacketCapture
+Function        Remove-NetEventVmNetworkAdapter                    1.0.0.0    NetEventPacketCapture
+Function        Remove-NetEventVmSwitch                            1.0.0.0    NetEventPacketCapture
+Function        Remove-NetEventVmSwitchProvider                    1.0.0.0    NetEventPacketCapture
+Function        Remove-NetEventWFPCaptureProvider                  1.0.0.0    NetEventPacketCapture
+Function        Remove-NetFirewallRule                             2.0.0.0    NetSecurity
+Function        Remove-NetIPAddress                                1.0.0.0    NetTCPIP
+Function        Remove-NetIPHttpsCertBinding                       1.0.0.0    NetworkTransition
+Function        Remove-NetIPHttpsConfiguration                     1.0.0.0    NetworkTransition
+Function        Remove-NetIPsecDospSetting                         2.0.0.0    NetSecurity
+Function        Remove-NetIPsecMainModeCryptoSet                   2.0.0.0    NetSecurity
+Function        Remove-NetIPsecMainModeRule                        2.0.0.0    NetSecurity
+Function        Remove-NetIPsecMainModeSA                          2.0.0.0    NetSecurity
+Function        Remove-NetIPsecPhase1AuthSet                       2.0.0.0    NetSecurity
+Function        Remove-NetIPsecPhase2AuthSet                       2.0.0.0    NetSecurity
+Function        Remove-NetIPsecQuickModeCryptoSet                  2.0.0.0    NetSecurity
+Function        Remove-NetIPsecQuickModeSA                         2.0.0.0    NetSecurity
+Function        Remove-NetIPsecRule                                2.0.0.0    NetSecurity
+Function        Remove-NetLbfoTeam                                 2.0.0.0    NetLbfo
+Function        Remove-NetLbfoTeamMember                           2.0.0.0    NetLbfo
+Function        Remove-NetLbfoTeamNic                              2.0.0.0    NetLbfo
+Function        Remove-NetNat                                      1.0.0.0    NetNat
+Function        Remove-NetNatExternalAddress                       1.0.0.0    NetNat
+Function        Remove-NetNatStaticMapping                         1.0.0.0    NetNat
+Function        Remove-NetNatTransitionConfiguration               1.0.0.0    NetworkTransition
+Function        Remove-NetNeighbor                                 1.0.0.0    NetTCPIP
+Function        Remove-NetQosPolicy                                2.0.0.0    NetQos
+Function        Remove-NetRoute                                    1.0.0.0    NetTCPIP
+Function        Remove-NetSwitchTeam                               1.0.0.0    NetSwitchTeam
+Function        Remove-NetSwitchTeamMember                         1.0.0.0    NetSwitchTeam
+Function        Remove-NetTransportFilter                          1.0.0.0    NetTCPIP
+Function        Remove-NetworkSwitchEthernetPortIPAddress          1.0.0.0    NetworkSwitchManager
+Function        Remove-NetworkSwitchVlan                           1.0.0.0    NetworkSwitchManager
+Function        Rename-NetAdapter                                  2.0.0.0    NetAdapter
+Function        Rename-NetFirewallRule                             2.0.0.0    NetSecurity
+Function        Rename-NetIPHttpsConfiguration                     1.0.0.0    NetworkTransition
+Function        Rename-NetIPsecMainModeCryptoSet                   2.0.0.0    NetSecurity
+Function        Rename-NetIPsecMainModeRule                        2.0.0.0    NetSecurity
+Function        Rename-NetIPsecPhase1AuthSet                       2.0.0.0    NetSecurity
+Function        Rename-NetIPsecPhase2AuthSet                       2.0.0.0    NetSecurity
+Function        Rename-NetIPsecQuickModeCryptoSet                  2.0.0.0    NetSecurity
+Function        Rename-NetIPsecRule                                2.0.0.0    NetSecurity
+Function        Rename-NetLbfoTeam                                 2.0.0.0    NetLbfo
+Function        Rename-NetSwitchTeam                               1.0.0.0    NetSwitchTeam
+Function        Reset-Net6to4Configuration                         1.0.0.0    NetworkTransition
+Function        Reset-NetAdapterAdvancedProperty                   2.0.0.0    NetAdapter
+Function        Reset-NetDnsTransitionConfiguration                1.0.0.0    NetworkTransition
+Function        Reset-NetIPHttpsConfiguration                      1.0.0.0    NetworkTransition
+Function        Reset-NetIsatapConfiguration                       1.0.0.0    NetworkTransition
+Function        Reset-NetTeredoConfiguration                       1.0.0.0    NetworkTransition
+Function        Restart-NetAdapter                                 2.0.0.0    NetAdapter
+Function        Restore-NetworkSwitchConfiguration                 1.0.0.0    NetworkSwitchManager
+Function        Save-NetGPO                                        2.0.0.0    NetSecurity
+Function        Save-NetworkSwitchConfiguration                    1.0.0.0    NetworkSwitchManager
+Function        Set-Net6to4Configuration                           1.0.0.0    NetworkTransition
+Function        Set-NetAdapter                                     2.0.0.0    NetAdapter
+Function        Set-NetAdapterAdvancedProperty                     2.0.0.0    NetAdapter
+Function        Set-NetAdapterBinding                              2.0.0.0    NetAdapter
+Function        Set-NetAdapterChecksumOffload                      2.0.0.0    NetAdapter
+Function        Set-NetAdapterEncapsulatedPacketTaskOffload        2.0.0.0    NetAdapter
+Function        Set-NetAdapterIPsecOffload                         2.0.0.0    NetAdapter
+Function        Set-NetAdapterLso                                  2.0.0.0    NetAdapter
+Function        Set-NetAdapterPacketDirect                         2.0.0.0    NetAdapter
+Function        Set-NetAdapterPowerManagement                      2.0.0.0    NetAdapter
+Function        Set-NetAdapterQos                                  2.0.0.0    NetAdapter
+Function        Set-NetAdapterRdma                                 2.0.0.0    NetAdapter
+Function        Set-NetAdapterRsc                                  2.0.0.0    NetAdapter
+Function        Set-NetAdapterRss                                  2.0.0.0    NetAdapter
+Function        Set-NetAdapterSriov                                2.0.0.0    NetAdapter
+Function        Set-NetAdapterVmq                                  2.0.0.0    NetAdapter
+Function        Set-NetConnectionProfile                           1.0.0.0    NetConnection
+Function        Set-NetDnsTransitionConfiguration                  1.0.0.0    NetworkTransition
+Function        Set-NetEventPacketCaptureProvider                  1.0.0.0    NetEventPacketCapture
+Function        Set-NetEventProvider                               1.0.0.0    NetEventPacketCapture
+Function        Set-NetEventSession                                1.0.0.0    NetEventPacketCapture
+Function        Set-NetEventVFPProvider                            1.0.0.0    NetEventPacketCapture
+Function        Set-NetEventVmSwitchProvider                       1.0.0.0    NetEventPacketCapture
+Function        Set-NetEventWFPCaptureProvider                     1.0.0.0    NetEventPacketCapture
+Function        Set-NetFirewallAddressFilter                       2.0.0.0    NetSecurity
+Function        Set-NetFirewallApplicationFilter                   2.0.0.0    NetSecurity
+Function        Set-NetFirewallInterfaceFilter                     2.0.0.0    NetSecurity
+Function        Set-NetFirewallInterfaceTypeFilter                 2.0.0.0    NetSecurity
+Function        Set-NetFirewallPortFilter                          2.0.0.0    NetSecurity
+Function        Set-NetFirewallProfile                             2.0.0.0    NetSecurity
+Function        Set-NetFirewallRule                                2.0.0.0    NetSecurity
+Function        Set-NetFirewallSecurityFilter                      2.0.0.0    NetSecurity
+Function        Set-NetFirewallServiceFilter                       2.0.0.0    NetSecurity
+Function        Set-NetFirewallSetting                             2.0.0.0    NetSecurity
+Function        Set-NetIPAddress                                   1.0.0.0    NetTCPIP
+Function        Set-NetIPHttpsConfiguration                        1.0.0.0    NetworkTransition
+Function        Set-NetIPInterface                                 1.0.0.0    NetTCPIP
+Function        Set-NetIPsecMainModeCryptoSet                      2.0.0.0    NetSecurity
+Function        Set-NetIPsecMainModeRule                           2.0.0.0    NetSecurity
+Function        Set-NetIPsecPhase1AuthSet                          2.0.0.0    NetSecurity
+Function        Set-NetIPsecPhase2AuthSet                          2.0.0.0    NetSecurity
+Function        Set-NetIPsecQuickModeCryptoSet                     2.0.0.0    NetSecurity
+Function        Set-NetIPsecRule                                   2.0.0.0    NetSecurity
+Function        Set-NetIPv4Protocol                                1.0.0.0    NetTCPIP
+Function        Set-NetIPv6Protocol                                1.0.0.0    NetTCPIP
+Function        Set-NetIsatapConfiguration                         1.0.0.0    NetworkTransition
+Function        Set-NetLbfoTeam                                    2.0.0.0    NetLbfo
+Function        Set-NetLbfoTeamMember                              2.0.0.0    NetLbfo
+Function        Set-NetLbfoTeamNic                                 2.0.0.0    NetLbfo
+Function        Set-NetNat                                         1.0.0.0    NetNat
+Function        Set-NetNatGlobal                                   1.0.0.0    NetNat
+Function        Set-NetNatTransitionConfiguration                  1.0.0.0    NetworkTransition
+Function        Set-NetNeighbor                                    1.0.0.0    NetTCPIP
+Function        Set-NetOffloadGlobalSetting                        1.0.0.0    NetTCPIP
+Function        Set-NetQosPolicy                                   2.0.0.0    NetQos
+Function        Set-NetRoute                                       1.0.0.0    NetTCPIP
+Function        Set-NetTCPSetting                                  1.0.0.0    NetTCPIP
+Function        Set-NetTeredoConfiguration                         1.0.0.0    NetworkTransition
+Function        Set-NetUDPSetting                                  1.0.0.0    NetTCPIP
+Function        Set-NetworkSwitchEthernetPortIPAddress             1.0.0.0    NetworkSwitchManager
+Function        Set-NetworkSwitchPortMode                          1.0.0.0    NetworkSwitchManager
+Function        Set-NetworkSwitchPortProperty                      1.0.0.0    NetworkSwitchManager
+Function        Set-NetworkSwitchVlanProperty                      1.0.0.0    NetworkSwitchManager
+Function        Show-NetFirewallRule                               2.0.0.0    NetSecurity
+Function        Show-NetIPsecRule                                  2.0.0.0    NetSecurity
+Function        Start-NetEventSession                              1.0.0.0    NetEventPacketCapture
+Function        Stop-NetEventSession                               1.0.0.0    NetEventPacketCapture
+Function        Sync-NetIPsecRule                                  2.0.0.0    NetSecurity
+Function        Test-NetConnection                                 1.0.0.0    NetTCPIP
+Cmdlet          New-NetIPsecAuthProposal                           2.0.0.0    NetSecurity
+Cmdlet          New-NetIPsecMainModeCryptoProposal                 2.0.0.0    NetSecurity
+Cmdlet          New-NetIPsecQuickModeCryptoProposal                2.0.0.0    NetSecurity
+
+
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell> Get-Command *-NetFirewall*
+
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Function        Copy-NetFirewallRule                               2.0.0.0    NetSecurity
+Function        Disable-NetFirewallRule                            2.0.0.0    NetSecurity
+Function        Get-NetFirewallApplicationFilter                   2.0.0.0    NetSecurity
+Function        Get-NetFirewallInterfaceFilter                     2.0.0.0    NetSecurity
+Function        Get-NetFirewallInterfaceTypeFilter                 2.0.0.0    NetSecurity
+Function        Get-NetFirewallPortFilter                          2.0.0.0    NetSecurity
+Function        Get-NetFirewallProfile                             2.0.0.0    NetSecurity
+Function        Get-NetFirewallRule                                2.0.0.0    NetSecurity
+Function        Get-NetFirewallSecurityFilter                      2.0.0.0    NetSecurity
+Function        Get-NetFirewallServiceFilter                       2.0.0.0    NetSecurity
+Function        Get-NetFirewallSetting                             2.0.0.0    NetSecurity
+Function        New-NetFirewallRule                                2.0.0.0    NetSecurity
+Function        Remove-NetFirewallRule                             2.0.0.0    NetSecurity
+Function        Rename-NetFirewallRule                             2.0.0.0    NetSecurity
+Function        Set-NetFirewallAddressFilter                       2.0.0.0    NetSecurity
+Function        Set-NetFirewallInterfaceFilter                     2.0.0.0    NetSecurity
+Function        Set-NetFirewallPortFilter                          2.0.0.0    NetSecurity
+Function        Set-NetFirewallProfile                             2.0.0.0    NetSecurity
+Function        Set-NetFirewallRule                                2.0.0.0    NetSecurity
+Function        Set-NetFirewallSecurityFilter                      2.0.0.0    NetSecurity
+Function        Set-NetFirewallServiceFilter                       2.0.0.0    NetSecurity
+Function        Set-NetFirewallSetting                             2.0.0.0    NetSecurity
+Function        Show-NetFirewallRule                               2.0.0.0    NetSecurity
+
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell> dir
+
+
+    Directory: C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----       11/28/2022   1:44 PM                01_FUNDAMENTALS
+
+
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell> cd .\01_FUNDAMENTALS\
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\01_FUNDAMENTALS> dir
+
+
+    Directory: C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\01_FUNDAMENTALS
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----       11/28/2022  11:35 AM                01_AUTOFILL
+-a----       11/28/2022   1:44 PM         199213 Microsoft.PowerShell.Management_eefcb906-b326-4e99-9f54-8b4bb6ef3c6d_en-US_HelpContent.cab
+-a----       11/28/2022   1:44 PM            378 Microsoft.PowerShell.Management_eefcb906-b326-4e99-9f54-8b4bb6ef3c6d_HelpInfo.xml
+
+
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\01_FUNDAMENTALS> Remove-Item Microsoft.PowerShell.Management_eefcb906-b326-4e99-9f54-8b4bb6ef3c6d_HelpInfo.xml
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\01_FUNDAMENTALS> Remove-Item Microsoft.PowerShell.Management_eefcb906-b326-4e99-9f54-8b4bb6ef3c6d_en-US_HelpContent.cab -Confirm
+
+Confirm
+Are you sure you want to perform this action?
+Performing the operation "Remove File" on target
+"C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\01_FUNDAMENTALS\Microsoft.PowerShell.Management_eefcb906-b326-4e99-9f54-8b4bb6
+ef3c6d_en-US_HelpContent.cab".
+[Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "Y"): Y
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\01_FUNDAMENTALS> dir
+
+
+    Directory: C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\01_FUNDAMENTALS
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----       11/28/2022  11:35 AM                01_AUTOFILL
+
+
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\01_FUNDAMENTALS> Get-Module
+
+ModuleType Version    Name                                ExportedCommands
+---------- -------    ----                                ----------------
+Manifest   3.1.0.0    Microsoft.PowerShell.Management     {Add-Computer, Add-Content, Checkpoint-Computer, Clear-Content...}
+Manifest   3.1.0.0    Microsoft.PowerShell.Utility        {Add-Member, Add-Type, Clear-Variable, Compare-Object...}
+Script     2.0.0      PSReadline                          {Get-PSReadLineKeyHandler, Get-PSReadLineOption, Remove-PSReadLineKeyHandler, Set-PSReadLineKeyH...
+
+
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\01_FUNDAMENTALS> get-module -ListAvailable
+
+
+    Directory: C:\Program Files\WindowsPowerShell\Modules
+
+
+ModuleType Version    Name                                ExportedCommands
+---------- -------    ----                                ----------------
+Script     1.0.1      Microsoft.PowerShell.Operation.V... {Get-OperationValidation, Invoke-OperationValidation}
+Binary     1.0.0.1    PackageManagement                   {Find-Package, Get-Package, Get-PackageProvider, Get-PackageSource...}
+Script     3.4.0      Pester                              {Describe, Context, It, Should...}
+Script     1.0.0.1    PowerShellGet                       {Install-Module, Find-Module, Save-Module, Update-Module...}
+Script     2.0.0      PSReadline                          {Get-PSReadLineKeyHandler, Set-PSReadLineKeyHandler, Remove-PSReadLineKeyHandler, Get-PSReadLine...
+
+
+    Directory: C:\Windows\system32\WindowsPowerShell\v1.0\Modules
+
+
+ModuleType Version    Name                                ExportedCommands
+---------- -------    ----                                ----------------
+Manifest   1.0.1.0    ActiveDirectory                     {Add-ADCentralAccessPolicyMember, Add-ADComputerServiceAccount, Add-ADDomainControllerPasswordRe...
+Manifest   1.0.0.0    ADDSDeployment                      {Add-ADDSReadOnlyDomainControllerAccount, Install-ADDSForest, Install-ADDSDomain, Install-ADDSDo...
+Manifest   1.0.0.0    ADFS                                {Add-AdfsFarmNode, Disable-AdfsDeviceRegistration, Enable-AdfsDeviceRegistration, Export-AdfsDep...
+Manifest   1.0.0.0    AppBackgroundTask                   {Disable-AppBackgroundTaskDiagnosticLog, Enable-AppBackgroundTaskDiagnosticLog, Set-AppBackgroun...
+Manifest   2.0.0.0    AppLocker                           {Get-AppLockerFileInformation, Get-AppLockerPolicy, New-AppLockerPolicy, Set-AppLockerPolicy...}
+Manifest   1.0.0.0    AppvClient                          {Add-AppvClientConnectionGroup, Add-AppvClientPackage, Add-AppvPublishingServer, Disable-Appv...}
+Manifest   2.0.1.0    Appx                                {Add-AppxPackage, Get-AppxPackage, Get-AppxPackageManifest, Remove-AppxPackage...}
+Manifest   1.0        BestPractices                       {Get-BpaModel, Get-BpaResult, Invoke-BpaModel, Set-BpaResult}
+Manifest   1.0.0.0    BitLocker                           {Unlock-BitLocker, Suspend-BitLocker, Resume-BitLocker, Remove-BitLockerKeyProtector...}
+Manifest   2.0.0.0    BitsTransfer                        {Add-BitsFile, Complete-BitsTransfer, Get-BitsTransfer, Remove-BitsTransfer...}
+Manifest   1.0.0.0    BranchCache                         {Add-BCDataCacheExtension, Clear-BCCache, Disable-BC, Disable-BCDowngrading...}
+Manifest   1.0.0.0    CimCmdlets                          {Get-CimAssociatedInstance, Get-CimClass, Get-CimInstance, Get-CimSession...}
+Manifest   1.0        ConfigCI                            {Get-SystemDriver, New-CIPolicyRule, New-CIPolicy, Get-CIPolicy...}
+Manifest   1.0        ConfigDefender                      {Get-MpPreference, Set-MpPreference, Add-MpPreference, Remove-MpPreference...}
+Manifest   1.0        ConfigDefenderPerformance           {New-MpPerformanceRecording, Get-MpPerformanceReport}
+Manifest   1.0        Defender                            {Get-MpPreference, Set-MpPreference, Add-MpPreference, Remove-MpPreference...}
+Manifest   1.0.1.0    DeliveryOptimization                {Get-DeliveryOptimizationStatus, Get-DeliveryOptimizationPerfSnap, Get-DeliveryOptimizationLog, ...
+Manifest   1.0        DFSN                                {Get-DfsnRoot, Remove-DfsnRoot, Set-DfsnRoot, New-DfsnRoot...}
+Binary     2.0.0.0    DFSR                                {New-DfsReplicationGroup, Get-DfsReplicationGroup, Set-DfsReplicationGroup, Remove-DfsReplicatio...
+Manifest   2.0.0.0    DhcpServer                          {Add-DhcpServerInDC, Add-DhcpServerv4Class, Add-DhcpServerv4ExclusionRange, Add-DhcpServerv4Fail...
+Manifest   1.0.0.0    DirectAccessClientComponents        {Disable-DAManualEntryPointSelection, Enable-DAManualEntryPointSelection, Get-DAClientExperience...
+Script     3.0        Dism                                {Add-AppxProvisionedPackage, Add-WindowsDriver, Add-WindowsCapability, Add-WindowsImage...}
+Manifest   1.0.0.0    DnsClient                           {Resolve-DnsName, Clear-DnsClientCache, Get-DnsClient, Get-DnsClientCache...}
+Manifest   2.0.0.0    DnsServer                           {Add-DnsServerConditionalForwarderZone, Add-DnsServerDirectoryPartition, Add-DnsServerForwarder,...
+Manifest   1.0.0.0    EventTracingManagement              {Start-EtwTraceSession, New-EtwTraceSession, Get-EtwTraceSession, Update-EtwTraceSession...}
+Manifest   1.0.0.0    GroupPolicy                         {Backup-GPO, Block-GPInheritance, Copy-GPO, Get-GPInheritance...}
+Manifest   2.0.0.0    International                       {Get-WinDefaultInputMethodOverride, Set-WinDefaultInputMethodOverride, Get-WinHomeLocation, Set-...
+Manifest   1.0.0.0    iSCSI                               {Get-IscsiTargetPortal, New-IscsiTargetPortal, Remove-IscsiTargetPortal, Update-IscsiTargetPorta...
+Manifest   2.0.0.0    IscsiTarget                         {Add-ClusteriSCSITargetServerRole, Add-IscsiVirtualDiskTargetMapping, Checkpoint-IscsiVirtualDis...
+Script     1.0.0.0    ISE                                 {New-IseSnippet, Import-IseSnippet, Get-IseSnippet}
+Manifest   1.0.0.0    Kds                                 {Add-KdsRootKey, Get-KdsRootKey, Test-KdsRootKey, Set-KdsConfiguration...}
+Manifest   1.0.1.0    Microsoft.PowerShell.Archive        {Compress-Archive, Expand-Archive}
+Manifest   3.0.0.0    Microsoft.PowerShell.Diagnostics    {Get-WinEvent, Get-Counter, Import-Counter, Export-Counter...}
+Manifest   3.0.0.0    Microsoft.PowerShell.Host           {Start-Transcript, Stop-Transcript}
+Manifest   1.0.0.0    Microsoft.PowerShell.LocalAccounts  {Add-LocalGroupMember, Disable-LocalUser, Enable-LocalUser, Get-LocalGroup...}
+Manifest   3.1.0.0    Microsoft.PowerShell.Management     {Add-Content, Clear-Content, Clear-ItemProperty, Join-Path...}
+Script     1.0        Microsoft.PowerShell.ODataUtils     Export-ODataEndpointProxy
+Manifest   3.0.0.0    Microsoft.PowerShell.Security       {Get-Acl, Set-Acl, Get-PfxCertificate, Get-Credential...}
+Manifest   3.1.0.0    Microsoft.PowerShell.Utility        {Format-List, Format-Custom, Format-Table, Format-Wide...}
+Manifest   3.0.0.0    Microsoft.WSMan.Management          {Disable-WSManCredSSP, Enable-WSManCredSSP, Get-WSManCredSSP, Set-WSManQuickConfig...}
+Manifest   1.0        MMAgent                             {Disable-MMAgent, Enable-MMAgent, Set-MMAgent, Get-MMAgent...}
+Manifest   1.0.0.0    MsDtc                               {New-DtcDiagnosticTransaction, Complete-DtcDiagnosticTransaction, Join-DtcDiagnosticResourceMana...
+Manifest   2.0.0.0    NetAdapter                          {Disable-NetAdapter, Disable-NetAdapterBinding, Disable-NetAdapterChecksumOffload, Disable-NetAd...
+Manifest   1.0.0.0    NetConnection                       {Get-NetConnectionProfile, Set-NetConnectionProfile}
+Manifest   1.0.0.0    NetDiagnostics                      Get-NetView
+Manifest   1.0.0.0    NetEventPacketCapture               {New-NetEventSession, Remove-NetEventSession, Get-NetEventSession, Set-NetEventSession...}
+Manifest   2.0.0.0    NetLbfo                             {Add-NetLbfoTeamMember, Add-NetLbfoTeamNic, Get-NetLbfoTeam, Get-NetLbfoTeamMember...}
+Manifest   1.0.0.0    NetNat                              {Get-NetNat, Get-NetNatExternalAddress, Get-NetNatStaticMapping, Get-NetNatSession...}
+Manifest   2.0.0.0    NetQos                              {Get-NetQosPolicy, Set-NetQosPolicy, Remove-NetQosPolicy, New-NetQosPolicy}
+Manifest   2.0.0.0    NetSecurity                         {Get-DAPolicyChange, New-NetIPsecAuthProposal, New-NetIPsecMainModeCryptoProposal, New-NetIPsecQ...
+Manifest   1.0.0.0    NetSwitchTeam                       {New-NetSwitchTeam, Remove-NetSwitchTeam, Get-NetSwitchTeam, Rename-NetSwitchTeam...}
+Manifest   1.0.0.0    NetTCPIP                            {Get-NetIPAddress, Get-NetIPInterface, Get-NetIPv4Protocol, Get-NetIPv6Protocol...}
+Manifest   1.0.0.0    NetworkConnectivityStatus           {Get-DAConnectionStatus, Get-NCSIPolicyConfiguration, Reset-NCSIPolicyConfiguration, Set-NCSIPol...
+Manifest   1.0.0.0    NetworkSwitchManager                {Disable-NetworkSwitchEthernetPort, Enable-NetworkSwitchEthernetPort, Get-NetworkSwitchEthernetP...
+Manifest   1.0.0.0    NetworkTransition                   {Add-NetIPHttpsCertBinding, Disable-NetDnsTransitionConfiguration, Disable-NetIPHttpsProfile, Di...
+Manifest   1.0        NFS                                 {Get-NfsMappedIdentity, Get-NfsNetgroup, Install-NfsMappingStore, New-NfsMappedIdentity...}
+Manifest   1.0.0.0    PcsvDevice                          {Get-PcsvDevice, Start-PcsvDevice, Stop-PcsvDevice, Restart-PcsvDevice...}
+Manifest   1.0.0.0    PKI                                 {Add-CertificateEnrollmentPolicyServer, Export-Certificate, Export-PfxCertificate, Get-Certifica...
+Manifest   1.0.0.0    PlatformIdentifier                  Get-PlatformIdentifier
+Manifest   1.0.0.0    PnpDevice                           {Get-PnpDevice, Get-PnpDeviceProperty, Enable-PnpDevice, Disable-PnpDevice}
+Manifest   1.1        PrintManagement                     {Add-Printer, Add-PrinterDriver, Add-PrinterPort, Get-PrintConfiguration...}
+Binary     1.0.11     ProcessMitigations                  {Get-ProcessMitigation, Set-ProcessMitigation, ConvertTo-ProcessMitigationPolicy}
+Manifest   1.1        PSDesiredStateConfiguration         {Set-DscLocalConfigurationManager, Start-DscConfiguration, Test-DscConfiguration, Publish-DscCon...
+Script     1.0.0.0    PSDiagnostics                       {Disable-PSTrace, Disable-PSWSManCombinedTrace, Disable-WSManTrace, Enable-PSTrace...}
+Binary     1.1.0.0    PSScheduledJob                      {New-JobTrigger, Add-JobTrigger, Remove-JobTrigger, Get-JobTrigger...}
+Manifest   2.0.0.0    RemoteDesktop                       {Get-RDCertificate, Set-RDCertificate, New-RDCertificate, New-RDVirtualDesktopDeployment...}
+Manifest   1.0.0.0    ScheduledTasks                      {Get-ScheduledTask, Set-ScheduledTask, Register-ScheduledTask, Unregister-ScheduledTask...}
+Manifest   2.0.0.0    SecureBoot                          {Confirm-SecureBootUEFI, Set-SecureBootUEFI, Get-SecureBootUEFI, Format-SecureBootUEFI...}
+Manifest   1.0.0.0    SecurityCmdlets                     {Backup-SecurityPolicy, Restore-SecurityPolicy, Backup-AuditPolicy, Restore-AuditPolicy}
+Script     1.0.0.0    ServerCore                          {Get-DisplayResolution, Set-DisplayResolution}
+Script     2.0.0.0    ServerManager                       {Get-WindowsFeature, Install-WindowsFeature, Uninstall-WindowsFeature, Enable-ServerManagerStand...
+Manifest   2.0.0.0    SmbShare                            {Get-SmbShare, Remove-SmbShare, Set-SmbShare, Block-SmbShareAccess...}
+Manifest   2.0.0.0    SmbWitness                          {Get-SmbWitnessClient, Move-SmbWitnessClient, gsmbw, msmbw...}
+Manifest   2.0.0.0    SoftwareInventoryLogging            {Get-SilComputer, Get-SilComputerIdentity, Get-SilSoftware, Get-SilWindowsUpdate...}
+Manifest   1.0.0.0    StartLayout                         {Export-StartLayout, Import-StartLayout, Export-StartLayoutEdgeAssets, Get-StartApps}
+Manifest   2.0.0.0    Storage                             {Add-InitiatorIdToMaskingSet, Add-PartitionAccessPath, Add-PhysicalDisk, Add-StorageFaultDomain...}
+Manifest   1.0.0.0    StorageBusCache                     {Clear-StorageBusDisk, Disable-StorageBusCache, Disable-StorageBusDisk, Enable-StorageBusCache...}
+Manifest   2.0.0.0    TrustedPlatformModule               {Get-Tpm, Initialize-Tpm, Clear-Tpm, Unblock-Tpm...}
+Manifest   2.0.0.0    VpnClient                           {Add-VpnConnection, Set-VpnConnection, Remove-VpnConnection, Get-VpnConnection...}
+Manifest   1.0.0.0    WindowsDeveloperLicense             {Get-WindowsDeveloperLicense, Unregister-WindowsDeveloperLicense, Show-WindowsDeveloperLicenseRe...
+Script     1.0        WindowsErrorReporting               {Enable-WindowsErrorReporting, Disable-WindowsErrorReporting, Get-WindowsErrorReporting}
+Manifest   1.0.0.0    WindowsSearch                       {Get-WindowsSearchSetting, Set-WindowsSearchSetting}
+Manifest   1.0.0.0    WindowsUpdate                       Get-WindowsUpdateLog
+Manifest   1.0.0.2    WindowsUpdateProvider               {Get-WUAVersion, Get-WULastInstallationDate, Get-WULastScanSuccessDate, Get-WUIsPendingReboot...}
+
+
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\01_FUNDAMENTALS> Get-Modle CimCmdlets
+Get-Modle : The term 'Get-Modle' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or
+if a path was included, verify that the path is correct and try again.
++ Get-Modle CimCmdlets
++ ~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Get-Modle:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\01_FUNDAMENTALS> Get-Module CimCmdlets
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\01_FUNDAMENTALS> Get-CimInstance Win32_OperatingSystem
+
+SystemDirectory     Organization BuildNumber RegisteredUser SerialNumber            Version
+---------------     ------------ ----------- -------------- ------------            -------
+C:\Windows\system32              17763                      00430-00000-00000-AA565 10.0.17763
+
+
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\01_FUNDAMENTALS> Get-Module CimCmdlets
+
+ModuleType Version    Name                                ExportedCommands
+---------- -------    ----                                ----------------
+Binary     1.0.0.0    CimCmdlets                          {Export-BinaryMiLog, Get-CimAssociatedInstance, Get-CimClass, Get-CimInstance...}
+
+
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\01_FUNDAMENTALS> $PSModuleAutoLoadingPreference
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\01_FUNDAMENTALS> Write-Host $PSModuleAutoLoadingPreference
+
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\01_FUNDAMENTALS> $PSModuleAutoLoadingPreference = 'None'
+None
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\01_FUNDAMENTALS> Import-Module ScheduledTasks
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\01_FUNDAMENTALS> Get-Module
+
+ModuleType Version    Name                                ExportedCommands
+---------- -------    ----                                ----------------
+Binary     1.0.0.0    CimCmdlets                          {Export-BinaryMiLog, Get-CimAssociatedInstance, Get-CimClass, Get-CimInstance...}
+Manifest   3.1.0.0    Microsoft.PowerShell.Management     {Add-Computer, Add-Content, Checkpoint-Computer, Clear-Content...}
+Script     2.0.0      PSReadline                          {Get-PSReadLineKeyHandler, Get-PSReadLineOption, Remove-PSReadLineKeyHandler, Set-PSReadLineKeyH...
+Manifest   1.0.0.0    ScheduledTasks                      {Disable-ScheduledTask, Enable-ScheduledTask, Export-ScheduledTask, Get-ClusteredScheduledTask...}
+
+
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\01_FUNDAMENTALS> Get-Command -Module ScheduledTasks
+
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Function        Enable-ScheduledTask                               1.0.0.0    ScheduledTasks
+Function        Export-ScheduledTask                               1.0.0.0    ScheduledTasks
+Function        Get-ClusteredScheduledTask                         1.0.0.0    ScheduledTasks
+Function        Get-ScheduledTask                                  1.0.0.0    ScheduledTasks
+Function        Get-ScheduledTaskInfo                              1.0.0.0    ScheduledTasks
+Function        New-ScheduledTask                                  1.0.0.0    ScheduledTasks
+Function        New-ScheduledTaskAction                            1.0.0.0    ScheduledTasks
+Function        New-ScheduledTaskPrincipal                         1.0.0.0    ScheduledTasks
+Function        New-ScheduledTaskSettingsSet                       1.0.0.0    ScheduledTasks
+Function        Register-ClusteredScheduledTask                    1.0.0.0    ScheduledTasks
+Function        Register-ScheduledTask                             1.0.0.0    ScheduledTasks
+Function        Set-ClusteredScheduledTask                         1.0.0.0    ScheduledTasks
+Function        Set-ScheduledTask                                  1.0.0.0    ScheduledTasks
+Function        Start-ScheduledTask                                1.0.0.0    ScheduledTasks
+Function        Stop-ScheduledTask                                 1.0.0.0    ScheduledTasks
+Function        Unregister-ClusteredScheduledTask                  1.0.0.0    ScheduledTasks
+Function        Unregister-ScheduledTask                           1.0.0.0    ScheduledTasks
+
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\01_FUNDAMENTALS> Find-Module Azure
+Find-Module : The term 'Find-Module' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name,
+or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ Find-Module Azure
++ ~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Find-Module:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\01_FUNDAMENTALS> Get-Command Find-Module
+Get-Command : The term 'Find-Module' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name,
+or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ Get-Command Find-Module
++ ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Find-Module:String) [Get-Command], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException,Microsoft.PowerShell.Commands.GetCommandCommand
+
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\01_FUNDAMENTALS> Install-Module Azure
+Install-Module : The term 'Install-Module' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the
+name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ ~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Install-Module:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\01_FUNDAMENTALS> [Net.ServicePointManager]::SecurityProtocol = [Net.ServicePointManager]::SecurityProtocol -bor [Net.SecurityProtocolType]::Tls12
+Install-Module : The term 'Install-Module' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the
+name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ Install-Module Azure
++ ~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Install-Module:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\01_FUNDAMENTALS> Install-PackageProvider -Name NuGet -Force
+Install-PackageProvider : The term 'Install-PackageProvider' is not recognized as the name of a cmdlet, function, script file, or operable program. Check
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ Install-PackageProvider -Name NuGet -Force
++ ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Install-PackageProvider:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\01_FUNDAMENTALS> $PSVersionTable
+
+Name                           Value
+----                           -----
+PSVersion                      5.1.17763.2931
+PSEdition                      Desktop
+PSCompatibleVersions           {1.0, 2.0, 3.0, 4.0...}
+BuildVersion                   10.0.17763.2931
+CLRVersion                     4.0.30319.42000
+WSManStackVersion              3.0
+PSRemotingProtocolVersion      2.3
+SerializationVersion           1.1.0.1
+
+
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\01_FUNDAMENTALS> Get-Alias cd
+
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Alias           cd -> Set-Location
+
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\01_FUNDAMENTALS> Get-Help Set-Location
+
+NAME
+    Set-Location
+
+SYNOPSIS
+    Sets the current working location to a specified location.
+
+
+SYNTAX
+    Set-Location -LiteralPath <System.String> [-PassThru] [-UseTransaction] [<CommonParameters>]
+
+    Set-Location [[-Path] <System.String>] [-PassThru] [-UseTransaction] [<CommonParameters>]
+
+    Set-Location [-PassThru] [-StackName <System.String>] [-UseTransaction] [<CommonParameters>]
+
+
+DESCRIPTION
+    The `Set-Location` cmdlet sets the working location to a specified location. That location could be a directory, a subdirectory, a registry location, or
+    any provider path.
+
+    You can also use the StackName parameter to make a named location stack the current location stack. For more information about location stacks, see the
+    Notes.
+
+
+RELATED LINKS
+    Online Version: https://learn.microsoft.com/powershell/module/microsoft.powershell.management/set-location?view=powershell-5.1&WT.mc_id=ps-gethelp
+    Get-Location
+    Pop-Location
+    Push-Location
+
+REMARKS
+    To see the examples, type: "get-help Set-Location -examples".
+    For more information, type: "get-help Set-Location -detailed".
+    For technical information, type: "get-help Set-Location -full".
+    For online help, type: "get-help Set-Location -online"
+
+
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\01_FUNDAMENTALS> Get-Help Set-Location -full
+
+NAME
+    Set-Location
+
+SYNOPSIS
+    Sets the current working location to a specified location.
+
+
+SYNTAX
+    Set-Location -LiteralPath <System.String> [-PassThru] [-UseTransaction] [<CommonParameters>]
+
+    Set-Location [[-Path] <System.String>] [-PassThru] [-UseTransaction] [<CommonParameters>]
+
+    Set-Location [-PassThru] [-StackName <System.String>] [-UseTransaction] [<CommonParameters>]
+
+
+DESCRIPTION
+    The `Set-Location` cmdlet sets the working location to a specified location. That location could be a directory, a subdirectory, a registry location, or
+    any provider path.
+
+    You can also use the StackName parameter to make a named location stack the current location stack. For more information about location stacks, see the
+    Notes.
+
+
+PARAMETERS
+    -LiteralPath <System.String>
+        Specifies a path of the location. The value of the LiteralPath parameter is used exactly as it is typed. No characters are interpreted as wildcard
+        characters. If the path includes escape characters, enclose it in single quotation marks. Single quotation marks tell PowerShell not to interpret
+        any characters as escape sequences.
+
+        Required?                    true
+        Position?                    named
+        Default value                None
+        Accept pipeline input?       True (ByPropertyName)
+        Accept wildcard characters?  false
+
+    -PassThru <System.Management.Automation.SwitchParameter>
+        Returns a PathInfo object that represents the location. By default, this cmdlet does not generate any output.
+
+        Required?                    false
+        Position?                    named
+        Default value                False
+        Accept pipeline input?       False
+        Accept wildcard characters?  false
+
+    -Path <System.String>
+        Specify the path of a new working location. If no path is provided, `Set-Location` defaults to the current user's home directory. When wildcards are
+        used, the cmdlet chooses the container (directory, registry key, certificate store) that matches the wildcard pattern. If the wildcard pattern
+        matches more than one container, the cmdlet returns an error.
+
+        Required?                    false
+        Position?                    0
+        Default value                None
+        Accept pipeline input?       True (ByPropertyName, ByValue)
+        Accept wildcard characters?  true
+
+    -StackName <System.String>
+        Specifies an existing location stack name that this cmdlet makes the current location stack. Enter a location stack name. To indicate the unnamed
+        default location stack, type `$null` or an empty string (`""`).
+
+        Using this parameter does not change the current location. It only changes the stack used by the ` -Location` cmdlets. The ` -Location` cmdlets act
+        on the current stack unless you use the StackName parameter to specify a different stack. For more information about location stacks, see the Notes
+        (#notes).
+
+        Required?                    false
+        Position?                    named
+        Default value                None
+        Accept pipeline input?       True (ByPropertyName)
+        Accept wildcard characters?  false
+
+    -UseTransaction <System.Management.Automation.SwitchParameter>
+        Includes the command in the active transaction. This parameter is valid only when a transaction is in progress. For more information, see
+        about_Transactions (../Microsoft.PowerShell.Core/About/about_Transactions.md).
+
+        Required?                    false
+        Position?                    named
+        Default value                False
+        Accept pipeline input?       False
+        Accept wildcard characters?  false
+
+    <CommonParameters>
+        This cmdlet supports the common parameters: Verbose, Debug,
+        ErrorAction, ErrorVariable, WarningAction, WarningVariable,
+        OutBuffer, PipelineVariable, and OutVariable. For more information, see
+        about_CommonParameters (https:/go.microsoft.com/fwlink/?LinkID=113216).
+
+INPUTS
+    System.String
+        You can pipe a string that contains a path, but not a literal path, to this cmdlet.
+
+
+OUTPUTS
+    None, System.Management.Automation.PathInfo, System.Management.Automation.PathInfoStack
+        This cmdlet does not generate any output unless you specify the PassThru parameter. Using PassThru with Path or LiteralPath generates a PathInfo
+        object that represents the new location. Using PassThru with StackName generates a PathInfoStack object representing the new stack context.
+
+
+NOTES
+
+
+        Windows PowerShell includes the following aliases for `Set-Location`:
+
+        - `cd`
+
+        - `chdir`
+
+        - `sl`
+
+
+        PowerShell supports multiple runspaces per process. Each runspace has its own current directory . This is not the same as
+        `[System.Environment]::CurrentDirectory`. This behavior can be an issue when calling .NET APIs or running native applications without providing
+        explicit directory paths.
+
+        Even if the location cmdlets did set the process-wide current directory, you can't depend on it because another runspace might change it at any
+        time. You should use the location cmdlets to perform path-based operations using the current working directory specific to the current runspace.
+
+        The `Set-Location` cmdlet is designed to work with the data exposed by any provider. To list the providers available in your session, type
+        `Get-PSProvider`. For more information, see about_Providers (../Microsoft.PowerShell.Core/about/about_Providers.md).
+
+        A stack is a last-in, first-out list in which only the most recently added item can be accessed. You add items to a stack in the order that you use
+        them, and then retrieve them for use in the reverse order. PowerShell lets you store provider locations in location stacks. PowerShell creates an
+        unnamed default location stack. You can create multiple named location stacks. If you do not specify a stack name, PowerShell uses the current
+        location stack. By default, the unnamed default location is the current location stack, but you can use the `Set-Location` cmdlet to change the
+        current location stack.
+
+        To manage location stacks, use the `*-Location` cmdlets, as follows:
+
+        - To add a location to a location stack, use the `Push-Location` cmdlet.
+
+        - To get a location from a location stack, use the `Pop-Location` cmdlet.
+
+        - To display the locations in the current location stack, use the Stack parameter of the   `Get-Location` cmdlet. To display the locations in a
+        named location stack, use the StackName parameter of `Get-Location`.
+
+        - To create a new location stack, use the StackName parameter of `Push-Location`. If you specify   a stack that does not exist, `Push-Location`
+        creates the stack.
+
+        - To make a location stack the current location stack, use the StackName parameter of   `Set-Location`.
+        The unnamed default location stack is fully accessible only when it is the current location stack. If you make a named location stack the current
+        location stack, you can no longer use the `Push-Location` or `Pop-Location` cmdlets to add or get items from the default stack or use the
+        `Get-Location` cmdlet to display the locations in the unnamed stack. To make the unnamed stack the current stack, use the StackName parameter of the
+        `Set-Location` cmdlet with a value of `$null` or an empty string (`""`).
+
+
+    ------------- Example 1: Set the current location -------------
+
+    PS C:\> Set-Location -Path "HKLM:\"
+    PS HKLM:\>
+
+    This command sets the current location to the root of the `HKLM:` drive.
+    Example 2: Set the current location and display that location
+
+    PS C:\> Set-Location -Path "Env:\" -PassThru
+
+    Path
+    ----
+    PS Env:\>
+
+    This command sets the current location to the root of the `Env:` drive. It uses the PassThru parameter to direct PowerShell to return a PathInfo object
+    that represents the `Env:` location.
+    Example 3: Set location to the current location in the C: drive
+
+    PS C:\Windows\> Set-Location HKLM:\
+    PS HKLM:\> Set-Location C:
+    The first command sets the location to the root of the `HKLM:` drive in the Registry provider. The second command sets the location to the current
+    location of the `C:` drive in the FileSystem provider. When the drive name is specified in the form `<DriveName>:` (without backslash), the cmdlet sets
+    the location to the current location in the PSDrive. To get the current location in the PSDrive use `Get-Location -PSDrive <DriveName>` command.
+    ----- Example 4: Set the current location to a named stack -----
+
+    PS C:\> Push-Location -Path 'C:\Program Files\PowerShell\' -StackName "Paths"
+    PS C:\Program Files\PowerShell\> Get-Location -Stack
+
+    Path
+    ----
+    C:\
+
+    The first command adds the current location to the Paths stack. The second command makes the Paths location stack the current location stack. The third
+
+    The `*-Location` cmdlets use the current location stack unless a different location stack is specified in the command. For information about location
+    stacks, see the Notes (#notes).
+
+RELATED LINKS
+    Online Version: https://learn.microsoft.com/powershell/module/microsoft.powershell.management/set-location?view=powershell-5.1&WT.mc_id=ps-gethelp
+    Get-Location
+    Pop-Location
+    Push-Location
+
+
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\01_FUNDAMENTALS>
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\01_FUNDAMENTALS> Get-Alias -Definition Get-Childitem
+
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Alias           dir -> Get-ChildItem
+Alias           gci -> Get-ChildItem
+Alias           ls -> Get-ChildItem
+
+
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\01_FUNDAMENTALS> New-Alias grep -Value Select-String
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\01_FUNDAMENTALS> Get-Alias grep
+
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Alias           grep -> Select-String
+
+
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\01_FUNDAMENTALS> Get-Alias -Definition Select-String
+
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Alias           grep -> Select-String
+Alias           sls -> Select-String
+
+
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\01_FUNDAMENTALS> Get-Command *-Alias
+
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Cmdlet          Export-Alias                                       3.1.0.0    Microsoft.PowerShell.Utility
+Cmdlet          Get-Alias                                          3.1.0.0    Microsoft.PowerShell.Utility
+Cmdlet          Import-Alias                                       3.1.0.0    Microsoft.PowerShell.Utility
+Cmdlet          New-Alias                                          3.1.0.0    Microsoft.PowerShell.Utility
+Cmdlet          Set-Alias                                          3.1.0.0    Microsoft.PowerShell.Utility
+
+
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\01_FUNDAMENTALS> get-help Set-Alias
+
+NAME
+    Set-Alias
+
+SYNOPSIS
+
+
+SYNTAX
+    Set-Alias [-Name] <System.String> [-Value] <System.String> [-Description <System.String>] [-Force] [-Option {AllScope | Constant | None | Private |
+    ReadOnly | Unspecified}] [-PassThru] [-Scope {Global | Local | Private | Numbered scopes | Script}] [-Confirm] [-WhatIf] [<CommonParameters>]
+
+
+DESCRIPTION
+    The `Set-Alias` cmdlet creates or changes an alias for a cmdlet or a command, such as a function, script, file, or other executable. An alias is an
+    alternate name that refers to a cmdlet or command. For example, `sal` is the alias for the `Set-Alias` cmdlet. For more information, see about_Aliases
+    (../Microsoft.PowerShell.Core/About/about_Aliases.md).
+
+    A cmdlet can have multiple aliases, but an alias can only be associated with one cmdlet. You can use `Set-Alias` to reassign an existing alias to
+    another cmdlet, or change an alias's properties, such as the description.
+
+    An alias that is created or changed by `Set-Alias` is not permanent and is only available during the current PowerShell session. When the PowerShell
+    session is closed, the alias is removed.
+
+
+RELATED LINKS
+    Online Version: https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/set-alias?view=powershell-5.1&WT.mc_id=ps-gethelp
+    about_Aliases
+    about_Functions
+    about_Profiles
+    about_Scopes
+    Export-Alias
+    Get-Alias
+    Import-Alias
+    New-Alias
+    Remove-Item
+
+REMARKS
+    To see the examples, type: "get-help Set-Alias -examples".
+    For more information, type: "get-help Set-Alias -detailed".
+    For technical information, type: "get-help Set-Alias -full".
+    For online help, type: "get-help Set-Alias -online"
+
+
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\01_FUNDAMENTALS> get-help Set-Alias -full
+
+NAME
+    Set-Alias
+
+SYNOPSIS
+    Creates or changes an alias for a cmdlet or other command in the current PowerShell session.
+
+
+SYNTAX
+    Set-Alias [-Name] <System.String> [-Value] <System.String> [-Description <System.String>] [-Force] [-Option {AllScope | Constant | None | Private |
+    ReadOnly | Unspecified}] [-PassThru] [-Scope {Global | Local | Private | Numbered scopes | Script}] [-Confirm] [-WhatIf] [<CommonParameters>]
+
+
+DESCRIPTION
+    The `Set-Alias` cmdlet creates or changes an alias for a cmdlet or a command, such as a function, script, file, or other executable. An alias is an
+    alternate name that refers to a cmdlet or command. For example, `sal` is the alias for the `Set-Alias` cmdlet. For more information, see about_Aliases
+    (../Microsoft.PowerShell.Core/About/about_Aliases.md).
+
+    A cmdlet can have multiple aliases, but an alias can only be associated with one cmdlet. You can use `Set-Alias` to reassign an existing alias to
+    another cmdlet, or change an alias's properties, such as the description.
+
+    An alias that is created or changed by `Set-Alias` is not permanent and is only available during the current PowerShell session. When the PowerShell
+    session is closed, the alias is removed.
+
+
+PARAMETERS
+    -Description <System.String>
+        Specifies a description of the alias. You can type any string. If the description includes spaces, enclose it single quotation marks.
+
+        Required?                    false
+        Position?                    named
+        Default value                None
+        Accept pipeline input?       False
+        Accept wildcard characters?  false
+
+    -Force <System.Management.Automation.SwitchParameter>
+        Use the Force parameter to change or delete an alias that has the Option parameter set to ReadOnly .
+
+        The Force parameter cannot change or delete an alias with the Option parameter set to Constant .
+
+        Required?                    false
+        Position?                    named
+        Default value                False
+        Accept pipeline input?       False
+        Accept wildcard characters?  false
+
+    -Name <System.String>
+        Specifies the name of a new alias. An alias name can contain alphanumeric characters and hyphens. Alias names cannot be numeric, such as 123.
+
+        Required?                    true
+        Position?                    0
+        Default value                None
+        Accept pipeline input?       True (ByPropertyName)
+        Accept wildcard characters?  false
+
+    -Option <System.Management.Automation.ScopedItemOptions>
+        Sets the Option property value of the alias. Values such as `ReadOnly` and `Constant` protect an alias from unintended changes. To see the Option
+        property of all aliases in the session, type `Get-Alias | Format-Table -Property Name, Options -Autosize`.
+
+        The acceptable values for this parameter are as follows:
+
+        - `AllScope` - The alias is copied to any new scopes that are created.
+
+        - `Constant` - Cannot be changed or deleted.
+
+        - `None` - Sets no options and is the default.
+
+        - `Private` - The alias is available only in the current scope.
+
+        - `ReadOnly` - Cannot be changed or deleted unless the Force parameter is used. - `Unspecified`
+
+        These values are defined as a flag-based enumeration. You can combine multiple values together to set multiple flags using this parameter. The
+        values can be passed to the Option parameter as an array of values or as a comma-separated string of those values. The cmdlet will combine the
+        values using a binary-OR operation. Passing values as an array is the simplest option and also allows you to use tab-completion on the values.
+
+        Required?                    false
+        Position?                    named
+        Default value                None
+        Accept pipeline input?       False
+        Accept wildcard characters?  false
+
+    -PassThru <System.Management.Automation.SwitchParameter>
+        Returns an object that represents the alias. Use a format cmdlet such as `Format-List` to display the object. By default, `Set-Alias` does not
+        generate any output.
+
+        Required?                    false
+        Position?                    named
+        Default value                False
+        Accept pipeline input?       False
+        Accept wildcard characters?  false
+
+    -Scope <System.String>
+        Specifies the scope in which this alias is valid. The default value is Local . For more information, see about_Scopes
+        (../Microsoft.PowerShell.Core/About/about_Scopes.md).
+
+        The acceptable values are as follows:
+
+        - Global
+
+        - Local
+
+        - Private
+
+        - Numbered scopes
+
+        - Script
+
+        Required?                    false
+        Position?                    named
+        Default value                Local
+        Accept pipeline input?       False
+        Accept wildcard characters?  false
+
+    -Value <System.String>
+        Specifies the name of the cmdlet or command that the alias runs. The Value parameter is the alias's Definition property.
+
+        Required?                    true
+        Position?                    1
+        Default value                None
+        Accept pipeline input?       True (ByPropertyName)
+        Accept wildcard characters?  false
+
+    -Confirm <System.Management.Automation.SwitchParameter>
+        Prompts you for confirmation before running the cmdlet.
+
+        Required?                    false
+        Position?                    named
+        Default value                False
+        Accept pipeline input?       False
+        Accept wildcard characters?  false
+
+    -WhatIf <System.Management.Automation.SwitchParameter>
+        Shows what would happen if the cmdlet runs. The cmdlet is not run.
+
+        Required?                    false
+        Position?                    named
+        Default value                False
+        Accept pipeline input?       False
+        Accept wildcard characters?  false
+
+    <CommonParameters>
+        This cmdlet supports the common parameters: Verbose, Debug,
+        ErrorAction, ErrorVariable, WarningAction, WarningVariable,
+        OutBuffer, PipelineVariable, and OutVariable. For more information, see
+        about_CommonParameters (https:/go.microsoft.com/fwlink/?LinkID=113216).
+
+INPUTS
+    None
+        `Set-Alias` does not accept input from the pipeline.
+
+
+OUTPUTS
+    None or System.Management.Automation.AliasInfo
+        When you use the PassThru parameter, `Set-Alias` generates a System.Management.Automation.AliasInfo object representing the alias. Otherwise,
+        `Set-Alias` does not generate any output.
+
+
+NOTES
+
+
+        Windows PowerShell includes the following aliases for `Set-Alias`:
+
+        - `sal`
+
+        PowerShell includes built-in aliases that are available in each PowerShell session. The `Get-Alias` cmdlet displays the aliases available in a
+        PowerShell session.
+
+        To create a new alias, use `Set-Alias` or `New-Alias`. To remove an alias use the `Remove-Item` cmdlet. For example, `Remove-Item -Path
+        Alias:aliasname`.
+
+        To create an alias that is available in each PowerShell session, add it to your PowerShell profile. For more information, see about_Profiles
+        (../Microsoft.PowerShell.Core/About/about_Profiles.md).
+
+        An alias can be saved and reused in another PowerShell session by doing an export and import. To save an alias to a file, use `Export-Alias`. To add
+        a saved alias to a new PowerShell session, use `Import-Alias`.
+
+    ----------- Example 1: Create an alias for a cmdlet -----------
+
+    PS> Set-Alias -Name list -Value Get-ChildItem
+
+    PS> Get-Alias -Name list
+
+    CommandType     Name
+    -----------     ----
+    Alias           list -> Get-ChildItem
+
+    The `Set-Alias` cmdlet creates an alias in the current PowerShell session. The Name parameter specifies the alias's name, `list`. The Value parameter
+    specifies the cmdlet that the alias runs.
+
+    To run the alias, type `list` on the PowerShell command line.
+    - Example 2: Reassign an existing alias to a different cmdlet -
+
+    PS> Get-Alias -Name list
+
+    CommandType     Name
+    -----------     ----
+    Alias           list -> Get-ChildItem
+
+    PS> Set-Alias -Name list -Value Get-Location
+
+    PS> Get-Alias -Name list
+
+    CommandType     Name
+    -----------     ----
+    Alias           list -> Get-Location
+
+    The `Get-Alias` cmdlet uses the Name parameter to display the `list` alias. The `list` alias is associated with the `Get-ChildItem` cmdlet. When the
+    `list` alias is run, the items in the current directory are displayed.
+
+    The `Set-Alias` cmdlet uses the Name parameter to specify the `list` alias. The Value parameter associates the alias to the `Get-Location` cmdlet.
+
+    The `Get-Alias` cmdlet uses the Name parameter to display the `list` alias. The `list` alias is associated with the `Get-Location` cmdlet. When the
+    `list` alias is run, the current directory's location is displayed.
+    -------- Example 3: Create and change a read-only alias --------
+
+    PS> Set-Alias -Name loc -Value Get-Location -Option ReadOnly -PassThru | Format-List -Property *
+
+    DisplayName         : loc -> Get-Location
+    Definition          : Get-Location
+    Options             : ReadOnly
+    Description         :
+    Name                : loc
+    CommandType         : Alias
+
+    PS> Set-Alias -Name loc -Value Get-Location -Option ReadOnly -Description 'Displays the current directory' -Force -PassThru | Format-List -Property *
+
+    DisplayName         : loc -> Get-Location
+    Definition          : Get-Location
+    Options             : ReadOnly
+    Description         : Displays the current directory
+    Name                : loc
+    CommandType         : Alias
+
+    The `Set-Alias` cmdlet creates an alias in the current PowerShell session. The Name parameter specifies the alias's name, `loc`. The Value parameter
+    specifies the `Get-Location` cmdlet that the alias runs. The Option parameter specifies the ReadOnly value. The PassThru parameter represents the alias
+    object and sends the object down the pipeline to the `Format-List` cmdlet. `Format-List` uses the Property parameter with an asterisk (`*`) so that all
+    of the properties are displayed. The example output shows a partial list of those properties.
+
+    The `loc` alias is changed with the addition of two parameters. Description adds text to explain the alias's purpose. The Force parameter is needed
+    because the `loc` alias is read-only. If the Force parameter is not used, the change fails.
+    ------- Example 4: Create an alias to an executable file -------
+
+    PS> Set-Alias -Name np -Value C:\Windows\notepad.exe
+
+    PS> Get-Alias -Name np
+
+    CommandType     Name
+    -----------     ----
+    Alias           np -> notepad.exe
+    The `Set-Alias` cmdlet creates an alias in the current PowerShell session. The Name parameter specifies the alias's name, `np`. The Value parameter
+    specifies the path and application name C:\Windows\notepad.exe . The `Get-Alias` cmdlet uses the Name parameter to show that the `np` alias is
+    associated with notepad.exe .
+
+    To run the alias, type `np` on the PowerShell command line to open notepad.exe .
+    --- Example 5: Create an alias for a command with parameters ---
+
+    Function CD32 {Set-Location -Path C:\Windows\System32}
+
+    Set-Alias -Name Go -Value CD32
+
+    A function named `CD32` is created. The function uses the `Set-Location` cmdlet with the Path parameter to specify the directory, `C:\Windows\System32`.
+
+    The `Set-Alias` cmdlet creates an alias to the function in the current PowerShell session. The Name parameter specifies the alias's name, `Go`. The
+    Value parameter specifies the function's name, `CD32`.
+
+    To run the alias, type `Go` on the PowerShell command line. The `CD32` function runs and changes to the directory `C:\Windows\System32`.
+    ------- Example 6: Update options for an existing alias -------
+
+    Set-Alias -Name Go -Option ReadOnly, Private
+
+    The alias `Go` should already exist. After running the command above, the alias is not be able to be changed without using the Force parameter and is
+    only available in the current scope.
+
+RELATED LINKS
+    Online Version: https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/set-alias?view=powershell-5.1&WT.mc_id=ps-gethelp
+    about_Aliases
+    about_Functions
+    about_Profiles
+    about_Scopes
+    Export-Alias
+    Get-Alias
+    Import-Alias
+    New-Alias
+    Remove-Item
+
+
+
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\01_FUNDAMENTALS> get-help new-Alias -full
+
+NAME
+    New-Alias
+
+SYNOPSIS
+    Creates a new alias.
+
+
+SYNTAX
+    New-Alias [-Name] <System.String> [-Value] <System.String> [-Description <System.String>] [-Force] [-Option {None | ReadOnly | Constant | Private |
+    AllScope | Unspecified}] [-PassThru] [-Scope <System.String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+
+
+DESCRIPTION
+    The `New-Alias` cmdlet creates a new alias in the current Windows PowerShell session. Aliases created by using `New-Alias` are not saved after you exit
+    the session or close Windows PowerShell. You can use the `Export-Alias` cmdlet to save your alias information to a file. You can later use
+    `Import-Alias` to retrieve that saved alias information.
+
+
+PARAMETERS
+    -Description <System.String>
+        Specifies a description of the alias. You can type any string. If the description includes spaces, enclose it in quotation marks.
+
+        Required?                    false
+        Position?                    named
+        Default value                None
+        Accept pipeline input?       False
+        Accept wildcard characters?  false
+
+    -Force <System.Management.Automation.SwitchParameter>
+        Indicates that the cmdlet acts like `Set-Alias` if the alias named already exists.
+
+        Required?                    false
+        Position?                    named
+        Default value                False
+        Accept pipeline input?       False
+        Accept wildcard characters?  false
+
+    -Name <System.String>
+        Specifies the new alias. You can use any alphanumeric characters in an alias, but the first character cannot be a number.
+
+        Required?                    true
+        Position?                    0
+        Default value                None
+        Accept pipeline input?       True (ByPropertyName)
+        Accept wildcard characters?  false
+
+    -Option <System.Management.Automation.ScopedItemOptions>
+        Specifies the value of the Options property of the alias. Valid values are:
+
+        - `None`: The alias has no constraints (default value)
+
+        - `ReadOnly`: The alias can be deleted but cannot be changed except by using the Force parameter - `Constant`: The alias cannot be deleted or changed
+
+        - `Private`: The alias is available only in the current scope
+
+        - `AllScope`: The alias is copied to any new scopes that are created
+
+        - `Unspecified`: The option is not specified
+
+
+        These values are defined as a flag-based enumeration. You can combine multiple values together to set multiple flags using this parameter. The
+        values can be passed to the Option parameter as an array of values or as a comma-separated string of those values. The cmdlet will combine the
+        values using a binary-OR operation. Passing values as an array is the simplest option and also allows you to use tab-completion on the values.
+        To see the Options property of all aliases in the session, type `Get-Alias | Format-Table -Property Name, Options -AutoSize`.
+
+
+        Required?                    false
+        Position?                    named
+        Default value                [System.Management.Automation.ScopedItemOptions]::None
+        Accept pipeline input?       False
+        Accept wildcard characters?  false
+
+    -PassThru <System.Management.Automation.SwitchParameter>
+        Returns an object representing the item with which you are working. By default, this cmdlet does not generate any output.
+
+        Required?                    false
+        Position?                    named
+        Default value                False
+        Accept pipeline input?       False
+        Accept wildcard characters?  false
+
+    -Scope <System.String>
+        Specifies the scope of the new alias. The acceptable values for this parameter are:
+
+        - `Global`
+
+        - `Local`
+
+        - `Script`
+
+        - A number relative to the current scope (0 through the number of scopes, where `0` is the current
+
+        scope and `1` is its parent).
+
+        `Local` is the default. For more information, see about_Scopes (../Microsoft.PowerShell.Core/About/about_Scopes.md).
+
+        Required?                    false
+        Position?                    named
+        Default value                None
+        Accept pipeline input?       False
+        Accept wildcard characters?  false
+
+    -Value <System.String>
+        Specifies the name of the cmdlet or command element that is being aliased.
+
+        Required?                    true
+        Position?                    1
+        Default value                None
+        Accept pipeline input?       True (ByPropertyName)
+        Accept wildcard characters?  false
+
+    -Confirm <System.Management.Automation.SwitchParameter>
+        Prompts you for confirmation before running the cmdlet.
+
+        Required?                    false
+        Position?                    named
+        Default value                False
+        Accept pipeline input?       False
+        Accept wildcard characters?  false
+
+    -WhatIf <System.Management.Automation.SwitchParameter>
+        Shows what would happen if the cmdlet runs. The cmdlet is not run.
+
+        Required?                    false
+        Position?                    named
+        Default value                False
+        Accept pipeline input?       False
+        Accept wildcard characters?  false
+
+    <CommonParameters>
+        This cmdlet supports the common parameters: Verbose, Debug,
+        ErrorAction, ErrorVariable, WarningAction, WarningVariable,
+        OutBuffer, PipelineVariable, and OutVariable. For more information, see
+        about_CommonParameters (https:/go.microsoft.com/fwlink/?LinkID=113216).
+
+INPUTS
+    None
+        You cannot pipe input to this cmdlet.
+
+
+OUTPUTS
+    None or System.Management.Automation.AliasInfo
+        When you use the Passthru parameter, `New-Alias` generates a System.Management.Automation.AliasInfo object representing the new alias. Otherwise,
+        this cmdlet does not generate any output.
+
+
+NOTES
+
+
+        Windows PowerShell includes the following aliases for `New-Alias`:
+
+        - `nal`
+
+        - To create a new alias, use `Set-Alias` or `New-Alias`. To change an alias, use `Set-Alias`. To delete an alias, use `Remove-Item`.
+
+    ----------- Example 1: Create an alias for a cmdlet -----------
+
+    New-Alias -Name "List" Get-ChildItem
+
+    This command creates an alias named List to represent the Get-ChildItem cmdlet.
+    ------- Example 2: Create a read-only alias for a cmdlet -------
+
+    New-Alias -Name "C" -Value Get-ChildItem -Description "quick gci alias" -Option ReadOnly
+    Get-Alias -Name "C" | Format-List *
+
+    This command creates an alias named `C` to represent the `Get-ChildItem` cmdlet. It creates a description, quick wmi alias, for the alias and makes it
+    read-only. The last line of the command uses `Get-Alias` to get the new alias and pipes it to Format-List to display all of the information about it.
+
+RELATED LINKS
+    Online Version: https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/new-alias?view=powershell-5.1&WT.mc_id=ps-gethelp
+    Export-Alias
+    Get-Alias
+    Import-Alias
+    Set-Alias
+
+
+
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\01_FUNDAMENTALS>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                  Remov^C
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\01_FUNDAMENTALS> Remove-Alias grep
+Remove-Alias : The term 'Remove-Alias' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the
+name, or if a path was included, verify that the path is correct and try again.
++ ~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Remove-Alias:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\01_FUNDAMENTALS> ^C
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\01_FUNDAMENTALS> ^C
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\01_FUNDAMENTALS> ^C
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\01_FUNDAMENTALS> ^C
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\01_FUNDAMENTALS> Remove-Alias grep
+Remove-Alias : The term 'Remove-Alias' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the
+name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ Remove-Alias grep
++ ~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Remove-Alias:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\01_FUNDAMENTALS> Remove-Alias grep -force
+Remove-Alias : The term 'Remove-Alias' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the
+name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ Remove-Alias grep -force
++ ~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Remove-Alias:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\01_FUNDAMENTALS> get-command *-alias
+
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Cmdlet          Export-Alias                                       3.1.0.0    Microsoft.PowerShell.Utility
+Cmdlet          Get-Alias                                          3.1.0.0    Microsoft.PowerShell.Utility
+Cmdlet          Import-Alias                                       3.1.0.0    Microsoft.PowerShell.Utility
+Cmdlet          New-Alias                                          3.1.0.0    Microsoft.PowerShell.Utility
+Cmdlet          Set-Alias                                          3.1.0.0    Microsoft.PowerShell.Utility
+
+
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\01_FUNDAMENTALS> Remove-Item alias:\grep
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\01_FUNDAMENTALS> Get-Childitem alias:\
+
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Alias           % -> ForEach-Object
+Alias           ? -> Where-Object
+Alias           ac -> Add-Content
+Alias           asnp -> Add-PSSnapin
+Alias           cat -> Get-Content
+Alias           cd -> Set-Location
+Alias           CFS -> ConvertFrom-String                          3.1.0.0    Microsoft.PowerShell.Utility
+Alias           chdir -> Set-Location
+Alias           clc -> Clear-Content
+Alias           clear -> Clear-Host
+Alias           clhy -> Clear-History
+Alias           cli -> Clear-Item
+Alias           clp -> Clear-ItemProperty
+Alias           cls -> Clear-Host
+Alias           clv -> Clear-Variable
+Alias           cnsn -> Connect-PSSession
+Alias           compare -> Compare-Object
+Alias           copy -> Copy-Item
+Alias           cp -> Copy-Item
+Alias           cpi -> Copy-Item
+Alias           cpp -> Copy-ItemProperty
+Alias           curl -> Invoke-WebRequest
+Alias           cvpa -> Convert-Path
+Alias           dbp -> Disable-PSBreakpoint
+Alias           del -> Remove-Item
+Alias           diff -> Compare-Object
+Alias           dir -> Get-ChildItem
+Alias           dnsn -> Disconnect-PSSession
+Alias           ebp -> Enable-PSBreakpoint
+Alias           echo -> Write-Output
+Alias           epal -> Export-Alias
+Alias           epcsv -> Export-Csv
+Alias           epsn -> Export-PSSession
+Alias           erase -> Remove-Item
+Alias           etsn -> Enter-PSSession
+Alias           exsn -> Exit-PSSession
+Alias           fc -> Format-Custom
+Alias           fhx -> Format-Hex                                  3.1.0.0    Microsoft.PowerShell.Utility
+Alias           fl -> Format-List
+Alias           foreach -> ForEach-Object
+Alias           ft -> Format-Table
+Alias           fw -> Format-Wide
+Alias           gal -> Get-Alias
+Alias           gbp -> Get-PSBreakpoint
+Alias           gc -> Get-Content
+Alias           gcai -> Get-CimAssociatedInstance
+Alias           gcb -> Get-Clipboard                               3.1.0.0    Microsoft.PowerShell.Management
+Alias           gci -> Get-ChildItem
+Alias           gcim -> Get-CimInstance
+Alias           gcls -> Get-CimClass
+Alias           gcm -> Get-Command
+Alias           gcms -> Get-CimSession
+Alias           gcs -> Get-PSCallStack
+Alias           gdr -> Get-PSDrive
+Alias           ghy -> Get-History
+Alias           gi -> Get-Item
+Alias           gin -> Get-ComputerInfo                            3.1.0.0    Microsoft.PowerShell.Management
+Alias           gjb -> Get-Job
+Alias           gl -> Get-Location
+Alias           gm -> Get-Member
+Alias           gmo -> Get-Module
+Alias           gp -> Get-ItemProperty
+Alias           gps -> Get-Process
+Alias           gpv -> Get-ItemPropertyValue
+Alias           group -> Group-Object
+Alias           gsn -> Get-PSSession
+Alias           gsnp -> Get-PSSnapin
+Alias           gsv -> Get-Service
+Alias           gtz -> Get-TimeZone                                3.1.0.0    Microsoft.PowerShell.Management
+Alias           gu -> Get-Unique
+Alias           gv -> Get-Variable
+Alias           gwmi -> Get-WmiObject
+Alias           h -> Get-History
+Alias           history -> Get-History
+Alias           icim -> Invoke-CimMethod
+Alias           icm -> Invoke-Command
+Alias           iex -> Invoke-Expression
+Alias           ihy -> Invoke-History
+Alias           ii -> Invoke-Item
+Alias           ipal -> Import-Alias
+Alias           ipcsv -> Import-Csv
+Alias           ipmo -> Import-Module
+Alias           ipsn -> Import-PSSession
+Alias           irm -> Invoke-RestMethod
+Alias           ise -> powershell_ise.exe
+Alias           iwmi -> Invoke-WmiMethod
+Alias           iwr -> Invoke-WebRequest
+Alias           kill -> Stop-Process
+Alias           lp -> Out-Printer
+Alias           ls -> Get-ChildItem
+Alias           man -> help
+Alias           md -> mkdir
+Alias           measure -> Measure-Object
+Alias           mi -> Move-Item
+Alias           mount -> New-PSDrive
+Alias           move -> Move-Item
+Alias           mp -> Move-ItemProperty
+Alias           mv -> Move-Item
+Alias           nal -> New-Alias
+Alias           ncim -> New-CimInstance
+Alias           ncms -> New-CimSession
+Alias           ncso -> New-CimSessionOption
+Alias           ndr -> New-PSDrive
+Alias           ni -> New-Item
+Alias           nmo -> New-Module
+Alias           npssc -> New-PSSessionConfigurationFile
+Alias           nsn -> New-PSSession
+Alias           nv -> New-Variable
+Alias           ogv -> Out-GridView
+Alias           oh -> Out-Host
+Alias           popd -> Pop-Location
+Alias           ps -> Get-Process
+Alias           pushd -> Push-Location
+Alias           pwd -> Get-Location
+Alias           r -> Invoke-History
+Alias           rbp -> Remove-PSBreakpoint
+Alias           rcie -> Register-CimIndicationEvent
+Alias           rcim -> Remove-CimInstance
+Alias           rcjb -> Receive-Job
+Alias           rcms -> Remove-CimSession
+Alias           rcsn -> Receive-PSSession
+Alias           rd -> Remove-Item
+Alias           rdr -> Remove-PSDrive
+Alias           ren -> Rename-Item
+Alias           ri -> Remove-Item
+Alias           rjb -> Remove-Job
+Alias           rm -> Remove-Item
+Alias           rmdir -> Remove-Item
+Alias           rmo -> Remove-Module
+Alias           rni -> Rename-Item
+Alias           rnp -> Rename-ItemProperty
+Alias           rp -> Remove-ItemProperty
+Alias           rsn -> Remove-PSSession
+Alias           rsnp -> Remove-PSSnapin
+Alias           rujb -> Resume-Job
+Alias           rv -> Remove-Variable
+Alias           rvpa -> Resolve-Path
+Alias           rwmi -> Remove-WmiObject
+Alias           sajb -> Start-Job
+Alias           sal -> Set-Alias
+Alias           saps -> Start-Process
+Alias           sasv -> Start-Service
+Alias           sbp -> Set-PSBreakpoint
+Alias           sc -> Set-Content
+Alias           scb -> Set-Clipboard                               3.1.0.0    Microsoft.PowerShell.Management
+Alias           scim -> Set-CimInstance
+Alias           select -> Select-Object
+Alias           set -> Set-Variable
+Alias           shcm -> Show-Command
+Alias           si -> Set-Item
+Alias           sl -> Set-Location
+Alias           sleep -> Start-Sleep
+Alias           sls -> Select-String
+Alias           sort -> Sort-Object
+Alias           sp -> Set-ItemProperty
+Alias           spjb -> Stop-Job
+Alias           spps -> Stop-Process
+Alias           spsv -> Stop-Service
+Alias           start -> Start-Process
+Alias           stz -> Set-TimeZone                                3.1.0.0    Microsoft.PowerShell.Management
+Alias           sujb -> Suspend-Job
+Alias           sv -> Set-Variable
+Alias           swmi -> Set-WmiInstance
+Alias           tee -> Tee-Object
+Alias           trcm -> Trace-Command
+Alias           type -> Get-Content
+Alias           wget -> Invoke-WebRequest
+Alias           where -> Where-Object
+Alias           wjb -> Wait-Job
+Alias           write -> Write-Output
+
+
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\01_FUNDAMENTALS>

@@ -1,0 +1,1 @@
+Get-Process | Select-Object -first 10 | Export-Csv reportTocsv.csv

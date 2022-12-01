@@ -1,0 +1,2763 @@
+AddDays              Method         datetime AddDays(double value)
+AddHours             Method         datetime AddHours(double value)
+AddMilliseconds      Method         datetime AddMilliseconds(double value)
+AddMinutes           Method         datetime AddMinutes(double value)
+AddMonths            Method         datetime AddMonths(int months)
+AddSeconds           Method         datetime AddSeconds(double value)
+AddTicks             Method         datetime AddTicks(long value)
+AddYears             Method         datetime AddYears(int value)
+CompareTo            Method         int CompareTo(System.Object value), int CompareTo(datetime value), int IComparable.CompareTo(System.Object obj), int I...
+Equals               Method         bool Equals(System.Object value), bool Equals(datetime value), bool IEquatable[datetime].Equals(datetime other)
+GetDateTimeFormats   Method         string[] GetDateTimeFormats(), string[] GetDateTimeFormats(System.IFormatProvider provider), string[] GetDateTimeForma...
+GetHashCode          Method         int GetHashCode()
+GetObjectData        Method         void ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.Str...
+GetType              Method         type GetType()
+GetTypeCode          Method         System.TypeCode GetTypeCode(), System.TypeCode IConvertible.GetTypeCode()
+IsDaylightSavingTime Method         bool IsDaylightSavingTime()
+Subtract             Method         timespan Subtract(datetime value), datetime Subtract(timespan value)
+ToBinary             Method         long ToBinary()
+ToBoolean            Method         bool IConvertible.ToBoolean(System.IFormatProvider provider)
+ToByte               Method         byte IConvertible.ToByte(System.IFormatProvider provider)
+ToChar               Method         char IConvertible.ToChar(System.IFormatProvider provider)
+ToDateTime           Method         datetime IConvertible.ToDateTime(System.IFormatProvider provider)
+ToDecimal            Method         decimal IConvertible.ToDecimal(System.IFormatProvider provider)
+ToDouble             Method         double IConvertible.ToDouble(System.IFormatProvider provider)
+ToFileTime           Method         long ToFileTime()
+ToFileTimeUtc        Method         long ToFileTimeUtc()
+ToInt16              Method         int16 IConvertible.ToInt16(System.IFormatProvider provider)
+ToInt32              Method         int IConvertible.ToInt32(System.IFormatProvider provider)
+ToInt64              Method         long IConvertible.ToInt64(System.IFormatProvider provider)
+ToLocalTime          Method         datetime ToLocalTime()
+ToLongDateString     Method         string ToLongDateString()
+ToLongTimeString     Method         string ToLongTimeString()
+ToOADate             Method         double ToOADate()
+ToSByte              Method         sbyte IConvertible.ToSByte(System.IFormatProvider provider)
+ToShortDateString    Method         string ToShortDateString()
+ToShortTimeString    Method         string ToShortTimeString()
+ToSingle             Method         float IConvertible.ToSingle(System.IFormatProvider provider)
+ToString             Method         string ToString(), string ToString(string format), string ToString(System.IFormatProvider provider), string ToString(s...
+ToType               Method         System.Object IConvertible.ToType(type conversionType, System.IFormatProvider provider)
+ToUInt16             Method         uint16 IConvertible.ToUInt16(System.IFormatProvider provider)
+ToUInt32             Method         uint32 IConvertible.ToUInt32(System.IFormatProvider provider)
+ToUInt64             Method         uint64 IConvertible.ToUInt64(System.IFormatProvider provider)
+ToUniversalTime      Method         datetime ToUniversalTime()
+DisplayHint          NoteProperty   DisplayHintType DisplayHint=DateTime
+Date                 Property       datetime Date {get;}
+Day                  Property       int Day {get;}
+DayOfWeek            Property       System.DayOfWeek DayOfWeek {get;}
+DayOfYear            Property       int DayOfYear {get;}
+Hour                 Property       int Hour {get;}
+Kind                 Property       System.DateTimeKind Kind {get;}
+Millisecond          Property       int Millisecond {get;}
+Minute               Property       int Minute {get;}
+Month                Property       int Month {get;}
+Second               Property       int Second {get;}
+Ticks                Property       long Ticks {get;}
+TimeOfDay            Property       timespan TimeOfDay {get;}
+Year                 Property       int Year {get;}
+DateTime             ScriptProperty System.Object DateTime {get=if ((& { Set-StrictMode -Version 1; $this.DisplayHint }) -ieq  "Date")...
+
+
+PS C:\Users\jsystemuser1> Get-Process | Where-Object StartTime -gt Get-Date.AddHours(-1)
+Where-Object : A positional parameter cannot be found that accepts argument '-1'.
+At line:1 char:15
++ Get-Process | Where-Object StartTime -gt Get-Date.AddHours(-1)
++               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Where-Object], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.WhereObjectCommand
+
+PS C:\Users\jsystemuser1> ^C
+PS C:\Users\jsystemuser1> Get-Service | Where-Object { $_.StartType -eq "Manual" -and $_.Status -eq "Running" }
+
+Status   Name               DisplayName
+------   ----               -----------
+Running  Appinfo            Application Information
+Running  CertPropSvc        Certificate Propagation
+Running  DsSvc              Data Sharing Service
+Running  fdPHost            Function Discovery Provider Host
+Running  FDResPub           Function Discovery Resource Publica...
+Running  KeyIso             CNG Key Isolation
+Running  LicenseManager     Windows License Manager Service
+Running  lmhosts            TCP/IP NetBIOS Helper
+Running  NcbService         Network Connection Broker
+Running  netprofm           Network List Service
+Running  NetSetupSvc        Network Setup Service
+Running  PcaSvc             Program Compatibility Assistant Ser...
+Running  pla                Performance Logs & Alerts
+Running  PlugPlay           Plug and Play
+Running  sacsvr             Special Administration Console Helper
+Running  SessionEnv         Remote Desktop Configuration
+Running  StateRepository    State Repository Service
+Running  StorSvc            Storage Service
+Running  TabletInputService Touch Keyboard and Handwriting Pane...
+Running  TermService        Remote Desktop Services
+Running  TimeBrokerSvc      Time Broker
+Running  TokenBroker        Web Account Manager
+Running  UmRdpService       Remote Desktop Services UserMode Po...
+Running  vds                Virtual Disk
+Running  vmicheartbeat      Hyper-V Heartbeat Service
+Running  vmickvpexchange    Hyper-V Data Exchange Service
+Running  vmicshutdown       Hyper-V Guest Shutdown Service
+Running  vmictimesync       Hyper-V Time Synchronization Service
+Running  WdiSystemHost      Diagnostic System Host
+Running  WdNisSvc           Windows Defender Antivirus Network ...
+Running  WinHttpAutoProx... WinHTTP Web Proxy Auto-Discovery Se...
+
+
+PS C:\Users\jsystemuser1> Get-Service | Where-Object { $_.StartType -eq "Manual" -and $_.Status -eq "Running" } | Select-Object Status, DisplayName,StartType
+
+ Status DisplayName                                           StartType
+ ------ -----------                                           ---------
+Running Application Information                                  Manual
+Running Certificate Propagation                                  Manual
+Running Data Sharing Service                                     Manual
+Running Function Discovery Provider Host                         Manual
+Running Function Discovery Resource Publication                  Manual
+Running CNG Key Isolation                                        Manual
+Running Windows License Manager Service                          Manual
+Running TCP/IP NetBIOS Helper                                    Manual
+Running Network Connection Broker                                Manual
+Running Network List Service                                     Manual
+Running Program Compatibility Assistant Service                  Manual
+Running Performance Logs & Alerts                                Manual
+Running Plug and Play                                            Manual
+Running Special Administration Console Helper                    Manual
+Running Remote Desktop Configuration                             Manual
+Running State Repository Service                                 Manual
+Running Storage Service                                          Manual
+Running Touch Keyboard and Handwriting Panel Service             Manual
+Running Remote Desktop Services                                  Manual
+Running Time Broker                                              Manual
+Running Web Account Manager                                      Manual
+Running Remote Desktop Services UserMode Port Redirector         Manual
+Running Virtual Disk                                             Manual
+Running Hyper-V Heartbeat Service                                Manual
+Running Hyper-V Data Exchange Service                            Manual
+Running Hyper-V Guest Shutdown Service                           Manual
+Running Hyper-V Time Synchronization Service                     Manual
+Running Diagnostic System Host                                   Manual
+Running Windows Defender Antivirus Network Inspection Service    Manual
+Running WinHTTP Web Proxy Auto-Discovery Service                 Manual
+
+
+PS C:\Users\jsystemuser1> Get-Service | Select-Object StartType, Status, Name | Where-Object { $_.StartType -eq "Manual" -and $_.Status -eq "Running" }
+
+StartType  Status Name
+---------  ------ ----
+   Manual Running Appinfo
+   Manual Running CertPropSvc
+   Manual Running DsSvc
+   Manual Running fdPHost
+   Manual Running FDResPub
+   Manual Running KeyIso
+   Manual Running LicenseManager
+   Manual Running lmhosts
+   Manual Running NcbService
+   Manual Running netprofm
+   Manual Running PcaSvc
+   Manual Running pla
+   Manual Running PlugPlay
+   Manual Running sacsvr
+   Manual Running SessionEnv
+   Manual Running StateRepository
+   Manual Running StorSvc
+   Manual Running TabletInputService
+   Manual Running TermService
+   Manual Running TimeBrokerSvc
+   Manual Running TokenBroker
+   Manual Running UmRdpService
+   Manual Running vds
+   Manual Running vmicheartbeat
+   Manual Running vmickvpexchange
+   Manual Running vmicshutdown
+   Manual Running vmictimesync
+   Manual Running WdiSystemHost
+   Manual Running WdNisSvc
+   Manual Running WinHttpAutoProxySvc
+
+
+PS C:\Users\jsystemuser1> Get-Service | Select-Object StartType,Name | Where-Object { $_.StartType -eq "Manual" -and $_.Status -eq "Running" }
+PS C:\Users\jsystemuser1> Get-Service | Select-Object StartType,Name | Where-Object { $_.StartType -eq "Manual" -and $_.Status -ne "Running" }
+
+StartType Name
+--------- ----
+   Manual adfssrv
+   Manual AJRouter
+   Manual ALG
+   Manual AppIDSvc
+   Manual Appinfo
+   Manual AppMgmt
+   Manual AppReadiness
+   Manual AppXSvc
+   Manual AudioEndpointBuilder
+   Manual Audiosrv
+   Manual BDESVC
+   Manual BITS
+   Manual BTAGService
+   Manual BthAvctpSvc
+   Manual bthserv
+   Manual camsvc
+   Manual CaptureService_11a4bf
+   Manual cbdhsvc_11a4bf
+   Manual CertPropSvc
+   Manual ClipSVC
+   Manual COMSysApp
+   Manual ConsentUxUserSvc_11a4bf
+   Manual defragsvc
+   Manual DeviceAssociationService
+   Manual DeviceInstall
+   Manual DevicesFlowUserSvc_11a4bf
+   Manual DevQueryBroker
+   Manual diagnosticshub.standardcollector.service
+   Manual DmEnrollmentSvc
+   Manual DoSvc
+   Manual dot3svc
+   Manual DsmSvc
+   Manual DsRoleSvc
+   Manual DsSvc
+   Manual Eaphost
+   Manual edgeupdatem
+   Manual EFS
+   Manual embeddedmode
+   Manual EntAppSvc
+   Manual fdPHost
+   Manual FDResPub
+   Manual FrameServer
+   Manual hidserv
+   Manual HvHost
+   Manual IKEEXT
+   Manual InstallService
+   Manual KdsSvc
+   Manual KeyIso
+   Manual KPSSVC
+   Manual KtmRm
+   Manual LicenseManager
+   Manual lmhosts
+   Manual MicrosoftEdgeElevationService
+   Manual MSiSCSI
+   Manual msiserver
+   Manual NcaSvc
+   Manual NcbService
+   Manual Netman
+   Manual netprofm
+   Manual NetSetupSvc
+   Manual NgcCtnrSvc
+   Manual NgcSvc
+   Manual PcaSvc
+   Manual PerfHost
+   Manual PimIndexMaintenanceSvc_11a4bf
+   Manual pla
+   Manual PlugPlay
+   Manual PolicyAgent
+   Manual PrintNotify
+   Manual PrintWorkflowUserSvc_11a4bf
+   Manual QWAVE
+   Manual RasAuto
+   Manual RasMan
+   Manual RpcLocator
+   Manual RSoPProv
+   Manual sacsvr
+   Manual SCardSvr
+   Manual SCPolicySvc
+   Manual seclogon
+   Manual SecurityHealthService
+   Manual Sense
+   Manual SensorService
+   Manual SensrSvc
+   Manual SessionEnv
+   Manual SgrmBroker
+   Manual smphost
+   Manual SNMPTRAP
+   Manual SstpSvc
+   Manual StateRepository
+   Manual stisvc
+   Manual StorSvc
+   Manual svsvc
+   Manual swprv
+   Manual TabletInputService
+   Manual tapisrv
+   Manual TermService
+   Manual TieringEngineService
+   Manual TimeBrokerSvc
+   Manual TokenBroker
+   Manual TrkWks
+   Manual TrustedInstaller
+   Manual UmRdpService
+   Manual UnistoreSvc_11a4bf
+   Manual UserDataSvc_11a4bf
+   Manual VaultSvc
+   Manual vds
+   Manual vmicguestinterface
+   Manual vmicheartbeat
+   Manual vmickvpexchange
+   Manual vmicrdv
+   Manual vmicshutdown
+   Manual vmictimesync
+   Manual vmicvmsession
+   Manual vmicvss
+   Manual VSS
+   Manual WaaSMedicSvc
+   Manual WarpJITSvc
+   Manual WbioSrvc
+   Manual WdiServiceHost
+   Manual WdiSystemHost
+   Manual WdNisSvc
+   Manual Wecsvc
+   Manual WEPHOSTSVC
+   Manual wercplsupport
+   Manual WerSvc
+   Manual WiaRpc
+   Manual WinHttpAutoProxySvc
+   Manual wlidsvc
+   Manual wmiApSrv
+   Manual WMPNetworkSvc
+   Manual WPDBusEnum
+   Manual wuauserv
+
+
+PS C:\Users\jsystemuser1> ^C
+PS C:\Users\jsystemuser1> Get-Service | ForEach { $_.StartType -eq "Manual" -and $_.Status -eq "Running" } | Select-Object Status, DisplayName,StartType
+
+Status DisplayName StartType
+------ ----------- ---------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PS C:\Users\jsystemuser1> Get-Service | ForEach { if ($_.Status -eq "Running"){$_}  } | Select-Object Status, DisplayName,StartType
+
+ Status DisplayName                                           StartType
+ ------ -----------                                           ---------
+Running Active Directory Web Services                         Automatic
+Running Application Information                                  Manual
+Running Base Filtering Engine                                 Automatic
+Running Background Tasks Infrastructure Service               Automatic
+Running Connected Devices Platform Service                    Automatic
+Running Connected Devices Platform User Service_11a4bf        Automatic
+Running Certificate Propagation                                  Manual
+Running CoreMessaging                                         Automatic
+Running Cryptographic Services                                Automatic
+Running DCOM Server Process Launcher                          Automatic
+Running DFS Namespace                                         Automatic
+Running DFS Replication                                       Automatic
+Running DHCP Client                                           Automatic
+Running DHCP Server                                           Automatic
+Running Connected User Experiences and Telemetry              Automatic
+Running DNS Server                                            Automatic
+Running DNS Client                                            Automatic
+Running Diagnostic Policy Service                             Automatic
+Running Data Sharing Service                                     Manual
+Running Windows Event Log                                     Automatic
+Running COM+ Event System                                     Automatic
+Running Function Discovery Provider Host                         Manual
+Running Function Discovery Resource Publication                  Manual
+Running Windows Font Cache Service                            Automatic
+Running Group Policy Client                                   Automatic
+Running IP Helper                                             Automatic
+Running Intersite Messaging                                   Automatic
+Running Kerberos Key Distribution Center                      Automatic
+Running CNG Key Isolation                                        Manual
+Running Server                                                Automatic
+Running Workstation                                           Automatic
+Running Windows License Manager Service                          Manual
+Running TCP/IP NetBIOS Helper                                    Manual
+Running Local Session Manager                                 Automatic
+Running Windows Defender Firewall                             Automatic
+Running Distributed Transaction Coordinator                   Automatic
+Running Network Connection Broker                                Manual
+Running Netlogon                                              Automatic
+Running Network List Service                                     Manual
+Running Network Setup Service                                    Manual
+Running Network Location Awareness                            Automatic
+Running Network Store Interface Service                       Automatic
+Running Active Directory Domain Services                      Automatic
+Running Program Compatibility Assistant Service                  Manual
+Running Performance Logs & Alerts                                Manual
+Running Plug and Play                                            Manual
+Running Power                                                 Automatic
+Running User Profile Service                                  Automatic
+Running RdAgent                                               Automatic
+Running RPC Endpoint Mapper                                   Automatic
+Running Remote Procedure Call (RPC)                           Automatic
+Running Special Administration Console Helper                    Manual
+Running Security Accounts Manager                             Automatic
+Running Task Scheduler                                        Automatic
+Running System Event Notification Service                     Automatic
+Running Remote Desktop Configuration                             Manual
+Running Shell Hardware Detection                              Automatic
+Running Print Spooler                                         Automatic
+Running State Repository Service                                 Manual
+Running Storage Service                                          Manual
+Running SysMain                                               Automatic
+Running System Events Broker                                  Automatic
+Running Touch Keyboard and Handwriting Panel Service             Manual
+Running Remote Desktop Services                                  Manual
+Running Themes                                                Automatic
+Running Time Broker                                              Manual
+Running Web Account Manager                                      Manual
+Running User Access Logging Service                           Automatic
+Running Remote Desktop Services UserMode Port Redirector         Manual
+Running User Manager                                          Automatic
+Running Update Orchestrator Service                           Automatic
+Running Virtual Disk                                             Manual
+Running Hyper-V Heartbeat Service                                Manual
+Running Hyper-V Data Exchange Service                            Manual
+Running Hyper-V Guest Shutdown Service                           Manual
+Running Hyper-V Time Synchronization Service                     Manual
+Running Windows Time                                          Automatic
+Running Windows Connection Manager                            Automatic
+Running Diagnostic System Host                                   Manual
+Running Windows Defender Antivirus Network Inspection Service    Manual
+Running Windows Defender Antivirus Service                    Automatic
+Running Windows Azure Guest Agent                             Automatic
+Running WinHTTP Web Proxy Auto-Discovery Service                 Manual
+Running Windows Management Instrumentation                    Automatic
+Running Windows Remote Management (WS-Management)             Automatic
+Running Windows Push Notifications System Service             Automatic
+Running Windows Push Notifications User Service_11a4bf        Automatic
+
+
+PS C:\Users\jsystemuser1> Get-Service | Where-Object { $_.StartType -eq "Manual" -and $_.Status -eq "Running" } | Select-Object -First 5
+
+Status   Name               DisplayName
+------   ----               -----------
+Running  Appinfo            Application Information
+Running  CertPropSvc        Certificate Propagation
+Running  DsSvc              Data Sharing Service
+Running  fdPHost            Function Discovery Provider Host
+Running  FDResPub           Function Discovery Resource Publica...
+
+
+PS C:\Users\jsystemuser1> Get-Service | Where-Object { $_.StartType -eq "Manual" -and $_.Status -eq "Running" } | Select-Object -Last 5
+
+Status   Name               DisplayName
+------   ----               -----------
+Running  vmicshutdown       Hyper-V Guest Shutdown Service
+Running  vmictimesync       Hyper-V Time Synchronization Service
+Running  WdiSystemHost      Diagnostic System Host
+Running  WdNisSvc           Windows Defender Antivirus Network ...
+Running  WinHttpAutoProx... WinHTTP Web Proxy Auto-Discovery Se...
+
+
+PS C:\Users\jsystemuser1> Get-Process | Get-Member
+
+
+   TypeName: System.Diagnostics.Process
+
+Name                       MemberType     Definition
+----                       ----------     ----------
+Handles                    AliasProperty  Handles = Handlecount
+Name                       AliasProperty  Name = ProcessName
+NPM                        AliasProperty  NPM = NonpagedSystemMemorySize64
+PM                         AliasProperty  PM = PagedMemorySize64
+SI                         AliasProperty  SI = SessionId
+VM                         AliasProperty  VM = VirtualMemorySize64
+WS                         AliasProperty  WS = WorkingSet64
+Disposed                   Event          System.EventHandler Disposed(System.Object, System.EventArgs)
+ErrorDataReceived          Event          System.Diagnostics.DataReceivedEventHandler ErrorDataReceived(System.Object, System.Diagnostics.DataReceivedEven...
+Exited                     Event          System.EventHandler Exited(System.Object, System.EventArgs)
+OutputDataReceived         Event          System.Diagnostics.DataReceivedEventHandler OutputDataReceived(System.Object, System.Diagnostics.DataReceivedEve...
+BeginErrorReadLine         Method         void BeginErrorReadLine()
+BeginOutputReadLine        Method         void BeginOutputReadLine()
+CancelErrorRead            Method         void CancelErrorRead()
+CancelOutputRead           Method         void CancelOutputRead()
+Close                      Method         void Close()
+CloseMainWindow            Method         bool CloseMainWindow()
+CreateObjRef               Method         System.Runtime.Remoting.ObjRef CreateObjRef(type requestedType)
+Dispose                    Method         void Dispose(), void IDisposable.Dispose()
+Equals                     Method         bool Equals(System.Object obj)
+GetHashCode                Method         int GetHashCode()
+GetLifetimeService         Method         System.Object GetLifetimeService()
+GetType                    Method         type GetType()
+InitializeLifetimeService  Method         System.Object InitializeLifetimeService()
+Kill                       Method         void Kill()
+Refresh                    Method         void Refresh()
+Start                      Method         bool Start()
+ToString                   Method         string ToString()
+WaitForExit                Method         bool WaitForExit(int milliseconds), void WaitForExit()
+WaitForInputIdle           Method         bool WaitForInputIdle(int milliseconds), bool WaitForInputIdle()
+__NounName                 NoteProperty   string __NounName=Process
+BasePriority               Property       int BasePriority {get;}
+Container                  Property       System.ComponentModel.IContainer Container {get;}
+EnableRaisingEvents        Property       bool EnableRaisingEvents {get;set;}
+ExitCode                   Property       int ExitCode {get;}
+ExitTime                   Property       datetime ExitTime {get;}
+Handle                     Property       System.IntPtr Handle {get;}
+HandleCount                Property       int HandleCount {get;}
+HasExited                  Property       bool HasExited {get;}
+Id                         Property       int Id {get;}
+MachineName                Property       string MachineName {get;}
+MainModule                 Property       System.Diagnostics.ProcessModule MainModule {get;}
+MainWindowHandle           Property       System.IntPtr MainWindowHandle {get;}
+MainWindowTitle            Property       string MainWindowTitle {get;}
+MaxWorkingSet              Property       System.IntPtr MaxWorkingSet {get;set;}
+MinWorkingSet              Property       System.IntPtr MinWorkingSet {get;set;}
+Modules                    Property       System.Diagnostics.ProcessModuleCollection Modules {get;}
+NonpagedSystemMemorySize   Property       int NonpagedSystemMemorySize {get;}
+NonpagedSystemMemorySize64 Property       long NonpagedSystemMemorySize64 {get;}
+PagedMemorySize            Property       int PagedMemorySize {get;}
+PagedMemorySize64          Property       long PagedMemorySize64 {get;}
+PagedSystemMemorySize      Property       int PagedSystemMemorySize {get;}
+PagedSystemMemorySize64    Property       long PagedSystemMemorySize64 {get;}
+PeakPagedMemorySize        Property       int PeakPagedMemorySize {get;}
+PeakPagedMemorySize64      Property       long PeakPagedMemorySize64 {get;}
+PeakVirtualMemorySize      Property       int PeakVirtualMemorySize {get;}
+PeakVirtualMemorySize64    Property       long PeakVirtualMemorySize64 {get;}
+PeakWorkingSet             Property       int PeakWorkingSet {get;}
+PeakWorkingSet64           Property       long PeakWorkingSet64 {get;}
+PriorityBoostEnabled       Property       bool PriorityBoostEnabled {get;set;}
+PriorityClass              Property       System.Diagnostics.ProcessPriorityClass PriorityClass {get;set;}
+PrivateMemorySize          Property       int PrivateMemorySize {get;}
+PrivateMemorySize64        Property       long PrivateMemorySize64 {get;}
+PrivilegedProcessorTime    Property       timespan PrivilegedProcessorTime {get;}
+ProcessName                Property       string ProcessName {get;}
+ProcessorAffinity          Property       System.IntPtr ProcessorAffinity {get;set;}
+Responding                 Property       bool Responding {get;}
+SafeHandle                 Property       Microsoft.Win32.SafeHandles.SafeProcessHandle SafeHandle {get;}
+SessionId                  Property       int SessionId {get;}
+Site                       Property       System.ComponentModel.ISite Site {get;set;}
+StandardError              Property       System.IO.StreamReader StandardError {get;}
+StandardInput              Property       System.IO.StreamWriter StandardInput {get;}
+StandardOutput             Property       System.IO.StreamReader StandardOutput {get;}
+StartInfo                  Property       System.Diagnostics.ProcessStartInfo StartInfo {get;set;}
+StartTime                  Property       datetime StartTime {get;}
+SynchronizingObject        Property       System.ComponentModel.ISynchronizeInvoke SynchronizingObject {get;set;}
+Threads                    Property       System.Diagnostics.ProcessThreadCollection Threads {get;}
+TotalProcessorTime         Property       timespan TotalProcessorTime {get;}
+UserProcessorTime          Property       timespan UserProcessorTime {get;}
+VirtualMemorySize          Property       int VirtualMemorySize {get;}
+VirtualMemorySize64        Property       long VirtualMemorySize64 {get;}
+WorkingSet                 Property       int WorkingSet {get;}
+WorkingSet64               Property       long WorkingSet64 {get;}
+PSConfiguration            PropertySet    PSConfiguration {Name, Id, PriorityClass, FileVersion}
+PSResources                PropertySet    PSResources {Name, Id, Handlecount, WorkingSet, NonPagedMemorySize, PagedMemorySize, PrivateMemorySize, VirtualM...
+Company                    ScriptProperty System.Object Company {get=$this.Mainmodule.FileVersionInfo.CompanyName;}
+CPU                        ScriptProperty System.Object CPU {get=$this.TotalProcessorTime.TotalSeconds;}
+Description                ScriptProperty System.Object Description {get=$this.Mainmodule.FileVersionInfo.FileDescription;}
+FileVersion                ScriptProperty System.Object FileVersion {get=$this.Mainmodule.FileVersionInfo.FileVersion;}
+Path                       ScriptProperty System.Object Path {get=$this.Mainmodule.FileName;}
+Product                    ScriptProperty System.Object Product {get=$this.Mainmodule.FileVersionInfo.ProductName;}
+ProductVersion             ScriptProperty System.Object ProductVersion {get=$this.Mainmodule.FileVersionInfo.ProductVersion;}
+
+
+PS C:\Users\jsystemuser1> ^C
+PS C:\Users\jsystemuser1> Get-Process | Sort-Object StartTime
+Sort-Object : Exception getting "StartTime": "Access is denied"
+At line:1 char:15
++ Get-Process | Sort-Object StartTime
++               ~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidResult: (System.Diagnostics.Process (Idle):PSObject) [Sort-Object], GetValueInvocationException
+    + FullyQualifiedErrorId : ExpressionEvaluation,Microsoft.PowerShell.Commands.SortObjectCommand
+
+
+Handles  NPM(K)    PM(K)      WS(K)     CPU(s)     Id  SI ProcessName
+-------  ------    -----      -----     ------     --  -- -----------
+      0       0       56          8                 0   0 Idle
+      0      10      556      69520       0.63     88   0 Registry
+   2537       0      192        156      11.56      4   0 System
+     56       3      488       1216       0.25    376   0 smss
+    500      19     2312       5504       0.48    500   0 csrss
+    177      11     1560       7036       0.20    576   0 wininit
+    165      10     1700       4776       0.08    584   1 csrss
+    230      11     2368      10684       0.09    644   1 winlogon
+    650      15     6156      13968      12.28    712   0 services
+   7603     163    52532      67384      19.78    720   0 lsass
+     89       5      964       3976       0.02    924   0 svchost
+    933      19     6868      22112       0.88    944   0 svchost
+    936      21     5216      11812       4.25    988   0 svchost
+    334      11     2416      10160       0.34     60   0 svchost
+    478      25    10484      43792       0.34    492   1 LogonUI
+    538      22    16396      38876       0.19    852   1 dwm
+   3111      73    96760     115628      49.94    964   0 svchost
+    212      12     1984       9792       0.05   1072   0 svchost
+    210      12     1724       7344       0.16   1088   0 svchost
+    158       9     1904       6868       0.06   1096   0 svchost
+    133      18     3584       7780       0.14   1108   0 svchost
+    177       9     1732      11740       0.05   1132   0 svchost
+    221       9     1960       7492       0.11   1224   0 svchost
+    443      14    15632      19904      17.86   1252   0 svchost
+    250      14     3272       9000       0.42   1272   0 svchost
+    169      11     2084       8608       2.91   1280   0 svchost
+    137       8     1524       6336       1.03   1288   0 svchost
+    125       8     1464       6160       0.00   1356   0 svchost
+    129       8     1500       6240       0.27   1376   0 svchost
+    281      16     3100      12356       0.72   1576   0 svchost
+    234      12     2616      11792       0.14   1584   0 svchost
+    170       9     1856       7788       0.13   1600   0 svchost
+    191       7     1316       5876       0.03   1612   0 svchost
+    353      14     3800      11288       0.11   1652   0 svchost
+    389      33     9688      18660       0.47   1792   0 svchost
+    388      17     5248      14928       0.73   1804   0 svchost
+    163       9     1748       8008       0.05   1872   0 svchost
+    320      10     2388       8380       0.16   1964   0 svchost
+    319      11     2028       8996       0.06   1976   0 svchost
+    224      11     2084       9956       0.16   1564   0 svchost
+    190      12     2040      12096       0.00   2116   0 svchost
+    178       9     1888       7404       0.14   2192   0 svchost
+    165      10     1748       7172       0.05   2240   0 svchost
+    382      14    10008      19540       9.23   2264   0 svchost
+    219      10     2324       9164       0.13   2312   0 svchost
+    201       9     1588       6940       0.02   2376   0 svchost
+    219      12     2120       9196       0.36   2500   0 svchost
+    137       9     1524       7172       0.03   2556   0 svchost
+    467      17     3196      11860       0.08   2616   0 svchost
+    291      17     2688      11204       0.05   2688   0 svchost
+    263      16     2676       9704       0.03   2756   0 svchost
+    200      10     2116       8272       0.05   2984   0 svchost
+     53       6     1380       4420       0.05   3156   1 fontdrvhost
+     53       6     1424       4468       0.03   3164   0 fontdrvhost
+    578      27     7388      24584       0.84   3172   0 spoolsv
+    262      25     4004      13876       0.73   3256   0 svchost
+    336      28   184880     100484       3.88   3264   0 svchost
+    155       7     1404       5964       0.05   3284   0 svchost
+    525      24    15660      31872       2.41   3292   0 svchost
+    403      32    16012      22872       1.91   3304   0 dfsrs
+    555      31    38380      48568       0.50   3320   0 Microsoft.ActiveDirectory.WebServices
+  10404   14769   130216     127984       0.53   3336   0 dns
+    136      12     1864       5780       0.02   3396   0 ismserv
+    103       7     1176       5296       0.03   3428   0 svchost
+    138       8     1544       6448       0.02   3476   0 svchost
+   1046      45    66408      85028       6.83   3488   0 WaAppAgent
+    605      38    47068      60624       7.78   3500   0 WindowsAzureGuestAgent
+    236      13     2812      11532       0.06   3524   0 svchost
+    176      10     2208      13572       0.05   3532   0 svchost
+    185      11     2388       7652       0.03   3564   0 dfssvc
+    774      89   227556     157948      88.31   3592   0 MsMpEng
+    215      15     2440      10672       0.11   4000   0 vds
+    415      22    16536      21280       1.17   3456   0 taskhostw
+    154       9     1732       7124       0.03   5036   0 svchost
+    214      11     4348      11360       0.86   4964   0 NisSrv
+    139       7     2316       6800       0.28   5056   0 WaSecAgentProv
+    128       7     6436      11492       0.02   4476   0 conhost
+    322      15    15824      19392       8.72   5916   0 svchost
+    232      13     2820      10360       0.05   6056   0 msdtc
+    279      19     7664      13756       0.13   5136   0 svchost
+    383      19     5048      23320       0.61    752   0 svchost
+    253      14     2928      13888       0.19   3424   0 svchost
+    182      10     1960       9024       0.08   3780   0 svchost
+    169       8     4308      12288       0.48   3352   0 svchost
+    352      15     2348      13736       6.11   2636   2 csrss
+    255      11     2332      11556       0.11   3628   2 winlogon
+     53       7     1812       4996       0.08   2764   2 fontdrvhost
+    610      30    21660      91012      10.91   1460   2 dwm
+    200      11     2564      11744       0.30   4536   0 svchost
+    332      14     2584      11868       2.11   4744   2 rdpclip
+    445      17     4888      24972       0.67   2928   2 sihost
+    268      12     2956      13940       0.14   3368   2 svchost
+    345      17     5012      25336       0.19   1732   2 svchost
+    230      21     3956      12824       0.09   1040   2 taskhostw
+    172       8     1480       7228       0.03   3928   0 svchost
+    379      15     3628      15316       0.44   4044   2 ctfmon
+   1418      54    21212       8872       3.73   4740   2 explorer
+    718      30    19648      60080       0.80   3516   2 ShellExperienceHost
+    568      35   103988      84804       4.41   2648   2 ServerManager
+   1241      76    89200     162352       5.31   5472   2 SearchUI
+    281      15     3760      15964       0.17   3124   2 RuntimeBroker
+    489      22    10192      31992       0.77   5504   2 RuntimeBroker
+    293      16     5152      20032       0.41   5112   2 RuntimeBroker
+    399      22     8420      24468       0.22   6344   2 smartscreen
+    127       7     1236       6072       0.05   6520   0 svchost
+    115       7     1420       6032       0.05   6768   0 svchost
+    220      16     3368      11992       0.23   5288   2 dllhost
+    902      37    36408       4408       4.45   6760   2 Code
+    186       9     3004       7824       0.06   6452   0 svchost
+    257      13    10844       4208       0.05   5624   2 Code
+    371      36   141748       4268      12.33   6992   2 Code
+    310      16    12264       4268       0.08   4392   2 Code
+    443      35   139156      17900      26.53   7076   2 Code
+    287      15    46652       4608       2.09   6172   2 Code
+    395      18    48664       5968       4.95   6508   2 Code
+    250      16    33156       4304       0.72   6148   2 Code
+    228      14    23856       4316       0.33   5132   2 Code
+    135       8     2220       4176       0.20   3640   2 winpty-agent
+    151      10     5932       4164       0.59   6468   2 conhost
+    566      26    63352       4236       0.77   6304   2 powershell
+    657      33   135008      45712       7.13   4464   2 powershell
+    257      13     5704      10452      23.63   1824   2 conhost
+    273      15     3536      17976       0.05   6376   0 svchost
+    192      15     6112      10256       0.11   8016   0 svchost
+    171       9     2196       8572       0.11   8000   0 WmiPrvSE
+
+
+PS C:\Users\jsystemuser1> Get-Process | Sort-Object StartTime | Select-Object Name, StartTime
+Sort-Object : Exception getting "StartTime": "Access is denied"
+At line:1 char:15
++ Get-Process | Sort-Object StartTime | Select-Object Name, StartTime
++               ~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidResult: (System.Diagnostics.Process (Idle):PSObject) [Sort-Object], GetValueInvocationException
+    + FullyQualifiedErrorId : ExpressionEvaluation,Microsoft.PowerShell.Commands.SortObjectCommand
+
+
+Name                                  StartTime
+----                                  ---------
+Idle
+Registry                              11/29/2022 7:22:32 AM
+System                                11/29/2022 7:22:37 AM
+smss                                  11/29/2022 7:22:37 AM
+csrss                                 11/29/2022 7:22:42 AM
+wininit                               11/29/2022 7:22:42 AM
+csrss                                 11/29/2022 7:22:42 AM
+winlogon                              11/29/2022 7:22:42 AM
+services                              11/29/2022 7:22:42 AM
+lsass                                 11/29/2022 7:22:42 AM
+svchost                               11/29/2022 7:22:45 AM
+svchost                               11/29/2022 7:22:45 AM
+svchost                               11/29/2022 7:22:45 AM
+svchost                               11/29/2022 7:22:45 AM
+LogonUI                               11/29/2022 7:22:45 AM
+dwm                                   11/29/2022 7:22:45 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:47 AM
+svchost                               11/29/2022 7:22:47 AM
+svchost                               11/29/2022 7:22:47 AM
+svchost                               11/29/2022 7:22:47 AM
+svchost                               11/29/2022 7:22:47 AM
+svchost                               11/29/2022 7:22:47 AM
+svchost                               11/29/2022 7:22:47 AM
+svchost                               11/29/2022 7:22:47 AM
+svchost                               11/29/2022 7:22:48 AM
+svchost                               11/29/2022 7:22:48 AM
+svchost                               11/29/2022 7:22:55 AM
+fontdrvhost                           11/29/2022 7:23:01 AM
+fontdrvhost                           11/29/2022 7:23:01 AM
+spoolsv                               11/29/2022 7:23:01 AM
+svchost                               11/29/2022 7:23:02 AM
+svchost                               11/29/2022 7:23:02 AM
+svchost                               11/29/2022 7:23:02 AM
+svchost                               11/29/2022 7:23:02 AM
+dfsrs                                 11/29/2022 7:23:02 AM
+Microsoft.ActiveDirectory.WebServices 11/29/2022 7:23:02 AM
+dns                                   11/29/2022 7:23:02 AM
+ismserv                               11/29/2022 7:23:02 AM
+svchost                               11/29/2022 7:23:02 AM
+svchost                               11/29/2022 7:23:02 AM
+WaAppAgent                            11/29/2022 7:23:02 AM
+WindowsAzureGuestAgent                11/29/2022 7:23:02 AM
+svchost                               11/29/2022 7:23:02 AM
+svchost                               11/29/2022 7:23:02 AM
+dfssvc                                11/29/2022 7:23:02 AM
+MsMpEng                               11/29/2022 7:23:02 AM
+vds                                   11/29/2022 7:23:03 AM
+taskhostw                             11/29/2022 7:23:12 AM
+svchost                               11/29/2022 7:23:12 AM
+NisSrv                                11/29/2022 7:23:13 AM
+WaSecAgentProv                        11/29/2022 7:23:21 AM
+conhost                               11/29/2022 7:23:22 AM
+svchost                               11/29/2022 7:25:04 AM
+msdtc                                 11/29/2022 7:25:05 AM
+svchost                               11/29/2022 7:25:06 AM
+svchost                               11/29/2022 7:25:08 AM
+svchost                               11/29/2022 7:25:08 AM
+svchost                               11/29/2022 7:32:03 AM
+svchost                               11/29/2022 7:32:03 AM
+csrss                                 11/29/2022 7:39:19 AM
+winlogon                              11/29/2022 7:39:19 AM
+fontdrvhost                           11/29/2022 7:39:20 AM
+dwm                                   11/29/2022 7:39:20 AM
+svchost                               11/29/2022 7:39:22 AM
+rdpclip                               11/29/2022 7:39:22 AM
+sihost                                11/29/2022 7:39:22 AM
+svchost                               11/29/2022 7:39:22 AM
+svchost                               11/29/2022 7:39:22 AM
+taskhostw                             11/29/2022 7:39:23 AM
+svchost                               11/29/2022 7:39:23 AM
+ctfmon                                11/29/2022 7:39:23 AM
+explorer                              11/29/2022 7:39:24 AM
+ShellExperienceHost                   11/29/2022 7:39:27 AM
+ServerManager                         11/29/2022 7:39:28 AM
+SearchUI                              11/29/2022 7:39:28 AM
+RuntimeBroker                         11/29/2022 7:39:29 AM
+RuntimeBroker                         11/29/2022 7:39:30 AM
+RuntimeBroker                         11/29/2022 7:39:36 AM
+smartscreen                           11/29/2022 7:39:41 AM
+svchost                               11/29/2022 7:39:43 AM
+svchost                               11/29/2022 7:40:06 AM
+dllhost                               11/29/2022 7:54:36 AM
+Code                                  11/29/2022 7:54:38 AM
+svchost                               11/29/2022 7:54:38 AM
+Code                                  11/29/2022 7:54:42 AM
+Code                                  11/29/2022 7:54:42 AM
+Code                                  11/29/2022 7:54:43 AM
+Code                                  11/29/2022 7:54:44 AM
+Code                                  11/29/2022 7:54:48 AM
+Code                                  11/29/2022 7:54:49 AM
+Code                                  11/29/2022 7:54:50 AM
+Code                                  11/29/2022 7:54:52 AM
+winpty-agent                          11/29/2022 7:54:55 AM
+conhost                               11/29/2022 7:54:55 AM
+powershell                            11/29/2022 7:54:56 AM
+powershell                            11/29/2022 8:32:46 AM
+conhost                               11/29/2022 8:32:46 AM
+svchost                               11/29/2022 9:25:32 AM
+svchost                               11/29/2022 9:25:34 AM
+WmiPrvSE                              11/29/2022 10:25:18 AM
+
+
+PS C:\Users\jsystemuser1> Get-Process | Sort-Object StartTime | Select-Object Name, StartTime -last 5
+Sort-Object : Exception getting "StartTime": "Access is denied"
+At line:1 char:15
++ Get-Process | Sort-Object StartTime | Select-Object Name, StartTime - ...
++               ~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidResult: (System.Diagnostics.Process (Idle):PSObject) [Sort-Object], GetValueInvocationException
+    + FullyQualifiedErrorId : ExpressionEvaluation,Microsoft.PowerShell.Commands.SortObjectCommand
+
+
+Name       StartTime
+----       ---------
+powershell 11/29/2022 8:32:46 AM
+conhost    11/29/2022 8:32:46 AM
+svchost    11/29/2022 9:25:32 AM
+svchost    11/29/2022 9:25:34 AM
+WmiPrvSE   11/29/2022 10:25:18 AM
+
+
+PS C:\Users\jsystemuser1> Get-Process | Sort-Object StartTime | Select-Object Name, StartTime -last 5 | Get-Member
+Sort-Object : Exception getting "StartTime": "Access is denied"
+At line:1 char:15
++ Get-Process | Sort-Object StartTime | Select-Object Name, StartTime - ...
++               ~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidResult: (System.Diagnostics.Process (Idle):PSObject) [Sort-Object], GetValueInvocationException
+    + FullyQualifiedErrorId : ExpressionEvaluation,Microsoft.PowerShell.Commands.SortObjectCommand
+
+
+
+   TypeName: Selected.System.Diagnostics.Process
+
+Name        MemberType   Definition
+----        ----------   ----------
+Equals      Method       bool Equals(System.Object obj)
+GetHashCode Method       int GetHashCode()
+GetType     Method       type GetType()
+ToString    Method       string ToString()
+Name        NoteProperty string Name=powershell
+StartTime   NoteProperty datetime StartTime=11/29/2022 8:32:46 AM
+
+
+PS C:\Users\jsystemuser1> Get-Process | Sort-Object StartTime | Select-Object Name, StartTime -last 5 | ^C
+PS C:\Users\jsystemuser1> Get-Process | Sort-Object StartTime | Select-Object Name, StartTime -last 5 | Where-Object { $_.WorkingSet -gt 5 }
+Sort-Object : Exception getting "StartTime": "Access is denied"
+At line:1 char:15
++ Get-Process | Sort-Object StartTime | Select-Object Name, StartTime - ...
++               ~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidResult: (System.Diagnostics.Process (Idle):PSObject) [Sort-Object], GetValueInvocationException
+    + FullyQualifiedErrorId : ExpressionEvaluation,Microsoft.PowerShell.Commands.SortObjectCommand
+
+PS C:\Users\jsystemuser1> Get-Process | Get-Member | Where-Object {$_.Name -like "*process*"}
+
+
+   TypeName: System.Diagnostics.Process
+
+Name                    MemberType Definition
+----                    ---------- ----------
+PrivilegedProcessorTime Property   timespan PrivilegedProcessorTime {get;}
+ProcessName             Property   string ProcessName {get;}
+ProcessorAffinity       Property   System.IntPtr ProcessorAffinity {get;set;}
+TotalProcessorTime      Property   timespan TotalProcessorTime {get;}
+UserProcessorTime       Property   timespan UserProcessorTime {get;}
+
+
+PS C:\Users\jsystemuser1> Get-Process | Sort-Object TotalProcessorTime -First 5 -Descending | Select-Object Name, TotalProcessorTime
+Sort-Object : A parameter cannot be found that matches parameter name 'First'.
+At line:1 char:46
++ Get-Process | Sort-Object TotalProcessorTime -First 5 -Descending | S ...
++                                              ~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Sort-Object], ParameterBindingException
+    + FullyQualifiedErrorId : NamedParameterNotFound,Microsoft.PowerShell.Commands.SortObjectCommand
+
+PS C:\Users\jsystemuser1> Get-Process | Sort-Object TotalProcessorTime -First 5 -Descending | Select-Object Name, TotalProcessorTimeTotalProcessorTimeTotalProcessorTime^C
+PS C:\Users\jsystemuser1> Get-Process | Sort-Object TotalProcessorTime  | Select-Object Name, TotalProcessorTime -First 5 -Descending
+Select-Object : A parameter cannot be found that matches parameter name 'Descending'.
+At line:1 char:97
++ ... orTime  | Select-Object Name, TotalProcessorTime -First 5 -Descending
++                                                               ~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Select-Object], ParameterBindingException
+    + FullyQualifiedErrorId : NamedParameterNotFound,Microsoft.PowerShell.Commands.SelectObjectCommand
+
+PS C:\Users\jsystemuser1> Get-Process | Sort-Object TotalProcessorTime  | Select-Object Name, TotalProcessorTime
+Sort-Object : Exception getting "TotalProcessorTime": "Access is denied"
+At line:1 char:15
++ Get-Process | Sort-Object TotalProcessorTime  | Select-Object Name, T ...
++               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidResult: (System.Diagnostics.Process (Idle):PSObject) [Sort-Object], GetValueInvocationException
+    + FullyQualifiedErrorId : ExpressionEvaluation,Microsoft.PowerShell.Commands.SortObjectCommand
+
+
+Name                                  TotalProcessorTime
+----                                  ------------------
+Idle
+svchost                               00:00:00
+svchost                               00:00:00
+ismserv                               00:00:00.0156250
+conhost                               00:00:00.0156250
+svchost                               00:00:00.0156250
+svchost                               00:00:00.0156250
+svchost                               00:00:00.0156250
+svchost                               00:00:00.0156250
+svchost                               00:00:00.0312500
+dfssvc                                00:00:00.0312500
+svchost                               00:00:00.0312500
+fontdrvhost                           00:00:00.0312500
+svchost                               00:00:00.0312500
+svchost                               00:00:00.0312500
+svchost                               00:00:00.0312500
+svchost                               00:00:00.0312500
+svchost                               00:00:00.0468750
+fontdrvhost                           00:00:00.0468750
+svchost                               00:00:00.0468750
+WmiPrvSE                              00:00:00.0468750
+msdtc                                 00:00:00.0468750
+svchost                               00:00:00.0468750
+svchost                               00:00:00.0468750
+svchost                               00:00:00.0468750
+svchost                               00:00:00.0468750
+svchost                               00:00:00.0468750
+svchost                               00:00:00.0468750
+Code                                  00:00:00.0468750
+svchost                               00:00:00.0468750
+svchost                               00:00:00.0468750
+svchost                               00:00:00.0468750
+svchost                               00:00:00.0625000
+svchost                               00:00:00.0625000
+svchost                               00:00:00.0625000
+svchost                               00:00:00.0625000
+svchost                               00:00:00.0781250
+svchost                               00:00:00.0781250
+Code                                  00:00:00.0781250
+fontdrvhost                           00:00:00.0781250
+csrss                                 00:00:00.0781250
+winlogon                              00:00:00.0937500
+taskhostw                             00:00:00.0937500
+vds                                   00:00:00.1093750
+svchost                               00:00:00.1093750
+svchost                               00:00:00.1093750
+winlogon                              00:00:00.1093750
+svchost                               00:00:00.1250000
+svchost                               00:00:00.1250000
+svchost                               00:00:00.1250000
+svchost                               00:00:00.1250000
+svchost                               00:00:00.1406250
+svchost                               00:00:00.1406250
+svchost                               00:00:00.1406250
+svchost                               00:00:00.1406250
+svchost                               00:00:00.1562500
+svchost                               00:00:00.1562500
+svchost                               00:00:00.1562500
+RuntimeBroker                         00:00:00.1718750
+dwm                                   00:00:00.1875000
+svchost                               00:00:00.1875000
+svchost                               00:00:00.1875000
+winpty-agent                          00:00:00.2031250
+wininit                               00:00:00.2031250
+smartscreen                           00:00:00.2187500
+dllhost                               00:00:00.2343750
+smss                                  00:00:00.2500000
+svchost                               00:00:00.2812500
+WaSecAgentProv                        00:00:00.2968750
+svchost                               00:00:00.3125000
+Code                                  00:00:00.3281250
+WmiPrvSE                              00:00:00.3281250
+LogonUI                               00:00:00.3437500
+svchost                               00:00:00.3593750
+svchost                               00:00:00.3593750
+RuntimeBroker                         00:00:00.4062500
+svchost                               00:00:00.4218750
+ctfmon                                00:00:00.4375000
+svchost                               00:00:00.4687500
+svchost                               00:00:00.4843750
+csrss                                 00:00:00.4843750
+Microsoft.ActiveDirectory.WebServices 00:00:00.5156250
+dns                                   00:00:00.5312500
+svchost                               00:00:00.6093750
+conhost                               00:00:00.6250000
+Registry                              00:00:00.6250000
+WmiPrvSE                              00:00:00.6406250
+sihost                                00:00:00.6718750
+Code                                  00:00:00.7187500
+svchost                               00:00:00.7343750
+svchost                               00:00:00.7343750
+svchost                               00:00:00.7500000
+RuntimeBroker                         00:00:00.7656250
+powershell                            00:00:00.7656250
+ShellExperienceHost                   00:00:00.7968750
+spoolsv                               00:00:00.8437500
+NisSrv                                00:00:00.8593750
+svchost                               00:00:00.9062500
+svchost                               00:00:01.1250000
+taskhostw                             00:00:01.1718750
+dfsrs                                 00:00:01.9843750
+Code                                  00:00:02.1406250
+rdpclip                               00:00:02.3593750
+svchost                               00:00:02.5000000
+svchost                               00:00:03.1718750
+explorer                              00:00:03.7968750
+svchost                               00:00:03.8750000
+Code                                  00:00:04.4531250
+svchost                               00:00:04.4531250
+ServerManager                         00:00:04.6406250
+Code                                  00:00:05.0156250
+SearchUI                              00:00:05.3125000
+csrss                                 00:00:06.7968750
+WaAppAgent                            00:00:06.9531250
+powershell                            00:00:07.9687500
+WindowsAzureGuestAgent                00:00:08.1718750
+svchost                               00:00:09.3281250
+svchost                               00:00:09.7656250
+System                                00:00:11.7500000
+dwm                                   00:00:11.8750000
+Code                                  00:00:12.3281250
+services                              00:00:12.5000000
+svchost                               00:00:19.6875000
+lsass                                 00:00:21.3281250
+conhost                               00:00:26.4062500
+Code                                  00:00:26.6875000
+svchost                               00:00:56.1562500
+MsMpEng                               00:01:28.8750000
+
+
+PS C:\Users\jsystemuser1> Get-Process | Sort-Object ProcessorAffinity | Select-Object Name, ProcessorAffinity
+Sort-Object : Exception getting "ProcessorAffinity": "Access is denied"
+At line:1 char:15
++ Get-Process | Sort-Object ProcessorAffinity | Select-Object Name, Pro ...
++               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidResult: (System.Diagnostics.Process (csrss):PSObject) [Sort-Object], GetValueInvocationException
+    + FullyQualifiedErrorId : ExpressionEvaluation,Microsoft.PowerShell.Commands.SortObjectCommand
+
+Sort-Object : Exception getting "ProcessorAffinity": "Access is denied"
+At line:1 char:15
++ Get-Process | Sort-Object ProcessorAffinity | Select-Object Name, Pro ...
++               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidResult: (System.Diagnostics.Process (csrss):PSObject) [Sort-Object], GetValueInvocationException
+    + FullyQualifiedErrorId : ExpressionEvaluation,Microsoft.PowerShell.Commands.SortObjectCommand
+
+Sort-Object : Exception getting "ProcessorAffinity": "Access is denied"
+At line:1 char:15
++ Get-Process | Sort-Object ProcessorAffinity | Select-Object Name, Pro ...
++               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidResult: (System.Diagnostics.Process (csrss):PSObject) [Sort-Object], GetValueInvocationException
+    + FullyQualifiedErrorId : ExpressionEvaluation,Microsoft.PowerShell.Commands.SortObjectCommand
+
+Sort-Object : Exception getting "ProcessorAffinity": "Access is denied"
+At line:1 char:15
++ Get-Process | Sort-Object ProcessorAffinity | Select-Object Name, Pro ...
++               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidResult: (System.Diagnostics.Process (Idle):PSObject) [Sort-Object], GetValueInvocationException
+    + FullyQualifiedErrorId : ExpressionEvaluation,Microsoft.PowerShell.Commands.SortObjectCommand
+
+Sort-Object : Exception getting "ProcessorAffinity": "Access is denied"
+At line:1 char:15
++ Get-Process | Sort-Object ProcessorAffinity | Select-Object Name, Pro ...
++               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidResult: (System.Diagnostics.Process (MsMpEng):PSObject) [Sort-Object], GetValueInvocationException
+    + FullyQualifiedErrorId : ExpressionEvaluation,Microsoft.PowerShell.Commands.SortObjectCommand
+
+Sort-Object : Exception getting "ProcessorAffinity": "Access is denied"
+At line:1 char:15
++ Get-Process | Sort-Object ProcessorAffinity | Select-Object Name, Pro ...
++               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidResult: (System.Diagnostics.Process (NisSrv):PSObject) [Sort-Object], GetValueInvocationException
+    + FullyQualifiedErrorId : ExpressionEvaluation,Microsoft.PowerShell.Commands.SortObjectCommand
+
+Sort-Object : Exception getting "ProcessorAffinity": "Access is denied"
+At line:1 char:15
++ Get-Process | Sort-Object ProcessorAffinity | Select-Object Name, Pro ...
++               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidResult: (System.Diagnostics.Process (Registry):PSObject) [Sort-Object], GetValueInvocationException
+    + FullyQualifiedErrorId : ExpressionEvaluation,Microsoft.PowerShell.Commands.SortObjectCommand
+
+Sort-Object : Exception getting "ProcessorAffinity": "Access is denied"
+At line:1 char:15
++ Get-Process | Sort-Object ProcessorAffinity | Select-Object Name, Pro ...
++               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidResult: (System.Diagnostics.Process (services):PSObject) [Sort-Object], GetValueInvocationException
+    + FullyQualifiedErrorId : ExpressionEvaluation,Microsoft.PowerShell.Commands.SortObjectCommand
+
+Sort-Object : Exception getting "ProcessorAffinity": "Access is denied"
+At line:1 char:15
++ Get-Process | Sort-Object ProcessorAffinity | Select-Object Name, Pro ...
++               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidResult: (System.Diagnostics.Process (smss):PSObject) [Sort-Object], GetValueInvocationException
+    + FullyQualifiedErrorId : ExpressionEvaluation,Microsoft.PowerShell.Commands.SortObjectCommand
+
+Sort-Object : Exception getting "ProcessorAffinity": "Access is denied"
+At line:1 char:15
++ Get-Process | Sort-Object ProcessorAffinity | Select-Object Name, Pro ...
++               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidResult: (System.Diagnostics.Process (System):PSObject) [Sort-Object], GetValueInvocationException
+    + FullyQualifiedErrorId : ExpressionEvaluation,Microsoft.PowerShell.Commands.SortObjectCommand
+
+Sort-Object : Exception getting "ProcessorAffinity": "Access is denied"
+At line:1 char:15
++ Get-Process | Sort-Object ProcessorAffinity | Select-Object Name, Pro ...
++               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidResult: (System.Diagnostics.Process (wininit):PSObject) [Sort-Object], GetValueInvocationException
+    + FullyQualifiedErrorId : ExpressionEvaluation,Microsoft.PowerShell.Commands.SortObjectCommand
+
+
+Name                                  ProcessorAffinity
+----                                  -----------------
+csrss
+System
+csrss
+csrss
+Registry
+services
+MsMpEng
+Idle
+smss
+wininit
+NisSrv
+svchost                               3
+svchost                               3
+svchost                               3
+svchost                               3
+svchost                               3
+svchost                               3
+svchost                               3
+svchost                               3
+svchost                               3
+svchost                               3
+svchost                               3
+svchost                               3
+svchost                               3
+svchost                               3
+svchost                               3
+svchost                               3
+svchost                               3
+svchost                               3
+svchost                               3
+svchost                               3
+svchost                               3
+svchost                               3
+svchost                               3
+svchost                               3
+svchost                               3
+svchost                               3
+svchost                               3
+svchost                               3
+taskhostw                             3
+vds                                   3
+WaAppAgent                            3
+taskhostw                             3
+svchost                               3
+svchost                               3
+svchost                               3
+winpty-agent                          3
+WmiPrvSE                              3
+WmiPrvSE                              3
+winlogon                              3
+WaSecAgentProv                        3
+WindowsAzureGuestAgent                3
+winlogon                              3
+svchost                               3
+svchost                               3
+svchost                               3
+svchost                               3
+WmiPrvSE                              3
+svchost                               3
+svchost                               3
+svchost                               3
+svchost                               3
+svchost                               3
+svchost                               3
+svchost                               3
+svchost                               3
+svchost                               3
+svchost                               3
+svchost                               3
+explorer                              3
+fontdrvhost                           3
+fontdrvhost                           3
+dwm                                   3
+dllhost                               3
+dns                                   3
+dwm                                   3
+Microsoft.ActiveDirectory.WebServices 3
+msdtc                                 3
+powershell                            3
+lsass                                 3
+fontdrvhost                           3
+ismserv                               3
+LogonUI                               3
+dfssvc                                3
+Code                                  3
+Code                                  3
+Code                                  3
+Code                                  3
+Code                                  3
+Code                                  3
+Code                                  3
+ctfmon                                3
+dfsrs                                 3
+conhost                               3
+Code                                  3
+Code                                  3
+conhost                               3
+powershell                            3
+svchost                               3
+svchost                               3
+svchost                               3
+svchost                               3
+svchost                               3
+svchost                               3
+svchost                               3
+svchost                               3
+svchost                               3
+svchost                               3
+svchost                               3
+svchost                               3
+svchost                               3
+svchost                               3
+svchost                               3
+SearchUI                              3
+ServerManager                         3
+ShellExperienceHost                   3
+RuntimeBroker                         3
+rdpclip                               3
+RuntimeBroker                         3
+RuntimeBroker                         3
+svchost                               3
+svchost                               3
+svchost                               3
+svchost                               3
+sihost                                3
+smartscreen                           3
+spoolsv                               3
+
+
+PS C:\Users\jsystemuser1> Get-Process | Sort-Object CPU | Select-Object Name, CPU
+
+Name                                  CPU
+----                                  ---
+Idle
+svchost                               0
+svchost                               0
+conhost                               0.015625
+svchost                               0.015625
+ismserv                               0.015625
+svchost                               0.015625
+svchost                               0.015625
+svchost                               0.03125
+svchost                               0.03125
+dfssvc                                0.03125
+svchost                               0.03125
+fontdrvhost                           0.03125
+svchost                               0.03125
+svchost                               0.03125
+svchost                               0.03125
+svchost                               0.046875
+fontdrvhost                           0.046875
+svchost                               0.046875
+svchost                               0.046875
+svchost                               0.046875
+msdtc                                 0.046875
+svchost                               0.046875
+Code                                  0.046875
+svchost                               0.046875
+svchost                               0.046875
+svchost                               0.046875
+svchost                               0.046875
+svchost                               0.046875
+svchost                               0.046875
+svchost                               0.0625
+svchost                               0.0625
+svchost                               0.0625
+svchost                               0.0625
+svchost                               0.078125
+svchost                               0.078125
+csrss                                 0.078125
+fontdrvhost                           0.078125
+Code                                  0.078125
+winlogon                              0.09375
+taskhostw                             0.09375
+winlogon                              0.109375
+svchost                               0.109375
+svchost                               0.109375
+vds                                   0.109375
+svchost                               0.125
+svchost                               0.125
+svchost                               0.125
+svchost                               0.125
+svchost                               0.140625
+svchost                               0.140625
+svchost                               0.140625
+svchost                               0.140625
+svchost                               0.15625
+svchost                               0.15625
+svchost                               0.15625
+RuntimeBroker                         0.171875
+svchost                               0.1875
+svchost                               0.1875
+dwm                                   0.1875
+wininit                               0.203125
+winpty-agent                          0.203125
+smartscreen                           0.21875
+dllhost                               0.234375
+smss                                  0.25
+svchost                               0.28125
+WaSecAgentProv                        0.296875
+svchost                               0.3125
+Code                                  0.328125
+LogonUI                               0.34375
+svchost                               0.359375
+svchost                               0.359375
+RuntimeBroker                         0.40625
+svchost                               0.421875
+ctfmon                                0.4375
+svchost                               0.46875
+csrss                                 0.484375
+svchost                               0.484375
+Microsoft.ActiveDirectory.WebServices 0.515625
+dns                                   0.53125
+svchost                               0.609375
+Registry                              0.625
+conhost                               0.625
+sihost                                0.671875
+Code                                  0.71875
+svchost                               0.734375
+svchost                               0.734375
+RuntimeBroker                         0.765625
+powershell                            0.765625
+ShellExperienceHost                   0.796875
+spoolsv                               0.84375
+NisSrv                                0.859375
+svchost                               0.90625
+svchost                               1.140625
+taskhostw                             1.171875
+dfsrs                                 1.984375
+Code                                  2.140625
+rdpclip                               2.359375
+svchost                               2.5
+svchost                               3.203125
+explorer                              3.796875
+svchost                               3.875
+Code                                  4.453125
+svchost                               4.453125
+ServerManager                         4.640625
+Code                                  5.015625
+SearchUI                              5.3125
+csrss                                 6.890625
+WaAppAgent                            6.953125
+WindowsAzureGuestAgent                8.25
+powershell                            8.34375
+svchost                               9.390625
+svchost                               9.765625
+System                                11.765625
+dwm                                   11.9375
+Code                                  12.328125
+services                              12.5
+svchost                               19.6875
+lsass                                 21.46875
+Code                                  26.6875
+conhost                               27.125
+svchost                               57.734375
+MsMpEng                               88.953125
+
+
+PS C:\Users\jsystemuser1> Get-Process | Sort-Object -Property CPU -Descending | Select-Object Name, CPU
+
+Name                                        CPU
+----                                        ---
+MsMpEng                                88.96875
+svchost                                58.34375
+conhost                                 27.4375
+Code                                    26.6875
+lsass                                 21.515625
+svchost                                 19.6875
+services                                   12.5
+Code                                  12.328125
+dwm                                   11.953125
+System                                11.765625
+svchost                                9.765625
+svchost                                  9.4375
+powershell                               8.4375
+WindowsAzureGuestAgent                     8.25
+WaAppAgent                             6.953125
+csrss                                   6.90625
+SearchUI                                 5.3125
+Code                                   5.015625
+ServerManager                          4.640625
+svchost                                4.484375
+Code                                   4.453125
+svchost                                   3.875
+explorer                               3.796875
+svchost                                3.203125
+svchost                                2.515625
+rdpclip                                2.359375
+Code                                   2.140625
+dfsrs                                  1.984375
+taskhostw                              1.171875
+svchost                                1.140625
+svchost                                 0.90625
+NisSrv                                 0.859375
+spoolsv                                 0.84375
+ShellExperienceHost                    0.796875
+powershell                             0.765625
+RuntimeBroker                          0.765625
+svchost                                    0.75
+svchost                                0.734375
+svchost                                0.734375
+Code                                    0.71875
+sihost                                 0.671875
+conhost                                   0.625
+Registry                                  0.625
+svchost                                0.609375
+dns                                     0.53125
+Microsoft.ActiveDirectory.WebServices  0.515625
+svchost                                0.484375
+csrss                                  0.484375
+svchost                                 0.46875
+ctfmon                                   0.4375
+svchost                                0.421875
+RuntimeBroker                           0.40625
+svchost                                0.359375
+svchost                                0.359375
+LogonUI                                 0.34375
+Code                                   0.328125
+svchost                                  0.3125
+WaSecAgentProv                         0.296875
+svchost                                 0.28125
+smss                                       0.25
+dllhost                                0.234375
+smartscreen                             0.21875
+wininit                                0.203125
+winpty-agent                           0.203125
+svchost                                  0.1875
+dwm                                      0.1875
+svchost                                  0.1875
+RuntimeBroker                          0.171875
+svchost                                 0.15625
+svchost                                 0.15625
+svchost                                 0.15625
+svchost                                0.140625
+svchost                                0.140625
+svchost                                0.140625
+svchost                                0.140625
+svchost                                   0.125
+svchost                                   0.125
+svchost                                   0.125
+svchost                                   0.125
+svchost                                0.109375
+svchost                                0.109375
+vds                                    0.109375
+winlogon                               0.109375
+winlogon                                0.09375
+taskhostw                               0.09375
+fontdrvhost                            0.078125
+Code                                   0.078125
+svchost                                0.078125
+svchost                                0.078125
+svchost                                  0.0625
+svchost                                  0.0625
+svchost                                  0.0625
+svchost                                  0.0625
+svchost                                0.046875
+svchost                                0.046875
+fontdrvhost                            0.046875
+svchost                                0.046875
+svchost                                0.046875
+svchost                                0.046875
+svchost                                0.046875
+svchost                                0.046875
+msdtc                                  0.046875
+svchost                                0.046875
+svchost                                0.046875
+svchost                                0.046875
+svchost                                0.046875
+svchost                                 0.03125
+svchost                                 0.03125
+dfssvc                                  0.03125
+svchost                                 0.03125
+svchost                                 0.03125
+svchost                                 0.03125
+fontdrvhost                             0.03125
+svchost                                 0.03125
+svchost                                0.015625
+conhost                                0.015625
+ismserv                                0.015625
+svchost                                0.015625
+svchost                                0.015625
+svchost                                       0
+svchost                                       0
+Idle
+
+
+PS C:\Users\jsystemuser1> Get-Process | Sort-Object -Property CPU -Descending | Select-Object Name, CPU -First 5
+
+Name          CPU
+----          ---
+MsMpEng  88.96875
+svchost 58.484375
+conhost   27.5625
+Code      26.6875
+lsass    21.53125
+
+
+PS C:\Users\jsystemuser1> Get-Process | Get-Member
+
+
+   TypeName: System.Diagnostics.Process
+
+Name                       MemberType     Definition
+----                       ----------     ----------
+Handles                    AliasProperty  Handles = Handlecount
+Name                       AliasProperty  Name = ProcessName
+NPM                        AliasProperty  NPM = NonpagedSystemMemorySize64
+PM                         AliasProperty  PM = PagedMemorySize64
+SI                         AliasProperty  SI = SessionId
+VM                         AliasProperty  VM = VirtualMemorySize64
+WS                         AliasProperty  WS = WorkingSet64
+Disposed                   Event          System.EventHandler Disposed(System.Object, System.EventArgs)
+ErrorDataReceived          Event          System.Diagnostics.DataReceivedEventHandler ErrorDataReceived(System.Object, System.Diagnostics.DataReceivedEven...
+Exited                     Event          System.EventHandler Exited(System.Object, System.EventArgs)
+OutputDataReceived         Event          System.Diagnostics.DataReceivedEventHandler OutputDataReceived(System.Object, System.Diagnostics.DataReceivedEve...
+BeginErrorReadLine         Method         void BeginErrorReadLine()
+BeginOutputReadLine        Method         void BeginOutputReadLine()
+CancelErrorRead            Method         void CancelErrorRead()
+CancelOutputRead           Method         void CancelOutputRead()
+Close                      Method         void Close()
+CloseMainWindow            Method         bool CloseMainWindow()
+CreateObjRef               Method         System.Runtime.Remoting.ObjRef CreateObjRef(type requestedType)
+Dispose                    Method         void Dispose(), void IDisposable.Dispose()
+Equals                     Method         bool Equals(System.Object obj)
+GetHashCode                Method         int GetHashCode()
+GetLifetimeService         Method         System.Object GetLifetimeService()
+GetType                    Method         type GetType()
+InitializeLifetimeService  Method         System.Object InitializeLifetimeService()
+Kill                       Method         void Kill()
+Refresh                    Method         void Refresh()
+Start                      Method         bool Start()
+ToString                   Method         string ToString()
+WaitForExit                Method         bool WaitForExit(int milliseconds), void WaitForExit()
+WaitForInputIdle           Method         bool WaitForInputIdle(int milliseconds), bool WaitForInputIdle()
+__NounName                 NoteProperty   string __NounName=Process
+BasePriority               Property       int BasePriority {get;}
+Container                  Property       System.ComponentModel.IContainer Container {get;}
+EnableRaisingEvents        Property       bool EnableRaisingEvents {get;set;}
+ExitCode                   Property       int ExitCode {get;}
+ExitTime                   Property       datetime ExitTime {get;}
+Handle                     Property       System.IntPtr Handle {get;}
+HandleCount                Property       int HandleCount {get;}
+HasExited                  Property       bool HasExited {get;}
+Id                         Property       int Id {get;}
+MachineName                Property       string MachineName {get;}
+MainModule                 Property       System.Diagnostics.ProcessModule MainModule {get;}
+MainWindowHandle           Property       System.IntPtr MainWindowHandle {get;}
+MainWindowTitle            Property       string MainWindowTitle {get;}
+MaxWorkingSet              Property       System.IntPtr MaxWorkingSet {get;set;}
+MinWorkingSet              Property       System.IntPtr MinWorkingSet {get;set;}
+Modules                    Property       System.Diagnostics.ProcessModuleCollection Modules {get;}
+NonpagedSystemMemorySize   Property       int NonpagedSystemMemorySize {get;}
+NonpagedSystemMemorySize64 Property       long NonpagedSystemMemorySize64 {get;}
+PagedMemorySize            Property       int PagedMemorySize {get;}
+PagedMemorySize64          Property       long PagedMemorySize64 {get;}
+PagedSystemMemorySize      Property       int PagedSystemMemorySize {get;}
+PagedSystemMemorySize64    Property       long PagedSystemMemorySize64 {get;}
+PeakPagedMemorySize        Property       int PeakPagedMemorySize {get;}
+PeakPagedMemorySize64      Property       long PeakPagedMemorySize64 {get;}
+PeakVirtualMemorySize64    Property       long PeakVirtualMemorySize64 {get;}
+PeakWorkingSet             Property       int PeakWorkingSet {get;}
+PeakWorkingSet64           Property       long PeakWorkingSet64 {get;}
+PriorityBoostEnabled       Property       bool PriorityBoostEnabled {get;set;}
+PriorityClass              Property       System.Diagnostics.ProcessPriorityClass PriorityClass {get;set;}
+PrivateMemorySize          Property       int PrivateMemorySize {get;}
+PrivateMemorySize64        Property       long PrivateMemorySize64 {get;}
+PrivilegedProcessorTime    Property       timespan PrivilegedProcessorTime {get;}
+ProcessName                Property       string ProcessName {get;}
+ProcessorAffinity          Property       System.IntPtr ProcessorAffinity {get;set;}
+SafeHandle                 Property       Microsoft.Win32.SafeHandles.SafeProcessHandle SafeHandle {get;}
+SessionId                  Property       int SessionId {get;}
+Site                       Property       System.ComponentModel.ISite Site {get;set;}
+StandardError              Property       System.IO.StreamReader StandardError {get;}
+StandardInput              Property       System.IO.StreamWriter StandardInput {get;}
+StandardOutput             Property       System.IO.StreamReader StandardOutput {get;}
+StartInfo                  Property       System.Diagnostics.ProcessStartInfo StartInfo {get;set;}
+StartTime                  Property       datetime StartTime {get;}
+SynchronizingObject        Property       System.ComponentModel.ISynchronizeInvoke SynchronizingObject {get;set;}
+Threads                    Property       System.Diagnostics.ProcessThreadCollection Threads {get;}
+TotalProcessorTime         Property       timespan TotalProcessorTime {get;}
+UserProcessorTime          Property       timespan UserProcessorTime {get;}
+VirtualMemorySize          Property       int VirtualMemorySize {get;}
+VirtualMemorySize64        Property       long VirtualMemorySize64 {get;}
+WorkingSet                 Property       int WorkingSet {get;}
+WorkingSet64               Property       long WorkingSet64 {get;}
+PSConfiguration            PropertySet    PSConfiguration {Name, Id, PriorityClass, FileVersion}
+PSResources                PropertySet    PSResources {Name, Id, Handlecount, WorkingSet, NonPagedMemorySize, PagedMemorySize, PrivateMemorySize, VirtualM...
+Company                    ScriptProperty System.Object Company {get=$this.Mainmodule.FileVersionInfo.CompanyName;}
+CPU                        ScriptProperty System.Object CPU {get=$this.TotalProcessorTime.TotalSeconds;}
+Description                ScriptProperty System.Object Description {get=$this.Mainmodule.FileVersionInfo.FileDescription;}
+FileVersion                ScriptProperty System.Object FileVersion {get=$this.Mainmodule.FileVersionInfo.FileVersion;}
+Path                       ScriptProperty System.Object Path {get=$this.Mainmodule.FileName;}
+Product                    ScriptProperty System.Object Product {get=$this.Mainmodule.FileVersionInfo.ProductName;}
+ProductVersion             ScriptProperty System.Object ProductVersion {get=$this.Mainmodule.FileVersionInfo.ProductVersion;}
+
+
+PS C:\Users\jsystemuser1> Get-Process | Sort-Object -Property CPU, Name -Descending | Select-Object Name, CPU -First 5
+
+Name          CPU
+----          ---
+MsMpEng   89.0625
+svchost  60.59375
+conhost      28.5
+Code    26.703125
+lsass   21.828125
+
+
+PS C:\Users\jsystemuser1> Get-Process | Sort-Object -Property Name, StartTime -Descending | Select-Object Name, StartTime
+Sort-Object : Exception getting "StartTime": "Access is denied"
+At line:1 char:15
++ ... t-Process | Sort-Object -Property Name, StartTime -Descending | Selec ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidResult: (System.Diagnostics.Process (Idle):PSObject) [Sort-Object], GetValueInvocationException
+    + FullyQualifiedErrorId : ExpressionEvaluation,Microsoft.PowerShell.Commands.SortObjectCommand
+
+
+Name                                  StartTime
+----                                  ---------
+winpty-agent                          11/29/2022 7:54:55 AM
+winlogon                              11/29/2022 7:39:19 AM
+winlogon                              11/29/2022 7:22:42 AM
+wininit                               11/29/2022 7:22:42 AM
+WindowsAzureGuestAgent                11/29/2022 7:23:02 AM
+WaSecAgentProv                        11/29/2022 7:23:21 AM
+WaAppAgent                            11/29/2022 7:23:02 AM
+vds                                   11/29/2022 7:23:03 AM
+taskhostw                             11/29/2022 7:39:23 AM
+taskhostw                             11/29/2022 7:23:12 AM
+System                                11/29/2022 7:22:37 AM
+svchost                               11/29/2022 9:25:34 AM
+svchost                               11/29/2022 9:25:32 AM
+svchost                               11/29/2022 7:54:38 AM
+svchost                               11/29/2022 7:40:06 AM
+svchost                               11/29/2022 7:39:43 AM
+svchost                               11/29/2022 7:39:23 AM
+svchost                               11/29/2022 7:39:22 AM
+svchost                               11/29/2022 7:39:22 AM
+svchost                               11/29/2022 7:39:22 AM
+svchost                               11/29/2022 7:32:03 AM
+svchost                               11/29/2022 7:32:03 AM
+svchost                               11/29/2022 7:25:08 AM
+svchost                               11/29/2022 7:25:08 AM
+svchost                               11/29/2022 7:25:06 AM
+svchost                               11/29/2022 7:25:04 AM
+svchost                               11/29/2022 7:23:12 AM
+svchost                               11/29/2022 7:23:02 AM
+svchost                               11/29/2022 7:23:02 AM
+svchost                               11/29/2022 7:23:02 AM
+svchost                               11/29/2022 7:23:02 AM
+svchost                               11/29/2022 7:23:02 AM
+svchost                               11/29/2022 7:23:02 AM
+svchost                               11/29/2022 7:23:02 AM
+svchost                               11/29/2022 7:23:02 AM
+svchost                               11/29/2022 7:22:55 AM
+svchost                               11/29/2022 7:22:48 AM
+svchost                               11/29/2022 7:22:48 AM
+svchost                               11/29/2022 7:22:47 AM
+svchost                               11/29/2022 7:22:47 AM
+svchost                               11/29/2022 7:22:47 AM
+svchost                               11/29/2022 7:22:47 AM
+svchost                               11/29/2022 7:22:47 AM
+svchost                               11/29/2022 7:22:47 AM
+svchost                               11/29/2022 7:22:47 AM
+svchost                               11/29/2022 7:22:47 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:45 AM
+svchost                               11/29/2022 7:22:45 AM
+svchost                               11/29/2022 7:22:45 AM
+svchost                               11/29/2022 7:22:45 AM
+spoolsv                               11/29/2022 7:23:01 AM
+smss                                  11/29/2022 7:22:37 AM
+smartscreen                           11/29/2022 7:39:41 AM
+sihost                                11/29/2022 7:39:22 AM
+ShellExperienceHost                   11/29/2022 7:39:27 AM
+services                              11/29/2022 7:22:42 AM
+ServerManager                         11/29/2022 7:39:28 AM
+SearchUI                              11/29/2022 7:39:28 AM
+RuntimeBroker                         11/29/2022 7:39:36 AM
+RuntimeBroker                         11/29/2022 7:39:30 AM
+RuntimeBroker                         11/29/2022 7:39:29 AM
+Registry                              11/29/2022 7:22:32 AM
+rdpclip                               11/29/2022 7:39:22 AM
+powershell                            11/29/2022 7:54:56 AM
+NisSrv                                11/29/2022 7:23:13 AM
+MsMpEng                               11/29/2022 7:23:02 AM
+msdtc                                 11/29/2022 7:25:05 AM
+Microsoft.ActiveDirectory.WebServices 11/29/2022 7:23:02 AM
+lsass                                 11/29/2022 7:22:42 AM
+LogonUI                               11/29/2022 7:22:45 AM
+ismserv                               11/29/2022 7:23:02 AM
+Idle
+fontdrvhost                           11/29/2022 7:39:20 AM
+fontdrvhost                           11/29/2022 7:23:01 AM
+fontdrvhost                           11/29/2022 7:23:01 AM
+explorer                              11/29/2022 7:39:24 AM
+dwm                                   11/29/2022 7:39:20 AM
+dwm                                   11/29/2022 7:22:45 AM
+dns                                   11/29/2022 7:23:02 AM
+dllhost                               11/29/2022 7:54:36 AM
+dfssvc                                11/29/2022 7:23:02 AM
+dfsrs                                 11/29/2022 7:23:02 AM
+ctfmon                                11/29/2022 7:39:23 AM
+csrss                                 11/29/2022 7:39:19 AM
+csrss                                 11/29/2022 7:22:42 AM
+csrss                                 11/29/2022 7:22:42 AM
+conhost                               11/29/2022 8:32:46 AM
+conhost                               11/29/2022 7:54:55 AM
+conhost                               11/29/2022 7:23:22 AM
+Code                                  11/29/2022 7:54:52 AM
+Code                                  11/29/2022 7:54:50 AM
+Code                                  11/29/2022 7:54:49 AM
+Code                                  11/29/2022 7:54:48 AM
+Code                                  11/29/2022 7:54:44 AM
+Code                                  11/29/2022 7:54:43 AM
+Code                                  11/29/2022 7:54:42 AM
+Code                                  11/29/2022 7:54:42 AM
+Code                                  11/29/2022 7:54:38 AM
+
+
+PS C:\Users\jsystemuser1> ^C
+PS C:\Users\jsystemuser1> Get-Help Get-Process
+
+NAME
+    Get-Process
+
+SYNOPSIS
+    Gets the processes that are running on the local computer or a remote computer.
+
+
+SYNTAX
+
+    Get-Process [-ComputerName <System.String[]>] [-FileVersionInfo] -Id <System.Int32[]> [-Module] [<CommonParameters>]
+
+    Get-Process [-ComputerName <System.String[]>] [-FileVersionInfo] -InputObject <System.Diagnostics.Process[]> [-Module] [<CommonParameters>]
+
+    Get-Process -Id <System.Int32[]> -IncludeUserName [<CommonParameters>]
+
+    Get-Process [[-Name] <System.String[]>] -IncludeUserName [<CommonParameters>]
+
+    Get-Process -IncludeUserName -InputObject <System.Diagnostics.Process[]> [<CommonParameters>]
+
+
+DESCRIPTION
+    The `Get-Process` cmdlet gets the processes on a local or remote computer.
+
+    Without parameters, this cmdlet gets all of the processes on the local computer. You can also specify a particular process by process name or process ID
+    (PID) or pass a process object through the pipeline to this cmdlet.
+
+    By default, this cmdlet returns a process object that has detailed information about the process and supports methods that let you start and stop the
+    process. You can also use the parameters of the `Get-Process` cmdlet to get file version information for the program that runs in the process and to get
+    the modules that the process loaded.
+
+
+RELATED LINKS
+    Online Version: https://learn.microsoft.com/powershell/module/microsoft.powershell.management/get-process?view=powershell-5.1&WT.mc_id=ps-gethelp
+    Debug-Process
+    Get-Process
+    Start-Process
+    Stop-Process
+    Wait-Process
+
+REMARKS
+    To see the examples, type: "get-help Get-Process -examples".
+    For more information, type: "get-help Get-Process -detailed".
+    For technical information, type: "get-help Get-Process -full".
+    For online help, type: "get-help Get-Process -online"
+
+
+PS C:\Users\jsystemuser1> Get-Process | Sort-Object Name, StartTime -Descending | Select-Object Name, StartTime
+Sort-Object : Exception getting "StartTime": "Access is denied"
+At line:1 char:15
++ Get-Process | Sort-Object Name, StartTime -Descending | Select-Object ...
++               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidResult: (System.Diagnostics.Process (Idle):PSObject) [Sort-Object], GetValueInvocationException
+    + FullyQualifiedErrorId : ExpressionEvaluation,Microsoft.PowerShell.Commands.SortObjectCommand
+
+
+Name                                  StartTime
+----                                  ---------
+WmiPrvSE                              11/29/2022 10:59:41 AM
+WmiPrvSE                              11/29/2022 10:59:38 AM
+WmiPrvSE                              11/29/2022 10:59:38 AM
+winpty-agent                          11/29/2022 7:54:55 AM
+winlogon                              11/29/2022 7:39:19 AM
+winlogon                              11/29/2022 7:22:42 AM
+wininit                               11/29/2022 7:22:42 AM
+WindowsAzureGuestAgent                11/29/2022 7:23:02 AM
+WaSecAgentProv                        11/29/2022 7:23:21 AM
+WaAppAgent                            11/29/2022 7:23:02 AM
+vds                                   11/29/2022 7:23:03 AM
+taskhostw                             11/29/2022 7:39:23 AM
+taskhostw                             11/29/2022 7:23:12 AM
+System                                11/29/2022 7:22:37 AM
+svchost                               11/29/2022 10:59:38 AM
+svchost                               11/29/2022 9:25:34 AM
+svchost                               11/29/2022 9:25:32 AM
+svchost                               11/29/2022 7:54:38 AM
+svchost                               11/29/2022 7:40:06 AM
+svchost                               11/29/2022 7:39:43 AM
+svchost                               11/29/2022 7:39:23 AM
+svchost                               11/29/2022 7:39:22 AM
+svchost                               11/29/2022 7:39:22 AM
+svchost                               11/29/2022 7:39:22 AM
+svchost                               11/29/2022 7:32:03 AM
+svchost                               11/29/2022 7:32:03 AM
+svchost                               11/29/2022 7:25:08 AM
+svchost                               11/29/2022 7:25:08 AM
+svchost                               11/29/2022 7:25:06 AM
+svchost                               11/29/2022 7:25:04 AM
+svchost                               11/29/2022 7:23:12 AM
+svchost                               11/29/2022 7:23:02 AM
+svchost                               11/29/2022 7:23:02 AM
+svchost                               11/29/2022 7:23:02 AM
+svchost                               11/29/2022 7:23:02 AM
+svchost                               11/29/2022 7:23:02 AM
+svchost                               11/29/2022 7:23:02 AM
+svchost                               11/29/2022 7:23:02 AM
+svchost                               11/29/2022 7:23:02 AM
+svchost                               11/29/2022 7:22:55 AM
+svchost                               11/29/2022 7:22:48 AM
+svchost                               11/29/2022 7:22:48 AM
+svchost                               11/29/2022 7:22:47 AM
+svchost                               11/29/2022 7:22:47 AM
+svchost                               11/29/2022 7:22:47 AM
+svchost                               11/29/2022 7:22:47 AM
+svchost                               11/29/2022 7:22:47 AM
+svchost                               11/29/2022 7:22:47 AM
+svchost                               11/29/2022 7:22:47 AM
+svchost                               11/29/2022 7:22:47 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:46 AM
+svchost                               11/29/2022 7:22:45 AM
+svchost                               11/29/2022 7:22:45 AM
+svchost                               11/29/2022 7:22:45 AM
+svchost                               11/29/2022 7:22:45 AM
+spoolsv                               11/29/2022 7:23:01 AM
+smss                                  11/29/2022 7:22:37 AM
+smartscreen                           11/29/2022 7:39:41 AM
+sihost                                11/29/2022 7:39:22 AM
+ShellExperienceHost                   11/29/2022 7:39:27 AM
+services                              11/29/2022 7:22:42 AM
+ServerManager                         11/29/2022 7:39:28 AM
+SearchUI                              11/29/2022 7:39:28 AM
+RuntimeBroker                         11/29/2022 7:39:36 AM
+RuntimeBroker                         11/29/2022 7:39:30 AM
+RuntimeBroker                         11/29/2022 7:39:29 AM
+Registry                              11/29/2022 7:22:32 AM
+rdpclip                               11/29/2022 7:39:22 AM
+powershell                            11/29/2022 7:54:56 AM
+NisSrv                                11/29/2022 7:23:13 AM
+MsMpEng                               11/29/2022 7:23:02 AM
+msdtc                                 11/29/2022 7:25:05 AM
+Microsoft.ActiveDirectory.WebServices 11/29/2022 7:23:02 AM
+lsass                                 11/29/2022 7:22:42 AM
+LogonUI                               11/29/2022 7:22:45 AM
+Idle
+fontdrvhost                           11/29/2022 7:39:20 AM
+fontdrvhost                           11/29/2022 7:23:01 AM
+fontdrvhost                           11/29/2022 7:23:01 AM
+explorer                              11/29/2022 7:39:24 AM
+dwm                                   11/29/2022 7:39:20 AM
+dwm                                   11/29/2022 7:22:45 AM
+dns                                   11/29/2022 7:23:02 AM
+dllhost                               11/29/2022 7:54:36 AM
+dfssvc                                11/29/2022 7:23:02 AM
+dfsrs                                 11/29/2022 7:23:02 AM
+ctfmon                                11/29/2022 7:39:23 AM
+csrss                                 11/29/2022 7:39:19 AM
+csrss                                 11/29/2022 7:22:42 AM
+csrss                                 11/29/2022 7:22:42 AM
+conhost                               11/29/2022 8:32:46 AM
+conhost                               11/29/2022 7:54:55 AM
+conhost                               11/29/2022 7:23:22 AM
+Code                                  11/29/2022 7:54:52 AM
+Code                                  11/29/2022 7:54:50 AM
+Code                                  11/29/2022 7:54:49 AM
+Code                                  11/29/2022 7:54:48 AM
+Code                                  11/29/2022 7:54:44 AM
+Code                                  11/29/2022 7:54:43 AM
+Code                                  11/29/2022 7:54:42 AM
+Code                                  11/29/2022 7:54:42 AM
+Code                                  11/29/2022 7:54:38 AM
+
+
+PS C:\Users\jsystemuser1> ^C
+PS C:\Users\jsystemuser1> sort-object | Get-Member
+Get-Member : You must specify an object for the Get-Member cmdlet.
+At line:1 char:15
++ sort-object | Get-Member
++               ~~~~~~~~~~
+    + CategoryInfo          : CloseError: (:) [Get-Member], InvalidOperationException
+    + FullyQualifiedErrorId : NoObjectInGetMember,Microsoft.PowerShell.Commands.GetMemberCommand
+
+PS C:\Users\jsystemuser1> Get-Process | Get-Member
+
+
+   TypeName: System.Diagnostics.Process
+
+Name                       MemberType     Definition
+----                       ----------     ----------
+Handles                    AliasProperty  Handles = Handlecount
+Name                       AliasProperty  Name = ProcessName
+NPM                        AliasProperty  NPM = NonpagedSystemMemorySize64
+PM                         AliasProperty  PM = PagedMemorySize64
+SI                         AliasProperty  SI = SessionId
+VM                         AliasProperty  VM = VirtualMemorySize64
+WS                         AliasProperty  WS = WorkingSet64
+Disposed                   Event          System.EventHandler Disposed(System.Object, System.EventArgs)
+ErrorDataReceived          Event          System.Diagnostics.DataReceivedEventHandler ErrorDataReceived(System.Object, System.Diagnostics.DataReceivedEven...
+Exited                     Event          System.EventHandler Exited(System.Object, System.EventArgs)
+OutputDataReceived         Event          System.Diagnostics.DataReceivedEventHandler OutputDataReceived(System.Object, System.Diagnostics.DataReceivedEve...
+BeginErrorReadLine         Method         void BeginErrorReadLine()
+BeginOutputReadLine        Method         void BeginOutputReadLine()
+CancelErrorRead            Method         void CancelErrorRead()
+CancelOutputRead           Method         void CancelOutputRead()
+Close                      Method         void Close()
+CloseMainWindow            Method         bool CloseMainWindow()
+CreateObjRef               Method         System.Runtime.Remoting.ObjRef CreateObjRef(type requestedType)
+Dispose                    Method         void Dispose(), void IDisposable.Dispose()
+Equals                     Method         bool Equals(System.Object obj)
+GetHashCode                Method         int GetHashCode()
+GetLifetimeService         Method         System.Object GetLifetimeService()
+GetType                    Method         type GetType()
+InitializeLifetimeService  Method         System.Object InitializeLifetimeService()
+Kill                       Method         void Kill()
+Refresh                    Method         void Refresh()
+Start                      Method         bool Start()
+ToString                   Method         string ToString()
+WaitForExit                Method         bool WaitForExit(int milliseconds), void WaitForExit()
+WaitForInputIdle           Method         bool WaitForInputIdle(int milliseconds), bool WaitForInputIdle()
+__NounName                 NoteProperty   string __NounName=Process
+BasePriority               Property       int BasePriority {get;}
+Container                  Property       System.ComponentModel.IContainer Container {get;}
+EnableRaisingEvents        Property       bool EnableRaisingEvents {get;set;}
+ExitCode                   Property       int ExitCode {get;}
+ExitTime                   Property       datetime ExitTime {get;}
+Handle                     Property       System.IntPtr Handle {get;}
+HandleCount                Property       int HandleCount {get;}
+HasExited                  Property       bool HasExited {get;}
+Id                         Property       int Id {get;}
+MachineName                Property       string MachineName {get;}
+MainModule                 Property       System.Diagnostics.ProcessModule MainModule {get;}
+MainWindowHandle           Property       System.IntPtr MainWindowHandle {get;}
+MainWindowTitle            Property       string MainWindowTitle {get;}
+MaxWorkingSet              Property       System.IntPtr MaxWorkingSet {get;set;}
+MinWorkingSet              Property       System.IntPtr MinWorkingSet {get;set;}
+Modules                    Property       System.Diagnostics.ProcessModuleCollection Modules {get;}
+NonpagedSystemMemorySize   Property       int NonpagedSystemMemorySize {get;}
+NonpagedSystemMemorySize64 Property       long NonpagedSystemMemorySize64 {get;}
+PagedMemorySize            Property       int PagedMemorySize {get;}
+PagedMemorySize64          Property       long PagedMemorySize64 {get;}
+PagedSystemMemorySize      Property       int PagedSystemMemorySize {get;}
+PagedSystemMemorySize64    Property       long PagedSystemMemorySize64 {get;}
+PeakPagedMemorySize        Property       int PeakPagedMemorySize {get;}
+PeakPagedMemorySize64      Property       long PeakPagedMemorySize64 {get;}
+PeakVirtualMemorySize      Property       int PeakVirtualMemorySize {get;}
+PeakWorkingSet             Property       int PeakWorkingSet {get;}
+PeakWorkingSet64           Property       long PeakWorkingSet64 {get;}
+PriorityBoostEnabled       Property       bool PriorityBoostEnabled {get;set;}
+PriorityClass              Property       System.Diagnostics.ProcessPriorityClass PriorityClass {get;set;}
+PrivateMemorySize          Property       int PrivateMemorySize {get;}
+PrivateMemorySize64        Property       long PrivateMemorySize64 {get;}
+PrivilegedProcessorTime    Property       timespan PrivilegedProcessorTime {get;}
+ProcessName                Property       string ProcessName {get;}
+ProcessorAffinity          Property       System.IntPtr ProcessorAffinity {get;set;}
+Responding                 Property       bool Responding {get;}
+SafeHandle                 Property       Microsoft.Win32.SafeHandles.SafeProcessHandle SafeHandle {get;}
+SessionId                  Property       int SessionId {get;}
+Site                       Property       System.ComponentModel.ISite Site {get;set;}
+StandardError              Property       System.IO.StreamReader StandardError {get;}
+StandardInput              Property       System.IO.StreamWriter StandardInput {get;}
+StandardOutput             Property       System.IO.StreamReader StandardOutput {get;}
+StartInfo                  Property       System.Diagnostics.ProcessStartInfo StartInfo {get;set;}
+StartTime                  Property       datetime StartTime {get;}
+SynchronizingObject        Property       System.ComponentModel.ISynchronizeInvoke SynchronizingObject {get;set;}
+Threads                    Property       System.Diagnostics.ProcessThreadCollection Threads {get;}
+TotalProcessorTime         Property       timespan TotalProcessorTime {get;}
+UserProcessorTime          Property       timespan UserProcessorTime {get;}
+VirtualMemorySize          Property       int VirtualMemorySize {get;}
+VirtualMemorySize64        Property       long VirtualMemorySize64 {get;}
+WorkingSet                 Property       int WorkingSet {get;}
+WorkingSet64               Property       long WorkingSet64 {get;}
+PSConfiguration            PropertySet    PSConfiguration {Name, Id, PriorityClass, FileVersion}
+PSResources                PropertySet    PSResources {Name, Id, Handlecount, WorkingSet, NonPagedMemorySize, PagedMemorySize, PrivateMemorySize, VirtualM...
+Company                    ScriptProperty System.Object Company {get=$this.Mainmodule.FileVersionInfo.CompanyName;}
+CPU                        ScriptProperty System.Object CPU {get=$this.TotalProcessorTime.TotalSeconds;}
+Description                ScriptProperty System.Object Description {get=$this.Mainmodule.FileVersionInfo.FileDescription;}
+FileVersion                ScriptProperty System.Object FileVersion {get=$this.Mainmodule.FileVersionInfo.FileVersion;}
+Path                       ScriptProperty System.Object Path {get=$this.Mainmodule.FileName;}
+Product                    ScriptProperty System.Object Product {get=$this.Mainmodule.FileVersionInfo.ProductName;}
+ProductVersion             ScriptProperty System.Object ProductVersion {get=$this.Mainmodule.FileVersionInfo.ProductVersion;}
+
+
+PS C:\Users\jsystemuser1> ^C
+PS C:\Users\jsystemuser1> Get-Date | Get-Member
+
+
+   TypeName: System.DateTime
+
+Name                 MemberType     Definition
+----                 ----------     ----------
+Add                  Method         datetime Add(timespan value)
+AddDays              Method         datetime AddDays(double value)
+AddHours             Method         datetime AddHours(double value)
+AddMilliseconds      Method         datetime AddMilliseconds(double value)
+AddMinutes           Method         datetime AddMinutes(double value)
+AddMonths            Method         datetime AddMonths(int months)
+AddSeconds           Method         datetime AddSeconds(double value)
+AddTicks             Method         datetime AddTicks(long value)
+AddYears             Method         datetime AddYears(int value)
+CompareTo            Method         int CompareTo(System.Object value), int CompareTo(datetime value), int IComparable.CompareTo(System.Object obj), int I...
+Equals               Method         bool Equals(System.Object value), bool Equals(datetime value), bool IEquatable[datetime].Equals(datetime other)
+GetDateTimeFormats   Method         string[] GetDateTimeFormats(), string[] GetDateTimeFormats(System.IFormatProvider provider), string[] GetDateTimeForma...
+GetHashCode          Method         int GetHashCode()
+GetObjectData        Method         void ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.Str...
+GetType              Method         type GetType()
+GetTypeCode          Method         System.TypeCode GetTypeCode(), System.TypeCode IConvertible.GetTypeCode()
+IsDaylightSavingTime Method         bool IsDaylightSavingTime()
+Subtract             Method         timespan Subtract(datetime value), datetime Subtract(timespan value)
+ToBinary             Method         long ToBinary()
+ToBoolean            Method         bool IConvertible.ToBoolean(System.IFormatProvider provider)
+ToByte               Method         byte IConvertible.ToByte(System.IFormatProvider provider)
+ToChar               Method         char IConvertible.ToChar(System.IFormatProvider provider)
+ToDateTime           Method         datetime IConvertible.ToDateTime(System.IFormatProvider provider)
+ToDouble             Method         double IConvertible.ToDouble(System.IFormatProvider provider)
+ToFileTime           Method         long ToFileTime()
+ToInt16              Method         int16 IConvertible.ToInt16(System.IFormatProvider provider)
+ToInt32              Method         int IConvertible.ToInt32(System.IFormatProvider provider)
+ToInt64              Method         long IConvertible.ToInt64(System.IFormatProvider provider)
+ToLocalTime          Method         datetime ToLocalTime()
+ToLongDateString     Method         string ToLongDateString()
+ToLongTimeString     Method         string ToLongTimeString()
+ToOADate             Method         double ToOADate()
+ToSByte              Method         sbyte IConvertible.ToSByte(System.IFormatProvider provider)
+ToShortDateString    Method         string ToShortDateString()
+ToShortTimeString    Method         string ToShortTimeString()
+ToString             Method         string ToString(), string ToString(string format), string ToString(System.IFormatProvider provider), string ToString(s...
+ToType               Method         System.Object IConvertible.ToType(type conversionType, System.IFormatProvider provider)
+ToUInt16             Method         uint16 IConvertible.ToUInt16(System.IFormatProvider provider)
+ToUInt32             Method         uint32 IConvertible.ToUInt32(System.IFormatProvider provider)
+ToUInt64             Method         uint64 IConvertible.ToUInt64(System.IFormatProvider provider)
+ToUniversalTime      Method         datetime ToUniversalTime()
+DisplayHint          NoteProperty   DisplayHintType DisplayHint=DateTime
+Date                 Property       datetime Date {get;}
+Day                  Property       int Day {get;}
+DayOfWeek            Property       System.DayOfWeek DayOfWeek {get;}
+Hour                 Property       int Hour {get;}
+Kind                 Property       System.DateTimeKind Kind {get;}
+Millisecond          Property       int Millisecond {get;}
+Minute               Property       int Minute {get;}
+Month                Property       int Month {get;}
+Second               Property       int Second {get;}
+Ticks                Property       long Ticks {get;}
+TimeOfDay            Property       timespan TimeOfDay {get;}
+Year                 Property       int Year {get;}
+DateTime             ScriptProperty System.Object DateTime {get=if ((& { Set-StrictMode -Version 1; $this.DisplayHint }) -ieq  "Date")...
+
+PS C:\Users\jsystemuser1> ^C
+PS C:\Users\jsystemuser1> cd "C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\02_PIPELINES"
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\02_PIPELINES> Get-Process | Sort-Object -Property CPU -Descending | Select-Ob
+ject Name, CPU -First 5^C
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\02_PIPELINES> New-Item . -Name 1 -ItemType directory
+
+
+    Directory: C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\02_PIPELINES
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----       11/29/2022  11:19 AM                1
+
+
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\02_PIPELINES> New-Item . -Name 2 -ItemType directory
+
+
+    Directory: C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\02_PIPELINES
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----       11/29/2022  11:19 AM                2
+
+
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\02_PIPELINES> New-Item 1 -Name 2 -ItemType directory
+
+
+    Directory: C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\02_PIPELINES\1
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----       11/29/2022  11:19 AM                2
+
+
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\02_PIPELINES> New-Item 1\2 -Name 2 -ItemType directory
+
+
+    Directory: C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\02_PIPELINES\1\2
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----       11/29/2022  11:19 AM                2
+
+
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\02_PIPELINES> New-Item 1\2 -Name 1.txt -ItemType file
+
+
+    Directory: C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\02_PIPELINES\1\2
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----       11/29/2022  11:20 AM              0 1.txt
+
+
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\02_PIPELINES> New-Item 1\2 -Name 2.txt -ItemType file
+
+
+    Directory: C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\02_PIPELINES\1\2
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----       11/29/2022  11:20 AM              0 2.txt
+
+
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\02_PIPELINES> New-Item 1 -Name 2.txt -ItemType file
+
+
+    Directory: C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\02_PIPELINES\1
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----       11/29/2022  11:20 AM              0 2.txt
+
+
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\02_PIPELINES> New-Item 2 -Name 2.txt -ItemType file
+
+
+    Directory: C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\02_PIPELINES\2
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----       11/29/2022  11:20 AM              0 2.txt
+
+
+
+
+    Directory: C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\02_PIPELINES
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----       11/29/2022  11:20 AM                1
+d-----       11/29/2022  11:19 AM                2
+
+
+    Directory: C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\02_PIPELINES\1
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----       11/29/2022  11:20 AM                2
+-a----       11/29/2022  11:20 AM              0 2.txt
+
+
+    Directory: C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\02_PIPELINES\1\2
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----       11/29/2022  11:19 AM                2
+-a----       11/29/2022  11:20 AM              0 1.txt
+
+
+    Directory: C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\02_PIPELINES\2
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----       11/29/2022  11:20 AM              0 2.txt
+
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\02_PIPELINES> Get-ChildItem *.txt -Recurse
+
+
+    Directory: C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\02_PIPELINES\1\2
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----       11/29/2022  11:20 AM              0 1.txt
+-a----       11/29/2022  11:20 AM              0 2.txt
+
+
+    Directory: C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\02_PIPELINES\1
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----       11/29/2022  11:20 AM              0 2.txt
+
+
+    Directory: C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\02_PIPELINES\2
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----       11/29/2022  11:20 AM              0 2.txt
+
+
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\02_PIPELINES> Get-ChildItem *.txt -Recurse | Remove-Item -WhatIf
+What if: Performing the operation "Remove File" on target "C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\02_PIPELINES\1\2\1.tx
+t".
+What if: Performing the operation "Remove File" on target "C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\02_PIPELINES\1\2\2.tx
+t".
+What if: Performing the operation "Remove File" on target "C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\02_PIPELINES\1\2.txt"
+.
+What if: Performing the operation "Remove File" on target "C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\02_PIPELINES\2\2.txt"
+.
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\02_PIPELINES> Get-ChildItem | Get-Member
+
+
+   TypeName: System.IO.DirectoryInfo
+
+Name                      MemberType     Definition
+----                      ----------     ----------
+LinkType                  CodeProperty   System.String LinkType{get=GetLinkType;}
+Mode                      CodeProperty   System.String Mode{get=Mode;}
+Target                    CodeProperty   System.Collections.Generic.IEnumerable`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyTok...
+Create                    Method         void Create(), void Create(System.Security.AccessControl.DirectorySecurity directorySecurity)
+CreateObjRef              Method         System.Runtime.Remoting.ObjRef CreateObjRef(type requestedType)
+CreateSubdirectory        Method         System.IO.DirectoryInfo CreateSubdirectory(string path), System.IO.DirectoryInfo CreateSubdirectory(string path, ...
+Delete                    Method         void Delete(), void Delete(bool recursive)
+Equals                    Method         bool Equals(System.Object obj)
+GetAccessControl          Method         System.Security.AccessControl.DirectorySecurity GetAccessControl(), System.Security.AccessControl.DirectorySecuri...
+GetDirectories            Method         System.IO.DirectoryInfo[] GetDirectories(), System.IO.DirectoryInfo[] GetDirectories(string searchPattern), Syste...
+GetFiles                  Method         System.IO.FileInfo[] GetFiles(string searchPattern), System.IO.FileInfo[] GetFiles(string searchPattern, System.I...
+GetFileSystemInfos        Method         System.IO.FileSystemInfo[] GetFileSystemInfos(string searchPattern), System.IO.FileSystemInfo[] GetFileSystemInfo...
+GetHashCode               Method         int GetHashCode()
+GetLifetimeService        Method         System.Object GetLifetimeService()
+GetObjectData             Method         void GetObjectData(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingCon...
+GetType                   Method         type GetType()
+InitializeLifetimeService Method         System.Object InitializeLifetimeService()
+MoveTo                    Method         void MoveTo(string destDirName)
+Refresh                   Method         void Refresh()
+SetAccessControl          Method         void SetAccessControl(System.Security.AccessControl.DirectorySecurity directorySecurity)
+ToString                  Method         string ToString()
+PSChildName               NoteProperty   string PSChildName=1
+PSDrive                   NoteProperty   PSDriveInfo PSDrive=C
+PSIsContainer             NoteProperty   bool PSIsContainer=True
+PSParentPath              NoteProperty   string PSParentPath=Microsoft.PowerShell.Core\FileSystem::C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministr...
+PSPath                    NoteProperty   string PSPath=Microsoft.PowerShell.Core\FileSystem::C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZW...
+PSProvider                NoteProperty   ProviderInfo PSProvider=Microsoft.PowerShell.Core\FileSystem
+Attributes                Property       System.IO.FileAttributes Attributes {get;set;}
+CreationTime              Property       datetime CreationTime {get;set;}
+CreationTimeUtc           Property       datetime CreationTimeUtc {get;set;}
+Exists                    Property       bool Exists {get;}
+Extension                 Property       string Extension {get;}
+FullName                  Property       string FullName {get;}
+LastAccessTime            Property       datetime LastAccessTime {get;set;}
+LastWriteTimeUtc          Property       datetime LastWriteTimeUtc {get;set;}
+Name                      Property       string Name {get;}
+Parent                    Property       System.IO.DirectoryInfo Parent {get;}
+Root                      Property       System.IO.DirectoryInfo Root {get;}
+BaseName                  ScriptProperty System.Object BaseName {get=$this.Name;}
+
+
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\02_PIPELINES> Get-ChildItem *.txt -Recurse | Remove-Item
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\02_PIPELINES> Get-ChildItem *.txt -Recurse
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\02_PIPELINES> Get-ChildItem -Directory -recurse
+
+
+    Directory: C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\02_PIPELINES
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----       11/29/2022  11:29 AM                1
+d-----       11/29/2022  11:29 AM                2
+
+
+    Directory: C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\02_PIPELINES\1
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----       11/29/2022  11:29 AM                2
+
+
+    Directory: C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\02_PIPELINES\1\2
+
+
+
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\02_PIPELINES> Get-ChildItem -Directory -recurse | New-Item -Name 2.txt -ItemT
+
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----       11/29/2022  12:25 PM              1 2.txt
+New-Item : The file 'C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\02_PIPELINES\2.txt' already exists.
+At line:1 char:37
++ ... t-ChildItem -Directory -recurse | New-Item -Name 2.txt -ItemType file
++                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (C:\Users\jsyste...PIPELINES\2.txt:String) [New-Item], IOException
+    + FullyQualifiedErrorId : NewItemIOError,Microsoft.PowerShell.Commands.NewItemCommand
+New-Item : The file 'C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\02_PIPELINES\2.txt' already exists.
+At line:1 char:37
++ ... t-ChildItem -Directory -recurse | New-Item -Name 2.txt -ItemType file
++                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (C:\Users\jsyste...PIPELINES\2.txt:String) [New-Item], IOException
+    + FullyQualifiedErrorId : NewItemIOError,Microsoft.PowerShell.Commands.NewItemCommand
+
+New-Item : The file 'C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\02_PIPELINES\2.txt' already exists.
+At line:1 char:37
++ ... t-ChildItem -Directory -recurse | New-Item -Name 2.txt -ItemType file
++                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (C:\Users\jsyste...PIPELINES\2.txt:String) [New-Item], IOException
+    + FullyQualifiedErrorId : NewItemIOError,Microsoft.PowerShell.Commands.NewItemCommand
+
+
+
+PS C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\02_PIPELINES> Get-ChildItem -Directory -recurse | Set-Location
+PS Microsoft.PowerShell.Core\FileSystem::C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\02_PIPELINES\1\2\2> cd ..
+PS Microsoft.PowerShell.Core\FileSystem::C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\02_PIPELINES\1\2> cd ..
+PS Microsoft.PowerShell.Core\FileSystem::C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\02_PIPELINES\1> cd ..
+PS Microsoft.PowerShell.Core\FileSystem::C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\02_PIPELINES> Get-ChildItem -Directory
+-recurse | Set-Location | New-Item -Name 2.txt -ItemType file
+PS Microsoft.PowerShell.Core\FileSystem::C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\02_PIPELINES\1\2\2> cd ..
+PS Microsoft.PowerShell.Core\FileSystem::C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\02_PIPELINES\1\2> cd ..
+PS Microsoft.PowerShell.Core\FileSystem::C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\02_PIPELINES\1> cd ..
+PS Microsoft.PowerShell.Core\FileSystem::C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\02_PIPELINES> Get-ChildItem *.txt -Recu
+
+    Directory: C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\02_PIPELINES
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----       11/29/2022  12:25 PM              1 2.txt
+
+
+PS Microsoft.PowerShell.Core\FileSystem::C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\02_PIPELINES> ls | ForEach { $_.Name  |
+ New-Item -Name task.txt -Path $_ }
+
+
+    Directory: C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\02_PIPELINES\1
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----       11/29/2022  12:27 PM              1 task.txt
+
+
+    Directory: C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\02_PIPELINES\2
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----       11/29/2022  12:27 PM              1 task.txt
+New-Item : Could not find a part of the path 'C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\02_PIPELINES\2.txt\task.txt'.
+At line:1 char:27
++ ls | ForEach { $_.Name  | New-Item -Name task.txt -Path $_ }
++                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (C:\Users\jsyste...\2.txt\task.txt:String) [New-Item], DirectoryNotFoundException
+    + FullyQualifiedErrorId : NewItemIOError,Microsoft.PowerShell.Commands.NewItemCommand
+
+
+
+PS Microsoft.PowerShell.Core\FileSystem::C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell\02_PIPELINES> cd ..
+PS Microsoft.PowerShell.Core\FileSystem::C:\Users\jsystemuser1\JS_2022-11_AutomatyzacjaAdministracjiZWindowsPowershell> cd ..
+PS Microsoft.PowerShell.Core\FileSystem::C:\Users\jsystemuser1> Get-Process | ConvertTo-HTML
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>HTML TABLE</title>
+</head><body>
+<table>
+<colgroup><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/></colgroup>
+<tr><th>Name</th><th>Id</th><th>PriorityClass</th><th>FileVersion</th><th>HandleCount</th><th>WorkingSet</th><th>PagedMemorySize</th><th>PrivateMemorySize</th><th>VirtualMemorySize</th><th>TotalProcessorTime</th><th>SI</th><th>Handles</th><th>VM</th><th>WS</th><th>PM</th><th>NPM</th><th>Path</th><th>Company</th><th>CPU</th><th>ProductVersion</th><th>Description</th><th>Product</th><th>__NounName</th><th>BasePriority</th><th>ExitCode</th><th>HasExited</th><th>ExitTime</th><th>Handle</th><th>SafeHandle</th><th>MachineName</th><th>MainWindowHandle</th><th>MainWindowTitle</th><th>MainModule</th><th>MaxWorkingSet</th><th>MinWorkingSet</th><th>Modules</th><th>NonpagedSystemMemorySize</th><th>NonpagedSystemMemorySize64</th><th>PagedMemorySize64</th><th>PagedSystemMemorySize</th><th>PagedSystemMemorySize64</th><th>PeakPagedMemorySize</th><th>PeakPagedMemorySize64</th><th>PeakWorkingSet</th><th>PeakWorkingSet64</th><th>PeakVirtualMemorySize</th><th>PeakVirtualMemorySize64</th><th>PriorityBoostEnabled</th><th>PrivateMemorySize64</th><th>PrivilegedProcessorTime</th><th>ProcessName</th><th>ProcessorAffinity</th><th>Responding</th><th>SessionId</th><th>StartInfo</th><th>StartTime</th><th>SynchronizingObject</th><th>Threads</th><th>UserProcessorTime</th><th>VirtualMemorySize64</th><th>EnableRaisingEvents</th><th>StandardInput</th><th>StandardOutput</th><th>StandardError</th><th>WorkingSet64</th><th>Site</th><th>Container</th></tr>
+<tr><td>Code</td><td>4392</td><td>Normal</td><td>1.73.1</td><td>310</td><td>4349952</td><td>12558336</td><td>12558336</td><td>386080768</td><td>00:00:00.1250000</td><td>2</td><td>310</td><td>2220884172800</td><td>4349952</td><td>12558336</td><td>16624</td><td>C:\Users\jsystemuser1\AppData\Local\Programs\Microsoft VS Code\Code.exe</td><td>Microsoft Corporation</td><td>0.125</td><td>1.73.1</td><td>Visual Studio Code</td><td>Visual Studio Code</td><td>Process</td><td>8</td><td></td><td>False</td><td></td><td>4816</td><td>Microsoft.Win32.SafeHandles.SafeProcessHandle</td><td>.</td><td>0</td><td></td><td>System.Diagnostics.ProcessModule (Code.exe)</td><td>1413120</td><td>204800</td><td>System.Diagnostics.ProcessModuleCollection</td><td>16624</td><td>16624</td><td>12558336</td><td>556384</td><td>556384</td><td>12976128</td><td>12976128</td><td>24346624</td><td>24346624</td><td>457383936</td><td>2220955475968</td><td>True</td><td>12558336</td><td>00:00:00.0937500</td><td>Code</td><td>3</td><td>True</td><td>2</td><td>System.Diagnostics.ProcessStartInfo</td><td>11/29/2022 7:54:43 AM</td><td></td><td>System.Diagnostics.ProcessThreadCollection</td><td>00:00:00.0312500</td><td>2220884172800</td><td>False</td><td></td><td></td><td></td><td>4349952</td><td></td><td></td></tr>
+<tr><td>Code</td><td>5132</td><td>Normal</td><td>1.73.1</td><td>228</td><td>4419584</td><td>24231936</td><td>24231936</td><td>556154880</td><td>00:00:00.3593750</td><td>2</td><td>228</td><td>2225349214208</td><td>4419584</td><td>24231936</td><td>14728</td><td>C:\Users\jsystemuser1\AppData\Local\Programs\Microsoft VS Code\Code.exe</td><td>Microsoft Corporation</td><td>0.359375</td><td>1.73.1</td><td>Visual Studio Code</td><td>Visual Studio Code</td><td>Process</td><td>8</td><td></td><td>False</td><td></td><td>3668</td><td>Microsoft.Win32.SafeHandles.SafeProcessHandle</td><td>.</td><td>0</td><td></td><td>System.Diagnostics.ProcessModule (Code.exe)</td><td>1413120</td><td>204800</td><td>System.Diagnostics.ProcessModuleCollection</td><td>14728</td><td>14728</td><td>24231936</td><td>542360</td><td>542360</td><td>28139520</td><td>28139520</td><td>43368448</td><td>43368448</td><td>653115392</td><td>2225446174720</td><td>True</td><td>24231936</td><td>00:00:00.1093750</td><td>Code</td><td>3</td><td>True</td><td>2</td><td>System.Diagnostics.ProcessStartInfo</td><td>11/29/2022 7:54:52 AM</td><td></td><td>System.Diagnostics.ProcessThreadCollection</td><td>00:00:00.2500000</td><td>2225349214208</td><td>False</td><td></td><td></td><td></td><td>4419584</td><td></td><td></td></tr>
+<tr><td>Code</td><td>5624</td><td>Normal</td><td>1.73.1</td><td>257</td><td>4268032</td><td>11104256</td><td>11104256</td><td>351096832</td><td>00:00:00.0625000</td><td>2</td><td>257</td><td>2220849188864</td><td>4268032</td><td>11104256</td><td>13368</td><td>C:\Users\jsystemuser1\AppData\Local\Programs\Microsoft VS Code\Code.exe</td><td>Microsoft Corporation</td><td>0.0625</td><td>1.73.1</td><td>Visual Studio Code</td><td>Visual Studio Code</td><td>Process</td><td>8</td><td></td><td>False</td><td></td><td>3720</td><td>Microsoft.Win32.SafeHandles.SafeProcessHandle</td><td>.</td><td>0</td><td></td><td>System.Diagnostics.ProcessModule (Code.exe)</td><td>1413120</td><td>204800</td><td>System.Diagnostics.ProcessModuleCollection</td><td>13368</td><td>13368</td><td>11104256</td><td>516584</td><td>516584</td><td>11227136</td><td>11227136</td><td>14573568</td><td>14573568</td><td>367874048</td><td>2220865966080</td><td>True</td><td>11104256</td><td>00:00:00.0468750</td><td>Code</td><td>3</td><td>True</td><td>2</td><td>System.Diagnostics.ProcessStartInfo</td><td>11/29/2022 7:54:42 AM</td><td></td><td>System.Diagnostics.ProcessThreadCollection</td><td>00:00:00.0156250</td><td>2220849188864</td><td>False</td><td></td><td></td><td></td><td>4268032</td><td></td><td></td></tr>
+<tr><td>Code</td><td>6148</td><td>Normal</td><td>1.73.1</td><td>250</td><td>4407296</td><td>33906688</td><td>33906688</td><td>548720640</td><td>00:00:00.7343750</td><td>2</td><td>250</td><td>2225341779968</td><td>4407296</td><td>33906688</td><td>16272</td><td>C:\Users\jsystemuser1\AppData\Local\Programs\Microsoft VS Code\Code.exe</td><td>Microsoft Corporation</td><td>0.734375</td><td>1.73.1</td><td>Visual Studio Code</td><td>Visual Studio Code</td><td>Process</td><td>8</td><td></td><td>False</td><td></td><td>3564</td><td>Microsoft.Win32.SafeHandles.SafeProcessHandle</td><td>.</td><td>0</td><td></td><td>System.Diagnostics.ProcessModule (Code.exe)</td><td>1413120</td><td>204800</td><td>System.Diagnostics.ProcessModuleCollection</td><td>16272</td><td>16272</td><td>33906688</td><td>552304</td><td>552304</td><td>43556864</td><td>43556864</td><td>52080640</td><td>52080640</td><td>653115392</td><td>2225446174720</td><td>True</td><td>33906688</td><td>00:00:00.1562500</td><td>Code</td><td>3</td><td>True</td><td>2</td><td>System.Diagnostics.ProcessStartInfo</td><td>11/29/2022 7:54:50 AM</td><td></td><td>System.Diagnostics.ProcessThreadCollection</td><td>00:00:00.5781250</td><td>2225341779968</td><td>False</td><td></td><td></td><td></td><td>4407296</td><td></td><td></td></tr>
+<tr><td>Code</td><td>6172</td><td>Normal</td><td>1.73.1</td><td>287</td><td>5038080</td><td>47865856</td><td>47865856</td><td>556965888</td><td>00:00:02.4218750</td><td>2</td><td>287</td><td>2225350025216</td><td>5038080</td><td>47865856</td><td>15816</td><td>C:\Users\jsystemuser1\AppData\Local\Programs\Microsoft VS Code\Code.exe</td><td>Microsoft Corporation</td><td>2.421875</td><td>1.73.1</td><td>Visual Studio Code</td><td>Visual Studio Code</td><td>Process</td><td>8</td><td></td><td>False</td><td></td><td>2852</td><td>Microsoft.Win32.SafeHandles.SafeProcessHandle</td><td>.</td><td>0</td><td></td><td>System.Diagnostics.ProcessModule (Code.exe)</td><td>1413120</td><td>204800</td><td>System.Diagnostics.ProcessModuleCollection</td><td>15816</td><td>15816</td><td>47865856</td><td>551528</td><td>551528</td><td>72450048</td><td>72450048</td><td>84996096</td><td>84996096</td><td>653115392</td><td>2225446174720</td><td>True</td><td>47865856</td><td>00:00:00.5625000</td><td>Code</td><td>3</td><td>True</td><td>2</td><td>System.Diagnostics.ProcessStartInfo</td><td>11/29/2022 7:54:48 AM</td><td></td><td>System.Diagnostics.ProcessThreadCollection</td><td>00:00:01.8593750</td><td>2225350025216</td><td>False</td><td></td><td></td><td></td><td>5038080</td><td></td><td></td></tr>
+<tr><td>Code</td><td>6508</td><td>Normal</td><td>1.73.1</td><td>395</td><td>11739136</td><td>52768768</td><td>52768768</td><td>618360832</td><td>00:00:05.4843750</td><td>2</td><td>395</td><td>2234001354752</td><td>11739136</td><td>52768768</td><td>18256</td><td>C:\Users\jsystemuser1\AppData\Local\Programs\Microsoft VS Code\Code.exe</td><td>Microsoft Corporation</td><td>5.484375</td><td>1.73.1</td><td>Visual Studio Code</td><td>Visual Studio Code</td><td>Process</td><td>8</td><td></td><td>False</td><td></td><td>4140</td><td>Microsoft.Win32.SafeHandles.SafeProcessHandle</td><td>.</td><td>0</td><td></td><td>System.Diagnostics.ProcessModule (Code.exe)</td><td>1413120</td><td>204800</td><td>System.Diagnostics.ProcessModuleCollection</td><td>18256</td><td>18256</td><td>52768768</td><td>560896</td><td>560896</td><td>120856576</td><td>120856576</td><td>152731648</td><td>152731648</td><td>659677184</td><td>2234042671104</td><td>True</td><td>52768768</td><td>00:00:01.8281250</td><td>Code</td><td>3</td><td>True</td><td>2</td><td>System.Diagnostics.ProcessStartInfo</td><td>11/29/2022 7:54:49 AM</td><td></td><td>System.Diagnostics.ProcessThreadCollection</td><td>00:00:03.6562500</td><td>2234001354752</td><td>False</td><td></td><td></td><td></td><td>11739136</td><td></td><td></td></tr>
+<tr><td>Code</td><td>6760</td><td>Normal</td><td>1.73.1</td><td>906</td><td>8024064</td><td>37466112</td><td>37466112</td><td>800112640</td><td>00:00:04.5468750</td><td>2</td><td>906</td><td>2225593171968</td><td>8024064</td><td>37466112</td><td>38160</td><td>C:\Users\jsystemuser1\AppData\Local\Programs\Microsoft VS Code\Code.exe</td><td>Microsoft Corporation</td><td>4.546875</td><td>1.73.1</td><td>Visual Studio Code</td><td>Visual Studio Code</td><td>Process</td><td>8</td><td></td><td>False</td><td></td><td>5832</td><td>Microsoft.Win32.SafeHandles.SafeProcessHandle</td><td>.</td><td>131642</td><td>terminal_output.txt - Untitled (Workspace) - Visual Studio Code [Administrator]</td><td>System.Diagnostics.ProcessModule (Code.exe)</td><td>1413120</td><td>204800</td><td>System.Diagnostics.ProcessModuleCollection</td><td>38160</td><td>38160</td><td>37466112</td><td>802272</td><td>802272</td><td>61460480</td><td>61460480</td><td>109891584</td><td>109891584</td><td>924897280</td><td>2225717956608</td><td>True</td><td>37466112</td><td>00:00:02.5625000</td><td>Code</td><td>3</td><td>True</td><td>2</td><td>System.Diagnostics.ProcessStartInfo</td><td>11/29/2022 7:54:38 AM</td><td></td><td>System.Diagnostics.ProcessThreadCollection</td><td>00:00:01.9843750</td><td>2225593171968</td><td>False</td><td></td><td></td><td></td><td>8024064</td><td></td><td></td></tr>
+<tr><td>Code</td><td>6992</td><td>AboveNormal</td><td>1.73.1</td><td>371</td><td>4370432</td><td>145145856</td><td>145145856</td><td>629731328</td><td>00:00:12.3750000</td><td>2</td><td>371</td><td>2221127823360</td><td>4370432</td><td>145145856</td><td>36352</td><td>C:\Users\jsystemuser1\AppData\Local\Programs\Microsoft VS Code\Code.exe</td><td>Microsoft Corporation</td><td>12.375</td><td>1.73.1</td><td>Visual Studio Code</td><td>Visual Studio Code</td><td>Process</td><td>10</td><td></td><td>False</td><td></td><td>3212</td><td>Microsoft.Win32.SafeHandles.SafeProcessHandle</td><td>.</td><td>0</td><td></td><td>System.Diagnostics.ProcessModule (Code.exe)</td><td>1413120</td><td>204800</td><td>System.Diagnostics.ProcessModuleCollection</td><td>36352</td><td>36352</td><td>145145856</td><td>739080</td><td>739080</td><td>153235456</td><td>153235456</td><td>129511424</td><td>129511424</td><td>653336576</td><td>2221151428608</td><td>True</td><td>145145856</td><td>00:00:03.3125000</td><td>Code</td><td>3</td><td>True</td><td>2</td><td>System.Diagnostics.ProcessStartInfo</td><td>11/29/2022 7:54:42 AM</td><td></td><td>System.Diagnostics.ProcessThreadCollection</td><td>00:00:09.0625000</td><td>2221127823360</td><td>False</td><td></td><td></td><td></td><td>4370432</td><td></td><td></td></tr>
+<tr><td>Code</td><td>7076</td><td>Normal</td><td>1.73.1</td><td>439</td><td>17682432</td><td>141176832</td><td>141176832</td><td>-1435910144</td><td>00:00:28.1718750</td><td>2</td><td>439</td><td>2240537018368</td><td>17682432</td><td>141176832</td><td>35672</td><td>C:\Users\jsystemuser1\AppData\Local\Programs\Microsoft VS Code\Code.exe</td><td>Microsoft Corporation</td><td>28.171875</td><td>1.73.1</td><td>Visual Studio Code</td><td>Visual Studio Code</td><td>Process</td><td>8</td><td></td><td>False</td><td></td><td>3080</td><td>Microsoft.Win32.SafeHandles.SafeProcessHandle</td><td>.</td><td>0</td><td></td><td>System.Diagnostics.ProcessModule (Code.exe)</td><td>1413120</td><td>204800</td><td>System.Diagnostics.ProcessModuleCollection</td><td>35672</td><td>35672</td><td>141176832</td><td>801064</td><td>801064</td><td>212725760</td><td>212725760</td><td>286633984</td><td>286633984</td><td>-1381912576</td><td>2244885983232</td><td>True</td><td>141176832</td><td>00:00:04.8437500</td><td>Code</td><td>3</td><td>True</td><td>2</td><td>System.Diagnostics.ProcessStartInfo</td><td>11/29/2022 7:54:44 AM</td><td></td><td>System.Diagnostics.ProcessThreadCollection</td><td>00:00:23.3281250</td><td>2240537018368</td><td>False</td><td></td><td></td><td></td><td>17682432</td><td></td><td></td></tr>
+<tr><td>conhost</td><td>1824</td><td>Normal</td><td>10.0.17763.1 (WinBuild.160101.0800)</td><td>257</td><td>12042240</td><td>6074368</td><td>6074368</td><td>185688064</td><td>00:00:36.3750000</td><td>2</td><td>257</td><td>2203503910912</td><td>12042240</td><td>6074368</td><td>13584</td><td>C:\Windows\system32\conhost.exe</td><td>Microsoft Corporation</td><td>36.375</td><td>10.0.17763.1</td><td>Console Window Host</td><td>Microsoft&#174; Windows&#174; Operating System</td><td>Process</td><td>8</td><td></td><td>False</td><td></td><td>3028</td><td>Microsoft.Win32.SafeHandles.SafeProcessHandle</td><td>.</td><td>0</td><td></td><td>System.Diagnostics.ProcessModule (conhost.exe)</td><td>1413120</td><td>204800</td><td>System.Diagnostics.ProcessModuleCollection</td><td>13584</td><td>13584</td><td>6074368</td><td>273408</td><td>273408</td><td>7630848</td><td>7630848</td><td>34406400</td><td>34406400</td><td>203468800</td><td>2203521691648</td><td>True</td><td>6074368</td><td>00:00:29.8593750</td><td>conhost</td><td>3</td><td>True</td><td>2</td><td>System.Diagnostics.ProcessStartInfo</td><td>11/29/2022 8:32:46 AM</td><td></td><td>System.Diagnostics.ProcessThreadCollection</td><td>00:00:06.5156250</td><td>2203503910912</td><td>False</td><td></td><td></td><td></td><td>12042240</td><td></td><td></td></tr>
+<tr><td>conhost</td><td>4476</td><td>Normal</td><td>10.0.17763.1 (WinBuild.160101.0800)</td><td>128</td><td>11767808</td><td>6590464</td><td>6590464</td><td>105816064</td><td>00:00:00.0156250</td><td>0</td><td>128</td><td>2203424038912</td><td>11767808</td><td>6590464</td><td>7464</td><td>C:\Windows\system32\conhost.exe</td><td>Microsoft Corporation</td><td>0.015625</td><td>10.0.17763.1</td><td>Console Window Host</td><td>Microsoft&#174; Windows&#174; Operating System</td><td>Process</td><td>8</td><td></td><td>False</td><td></td><td>5484</td><td>Microsoft.Win32.SafeHandles.SafeProcessHandle</td><td>.</td><td>0</td><td></td><td>System.Diagnostics.ProcessModule (conhost.exe)</td><td>104857600</td><td>13107200</td><td>System.Diagnostics.ProcessModuleCollection</td><td>7464</td><td>7464</td><td>6590464</td><td>126808</td><td>126808</td><td>6647808</td><td>6647808</td><td>11800576</td><td>11800576</td><td>106864640</td><td>2203425087488</td><td>True</td><td>6590464</td><td>00:00:00.0156250</td><td>conhost</td><td>3</td><td>True</td><td>0</td><td>System.Diagnostics.ProcessStartInfo</td><td>11/29/2022 7:23:22 AM</td><td></td><td>System.Diagnostics.ProcessThreadCollection</td><td>00:00:00</td><td>2203424038912</td><td>False</td><td></td><td></td><td></td><td>11767808</td><td></td><td></td></tr>
+<tr><td>conhost</td><td>6468</td><td>Normal</td><td>10.0.17763.1 (WinBuild.160101.0800)</td><td>151</td><td>4288512</td><td>6074368</td><td>6074368</td><td>155328512</td><td>00:00:00.7187500</td><td>2</td><td>151</td><td>2203473551360</td><td>4288512</td><td>6074368</td><td>10456</td><td>C:\Windows\system32\conhost.exe</td><td>Microsoft Corporation</td><td>0.71875</td><td>10.0.17763.1</td><td>Console Window Host</td><td>Microsoft&#174; Windows&#174; Operating System</td><td>Process</td><td>8</td><td></td><td>False</td><td></td><td>5472</td><td>Microsoft.Win32.SafeHandles.SafeProcessHandle</td><td>.</td><td>0</td><td></td><td>System.Diagnostics.ProcessModule (conhost.exe)</td><td>1413120</td><td>204800</td><td>System.Diagnostics.ProcessModuleCollection</td><td>10456</td><td>10456</td><td>6074368</td><td>226592</td><td>226592</td><td>9269248</td><td>9269248</td><td>16932864</td><td>16932864</td><td>159334400</td><td>2203477557248</td><td>True</td><td>6074368</td><td>00:00:00.2031250</td><td>conhost</td><td>3</td><td>True</td><td>2</td><td>System.Diagnostics.ProcessStartInfo</td><td>11/29/2022 7:54:55 AM</td><td></td><td>System.Diagnostics.ProcessThreadCollection</td><td>00:00:00.5156250</td><td>2203473551360</td><td>False</td><td></td><td></td><td></td><td>4288512</td><td></td><td></td></tr>
+<tr><td>csrss</td><td>500</td><td></td><td></td><td>498</td><td>5636096</td><td>2367488</td><td>2367488</td><td>91676672</td><td>00:00:00.4843750</td><td>0</td><td>498</td><td>2203409899520</td><td>5636096</td><td>2367488</td><td>19640</td><td></td><td></td><td>0.484375</td><td></td><td></td><td></td><td>Process</td><td>13</td><td></td><td></td><td></td><td></td><td></td><td>.</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>19640</td><td>19640</td><td>2367488</td><td>220976</td><td>220976</td><td>2367488</td><td>2367488</td><td>5722112</td><td>5722112</td><td>93184000</td><td>2203411406848</td><td></td><td>2367488</td><td>00:00:00.2968750</td><td>csrss</td><td></td><td>True</td><td>0</td><td>System.Diagnostics.ProcessStartInfo</td><td>11/29/2022 7:22:42 AM</td><td></td><td>System.Diagnostics.ProcessThreadCollection</td><td>00:00:00.1875000</td><td>2203409899520</td><td>False</td><td></td><td></td><td></td><td>5636096</td><td></td><td></td></tr>
+<tr><td>csrss</td><td>584</td><td></td><td></td><td>165</td><td>4890624</td><td>1740800</td><td>1740800</td><td>83943424</td><td>00:00:00.0781250</td><td>1</td><td>165</td><td>2203402166272</td><td>4890624</td><td>1740800</td><td>10008</td><td></td><td></td><td>0.078125</td><td></td><td></td><td></td><td>Process</td><td>13</td><td></td><td></td><td></td><td></td><td></td><td>.</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>10008</td><td>10008</td><td>1740800</td><td>113176</td><td>113176</td><td>1978368</td><td>1978368</td><td>5242880</td><td>5242880</td><td>88137728</td><td>2203406360576</td><td></td><td>1740800</td><td>00:00:00.0781250</td><td>csrss</td><td></td><td>True</td><td>1</td><td>System.Diagnostics.ProcessStartInfo</td><td>11/29/2022 7:22:42 AM</td><td></td><td>System.Diagnostics.ProcessThreadCollection</td><td>00:00:00</td><td>2203402166272</td><td>False</td><td></td><td></td><td></td><td>4890624</td><td></td><td></td></tr>
+<tr><td>csrss</td><td>2636</td><td></td><td></td><td>358</td><td>14094336</td><td>2433024</td><td>2433024</td><td>135909376</td><td>00:00:09.2968750</td><td>2</td><td>358</td><td>2203454132224</td><td>14094336</td><td>2433024</td><td>15656</td><td></td><td></td><td>9.296875</td><td></td><td></td><td></td><td>Process</td><td>13</td><td></td><td></td><td></td><td></td><td></td><td>.</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>15656</td><td>15656</td><td>2433024</td><td>258864</td><td>258864</td><td>2433024</td><td>2433024</td><td>14098432</td><td>14098432</td><td>140562432</td><td>2203458785280</td><td></td><td>2433024</td><td>00:00:09.2187500</td><td>csrss</td><td></td><td>True</td><td>2</td><td>System.Diagnostics.ProcessStartInfo</td><td>11/29/2022 7:39:19 AM</td><td></td><td>System.Diagnostics.ProcessThreadCollection</td><td>00:00:00.0781250</td><td>2203454132224</td><td>False</td><td></td><td></td><td></td><td>14094336</td><td></td><td></td></tr>
+<tr><td>ctfmon</td><td>4044</td><td>High</td><td>10.0.17763.1 (WinBuild.160101.0800)</td><td>387</td><td>15712256</td><td>3715072</td><td>3715072</td><td>138342400</td><td>00:00:00.5156250</td><td>2</td><td>387</td><td>2203456565248</td><td>15712256</td><td>3715072</td><td>15544</td><td>C:\Windows\system32\ctfmon.exe</td><td>Microsoft Corporation</td><td>0.515625</td><td>10.0.17763.1</td><td>CTF Loader</td><td>Microsoft&#174; Windows&#174; Operating System</td><td>Process</td><td>13</td><td></td><td>False</td><td></td><td>2440</td><td>Microsoft.Win32.SafeHandles.SafeProcessHandle</td><td>.</td><td>0</td><td></td><td>System.Diagnostics.ProcessModule (ctfmon.exe)</td><td>1413120</td><td>204800</td><td>System.Diagnostics.ProcessModuleCollection</td><td>15544</td><td>15544</td><td>3715072</td><td>197464</td><td>197464</td><td>3715072</td><td>3715072</td><td>15716352</td><td>15716352</td><td>139366400</td><td>2203457589248</td><td>True</td><td>3715072</td><td>00:00:00.3750000</td><td>ctfmon</td><td>3</td><td>True</td><td>2</td><td>System.Diagnostics.ProcessStartInfo</td><td>11/29/2022 7:39:23 AM</td><td></td><td>System.Diagnostics.ProcessThreadCollection</td><td>00:00:00.1406250</td><td>2203456565248</td><td>False</td><td></td><td></td><td></td><td>15712256</td><td></td><td></td></tr>
+<tr><td>dfsrs</td><td>3304</td><td>Normal</td><td>10.0.17763.1 (WinBuild.160101.0800)</td><td>399</td><td>23777280</td><td>16777216</td><td>16777216</td><td>204701696</td><td>00:00:02.5781250</td><td>0</td><td>399</td><td>2203522924544</td><td>23777280</td><td>16777216</td><td>33072</td><td>C:\Windows\system32\DFSRs.exe</td><td>Microsoft Corporation</td><td>2.578125</td><td>10.0.17763.1</td><td>Distributed File System Replication</td><td>Microsoft&#174; Windows&#174; Operating System</td><td>Process</td><td>8</td><td></td><td>False</td><td></td><td>5840</td><td>Microsoft.Win32.SafeHandles.SafeProcessHandle</td><td>.</td><td>0</td><td></td><td>System.Diagnostics.ProcessModule (DFSRs.exe)</td><td>1413120</td><td>204800</td><td>System.Diagnostics.ProcessModuleCollection</td><td>33072</td><td>33072</td><td>16777216</td><td>155080</td><td>155080</td><td>19398656</td><td>19398656</td><td>24514560</td><td>24514560</td><td>207208448</td><td>2203525431296</td><td>True</td><td>16777216</td><td>00:00:01.3281250</td><td>dfsrs</td><td>3</td><td>True</td><td>0</td><td>System.Diagnostics.ProcessStartInfo</td><td>11/29/2022 7:23:02 AM</td><td></td><td>System.Diagnostics.ProcessThreadCollection</td><td>00:00:01.2500000</td><td>2203522924544</td><td>False</td><td></td><td></td><td></td><td>23777280</td><td></td><td></td></tr>
+<tr><td>dfssvc</td><td>3564</td><td>Normal</td><td>10.0.17763.1 (WinBuild.160101.0800)</td><td>183</td><td>7806976</td><td>2338816</td><td>2338816</td><td>71929856</td><td>00:00:00.0312500</td><td>0</td><td>183</td><td>2203390152704</td><td>7806976</td><td>2338816</td><td>11152</td><td>C:\Windows\system32\dfssvc.exe</td><td>Microsoft Corporation</td><td>0.03125</td><td>10.0.17763.1</td><td>Windows NT Distributed File System Service</td><td>Microsoft&#174; Windows&#174; Operating System</td><td>Process</td><td>8</td><td></td><td>False</td><td></td><td>4744</td><td>Microsoft.Win32.SafeHandles.SafeProcessHandle</td><td>.</td><td>0</td><td></td><td>System.Diagnostics.ProcessModule (dfssvc.exe)</td><td>1413120</td><td>204800</td><td>System.Diagnostics.ProcessModuleCollection</td><td>11152</td><td>11152</td><td>2338816</td><td>62624</td><td>62624</td><td>2527232</td><td>2527232</td><td>7843840</td><td>7843840</td><td>73859072</td><td>2203392081920</td><td>True</td><td>2338816</td><td>00:00:00.0156250</td><td>dfssvc</td><td>3</td><td>True</td><td>0</td><td>System.Diagnostics.ProcessStartInfo</td><td>11/29/2022 7:23:02 AM</td><td></td><td>System.Diagnostics.ProcessThreadCollection</td><td>00:00:00.0156250</td><td>2203390152704</td><td>False</td><td></td><td></td><td></td><td>7806976</td><td></td><td></td></tr>
+<tr><td>dllhost</td><td>5288</td><td>Normal</td><td>10.0.17763.1 (WinBuild.160101.0800)</td><td>220</td><td>12279808</td><td>3448832</td><td>3448832</td><td>149852160</td><td>00:00:00.2343750</td><td>2</td><td>220</td><td>2203468075008</td><td>12279808</td><td>3448832</td><td>16312</td><td>C:\Windows\system32\DllHost.exe</td><td>Microsoft Corporation</td><td>0.234375</td><td>10.0.17763.1</td><td>COM Surrogate</td><td>Microsoft&#174; Windows&#174; Operating System</td><td>Process</td><td>8</td><td></td><td>False</td><td></td><td>3932</td><td>Microsoft.Win32.SafeHandles.SafeProcessHandle</td><td>.</td><td>0</td><td></td><td>System.Diagnostics.ProcessModule (DllHost.exe)</td><td>1413120</td><td>204800</td><td>System.Diagnostics.ProcessModuleCollection</td><td>16312</td><td>16312</td><td>3448832</td><td>143976</td><td>143976</td><td>5169152</td><td>5169152</td><td>13135872</td><td>13135872</td><td>162017280</td><td>2203480240128</td><td>True</td><td>3448832</td><td>00:00:00.1718750</td><td>dllhost</td><td>3</td><td>True</td><td>2</td><td>System.Diagnostics.ProcessStartInfo</td><td>11/29/2022 7:54:36 AM</td><td></td><td>System.Diagnostics.ProcessThreadCollection</td><td>00:00:00.0625000</td><td>2203468075008</td><td>False</td><td></td><td></td><td></td><td>12279808</td><td></td><td></td></tr>
+<tr><td>dns</td><td>3336</td><td>Normal</td><td>10.0.17763.3232 (WinBuild.160101.0800)</td><td>10402</td><td>131035136</td><td>132775936</td><td>132775936</td><td>215789568</td><td>00:00:00.5312500</td><td>0</td><td>10402</td><td>2203534012416</td><td>131035136</td><td>132775936</td><td>15083696</td><td>C:\Windows\system32\dns.exe</td><td>Microsoft Corporation</td><td>0.53125</td><td>10.0.17763.3232</td><td>Domain Name System (DNS) Server</td><td>Microsoft&#174; Windows&#174; Operating System</td><td>Process</td><td>8</td><td></td><td>False</td><td></td><td>4568</td><td>Microsoft.Win32.SafeHandles.SafeProcessHandle</td><td>.</td><td>0</td><td></td><td>System.Diagnostics.ProcessModule (dns.exe)</td><td>1413120</td><td>204800</td><td>System.Diagnostics.ProcessModuleCollection</td><td>15083696</td><td>15083696</td><td>132775936</td><td>1287088</td><td>1287088</td><td>134373376</td><td>134373376</td><td>131194880</td><td>131194880</td><td>218923008</td><td>2203537145856</td><td>True</td><td>132775936</td><td>00:00:00.3906250</td><td>dns</td><td>3</td><td>True</td><td>0</td><td>System.Diagnostics.ProcessStartInfo</td><td>11/29/2022 7:23:02 AM</td><td></td><td>System.Diagnostics.ProcessThreadCollection</td><td>00:00:00.1406250</td><td>2203534012416</td><td>False</td><td></td><td></td><td></td><td>131035136</td><td></td><td></td></tr>
+<tr><td>dwm</td><td>852</td><td>High</td><td>10.0.17763.1 (WinBuild.160101.0800)</td><td>538</td><td>39809024</td><td>16789504</td><td>16789504</td><td>213250048</td><td>00:00:00.1875000</td><td>1</td><td>538</td><td>2203531472896</td><td>39809024</td><td>16789504</td><td>22280</td><td>C:\Windows\system32\dwm.exe</td><td>Microsoft Corporation</td><td>0.1875</td><td>10.0.17763.1</td><td>Desktop Window Manager</td><td>Microsoft&#174; Windows&#174; Operating System</td><td>Process</td><td>13</td><td></td><td>False</td><td></td><td>3124</td><td>Microsoft.Win32.SafeHandles.SafeProcessHandle</td><td>.</td><td>0</td><td></td><td>System.Diagnostics.ProcessModule (dwm.exe)</td><td>1413120</td><td>204800</td><td>System.Diagnostics.ProcessModuleCollection</td><td>22280</td><td>22280</td><td>16789504</td><td>313408</td><td>313408</td><td>23179264</td><td>23179264</td><td>39813120</td><td>39813120</td><td>215941120</td><td>2203534163968</td><td>True</td><td>16789504</td><td>00:00:00.1562500</td><td>dwm</td><td>3</td><td>True</td><td>1</td><td>System.Diagnostics.ProcessStartInfo</td><td>11/29/2022 7:22:45 AM</td><td></td><td>System.Diagnostics.ProcessThreadCollection</td><td>00:00:00.0312500</td><td>2203531472896</td><td>False</td><td></td><td></td><td></td><td>39809024</td><td></td><td></td></tr>
+<tr><td>dwm</td><td>1460</td><td>High</td><td>10.0.17763.1 (WinBuild.160101.0800)</td><td>622</td><td>97722368</td><td>22687744</td><td>22687744</td><td>301895680</td><td>00:00:16.2031250</td><td>2</td><td>622</td><td>2203620118528</td><td>97722368</td><td>22687744</td><td>32072</td><td>C:\Windows\system32\dwm.exe</td><td>Microsoft Corporation</td><td>16.203125</td><td>10.0.17763.1</td><td>Desktop Window Manager</td><td>Microsoft&#174; Windows&#174; Operating System</td><td>Process</td><td>13</td><td></td><td>False</td><td></td><td>1968</td><td>Microsoft.Win32.SafeHandles.SafeProcessHandle</td><td>.</td><td>0</td><td></td><td>System.Diagnostics.ProcessModule (dwm.exe)</td><td>1413120</td><td>204800</td><td>System.Diagnostics.ProcessModuleCollection</td><td>32072</td><td>32072</td><td>22687744</td><td>543160</td><td>543160</td><td>29020160</td><td>29020160</td><td>111771648</td><td>111771648</td><td>315396096</td><td>2203633618944</td><td>True</td><td>22687744</td><td>00:00:07.8281250</td><td>dwm</td><td>3</td><td>True</td><td>2</td><td>System.Diagnostics.ProcessStartInfo</td><td>11/29/2022 7:39:20 AM</td><td></td><td>System.Diagnostics.ProcessThreadCollection</td><td>00:00:08.3750000</td><td>2203620118528</td><td>False</td><td></td><td></td><td></td><td>97722368</td><td></td><td></td></tr>
+<tr><td>explorer</td><td>4740</td><td>Normal</td><td>10.0.17763.1 (WinBuild.160101.0800)</td><td>1817</td><td>19386368</td><td>36691968</td><td>36691968</td><td>522686464</td><td>00:00:09.0312500</td><td>2</td><td>1817</td><td>2203840909312</td><td>19386368</td><td>36691968</td><td>88992</td><td>C:\Windows\Explorer.EXE</td><td>Microsoft Corporation</td><td>9.03125</td><td>10.0.17763.1</td><td>Windows Explorer</td><td>Microsoft&#174; Windows&#174; Operating System</td><td>Process</td><td>8</td><td></td><td>False</td><td></td><td>4636</td><td>Microsoft.Win32.SafeHandles.SafeProcessHandle</td><td>.</td><td>131102</td><td></td><td>System.Diagnostics.ProcessModule (Explorer.EXE)</td><td>1413120</td><td>204800</td><td>System.Diagnostics.ProcessModuleCollection</td><td>88992</td><td>88992</td><td>36691968</td><td>904144</td><td>904144</td><td>40103936</td><td>40103936</td><td>81649664</td><td>81649664</td><td>676352000</td><td>2203994574848</td><td>True</td><td>36691968</td><td>00:00:05.7187500</td><td>explorer</td><td>3</td><td>True</td><td>2</td><td>System.Diagnostics.ProcessStartInfo</td><td>11/29/2022 7:39:24 AM</td><td></td><td>System.Diagnostics.ProcessThreadCollection</td><td>00:00:03.3125000</td><td>2203840909312</td><td>False</td><td></td><td></td><td></td><td>19386368</td><td></td><td></td></tr>
+<tr><td>fontdrvhost</td><td>2764</td><td>Normal</td><td>10.0.17763.3469 (WinBuild.160101.0800)</td><td>53</td><td>5124096</td><td>1855488</td><td>1855488</td><td>98697216</td><td>00:00:00.0937500</td><td>2</td><td>53</td><td>2203416920064</td><td>5124096</td><td>1855488</td><td>6928</td><td>C:\Windows\system32\fontdrvhost.exe</td><td>Microsoft Corporation</td><td>0.09375</td><td>10.0.17763.3469</td><td>Usermode Font Driver Host</td><td>Microsoft&#174; Windows&#174; Operating System</td><td>Process</td><td>8</td><td></td><td>False</td><td></td><td>4236</td><td>Microsoft.Win32.SafeHandles.SafeProcessHandle</td><td>.</td><td>0</td><td></td><td>System.Diagnostics.ProcessModule (fontdrvhost.exe)</td><td>1413120</td><td>204800</td><td>System.Diagnostics.ProcessModuleCollection</td><td>6928</td><td>6928</td><td>1855488</td><td>96304</td><td>96304</td><td>1957888</td><td>1957888</td><td>5132288</td><td>5132288</td><td>98697216</td><td>2203416920064</td><td>True</td><td>1855488</td><td>00:00:00.0312500</td><td>fontdrvhost</td><td>3</td><td>True</td><td>2</td><td>System.Diagnostics.ProcessStartInfo</td><td>11/29/2022 7:39:20 AM</td><td></td><td>System.Diagnostics.ProcessThreadCollection</td><td>00:00:00.0625000</td><td>2203416920064</td><td>False</td><td></td><td></td><td></td><td>5124096</td><td></td><td></td></tr>
+<tr><td>fontdrvhost</td><td>3156</td><td>Normal</td><td>10.0.17763.3469 (WinBuild.160101.0800)</td><td>53</td><td>4526080</td><td>1413120</td><td>1413120</td><td>96038912</td><td>00:00:00.0468750</td><td>1</td><td>53</td><td>2203414261760</td><td>4526080</td><td>1413120</td><td>6112</td><td>C:\Windows\system32\fontdrvhost.exe</td><td>Microsoft Corporation</td><td>0.046875</td><td>10.0.17763.3469</td><td>Usermode Font Driver Host</td><td>Microsoft&#174; Windows&#174; Operating System</td><td>Process</td><td>8</td><td></td><td>False</td><td></td><td>2784</td><td>Microsoft.Win32.SafeHandles.SafeProcessHandle</td><td>.</td><td>0</td><td></td><td>System.Diagnostics.ProcessModule (fontdrvhost.exe)</td><td>1413120</td><td>204800</td><td>System.Diagnostics.ProcessModuleCollection</td><td>6112</td><td>6112</td><td>1413120</td><td>91112</td><td>91112</td><td>1527808</td><td>1527808</td><td>4534272</td><td>4534272</td><td>98136064</td><td>2203416358912</td><td>True</td><td>1413120</td><td>00:00:00.0312500</td><td>fontdrvhost</td><td>3</td><td>True</td><td>1</td><td>System.Diagnostics.ProcessStartInfo</td><td>11/29/2022 7:23:01 AM</td><td></td><td>System.Diagnostics.ProcessThreadCollection</td><td>00:00:00.0156250</td><td>2203414261760</td><td>False</td><td></td><td></td><td></td><td>4526080</td><td></td><td></td></tr>
+<tr><td>fontdrvhost</td><td>3164</td><td>Normal</td><td>10.0.17763.3469 (WinBuild.160101.0800)</td><td>53</td><td>4575232</td><td>1458176</td><td>1458176</td><td>96313344</td><td>00:00:00.0312500</td><td>0</td><td>53</td><td>2203414536192</td><td>4575232</td><td>1458176</td><td>6112</td><td>C:\Windows\system32\fontdrvhost.exe</td><td>Microsoft Corporation</td><td>0.03125</td><td>10.0.17763.3469</td><td>Usermode Font Driver Host</td><td>Microsoft&#174; Windows&#174; Operating System</td><td>Process</td><td>8</td><td></td><td>False</td><td></td><td>3220</td><td>Microsoft.Win32.SafeHandles.SafeProcessHandle</td><td>.</td><td>0</td><td></td><td>System.Diagnostics.ProcessModule (fontdrvhost.exe)</td><td>1413120</td><td>204800</td><td>System.Diagnostics.ProcessModuleCollection</td><td>6112</td><td>6112</td><td>1458176</td><td>91648</td><td>91648</td><td>1544192</td><td>1544192</td><td>4579328</td><td>4579328</td><td>97886208</td><td>2203416109056</td><td>True</td><td>1458176</td><td>00:00:00.0156250</td><td>fontdrvhost</td><td>3</td><td>True</td><td>0</td><td>System.Diagnostics.ProcessStartInfo</td><td>11/29/2022 7:23:01 AM</td><td></td><td>System.Diagnostics.ProcessThreadCollection</td><td>00:00:00.0156250</td><td>2203414536192</td><td>False</td><td></td><td></td><td></td><td>4575232</td><td></td><td></td></tr>
+<tr><td>Idle</td><td>0</td><td></td><td></td><td>0</td><td>8192</td><td>57344</td><td>57344</td><td>8192</td><td></td><td>0</td><td>0</td><td>8192</td><td>8192</td><td>57344</td><td>272</td><td></td><td></td><td></td><td></td><td></td><td></td><td>Process</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>.</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>272</td><td>272</td><td>57344</td><td>0</td><td>0</td><td>57344</td><td>57344</td><td>12288</td><td>12288</td><td>8192</td><td>8192</td><td></td><td>57344</td><td></td><td>Idle</td><td></td><td>True</td><td>0</td><td>System.Diagnostics.ProcessStartInfo</td><td></td><td></td><td>System.Diagnostics.ProcessThreadCollection</td><td></td><td>8192</td><td>False</td><td></td><td></td><td></td><td>8192</td><td></td><td></td></tr>
+<tr><td>ismserv</td><td>3396</td><td>Normal</td><td>10.0.17763.1 (WinBuild.160101.0800)</td><td>136</td><td>5918720</td><td>1908736</td><td>1908736</td><td>66920448</td><td>00:00:00.0156250</td><td>0</td><td>136</td><td>2203385143296</td><td>5918720</td><td>1908736</td><td>12424</td><td>C:\Windows\System32\ismserv.exe</td><td>Microsoft Corporation</td><td>0.015625</td><td>10.0.17763.1</td><td>Windows NT Intersite Messaging Service</td><td>Microsoft&#174; Windows&#174; Operating System</td><td>Process</td><td>8</td><td></td><td>False</td><td></td><td>3824</td><td>Microsoft.Win32.SafeHandles.SafeProcessHandle</td><td>.</td><td>0</td><td></td><td>System.Diagnostics.ProcessModule (ismserv.exe)</td><td>1413120</td><td>204800</td><td>System.Diagnostics.ProcessModuleCollection</td><td>12424</td><td>12424</td><td>1908736</td><td>49264</td><td>49264</td><td>2293760</td><td>2293760</td><td>5963776</td><td>5963776</td><td>72151040</td><td>2203390373888</td><td>True</td><td>1908736</td><td>00:00:00</td><td>ismserv</td><td>3</td><td>True</td><td>0</td><td>System.Diagnostics.ProcessStartInfo</td><td>11/29/2022 7:23:02 AM</td><td></td><td>System.Diagnostics.ProcessThreadCollection</td><td>00:00:00.0156250</td><td>2203385143296</td><td>False</td><td></td><td></td><td></td><td>5918720</td><td></td><td></td></tr>
+<tr><td>LogonUI</td><td>492</td><td>High</td><td>10.0.17763.1 (WinBuild.160101.0800)</td><td>478</td><td>45023232</td><td>11575296</td><td>11575296</td><td>324198400</td><td>00:00:00.3593750</td><td>1</td><td>478</td><td>2203642421248</td><td>45023232</td><td>11575296</td><td>26152</td><td>C:\Windows\system32\LogonUI.exe</td><td>Microsoft Corporation</td><td>0.359375</td><td>10.0.17763.1</td><td>Windows Logon User Interface Host</td><td>Microsoft&#174; Windows&#174; Operating System</td><td>Process</td><td>13</td><td></td><td>False</td><td></td><td>6000</td><td>Microsoft.Win32.SafeHandles.SafeProcessHandle</td><td>.</td><td>0</td><td></td><td>System.Diagnostics.ProcessModule (LogonUI.exe)</td><td>1413120</td><td>204800</td><td>System.Diagnostics.ProcessModuleCollection</td><td>26152</td><td>26152</td><td>11575296</td><td>505760</td><td>505760</td><td>18632704</td><td>18632704</td><td>49418240</td><td>49418240</td><td>329027584</td><td>2203647250432</td><td>True</td><td>11575296</td><td>00:00:00.1875000</td><td>LogonUI</td><td>3</td><td>True</td><td>1</td><td>System.Diagnostics.ProcessStartInfo</td><td>11/29/2022 7:22:45 AM</td><td></td><td>System.Diagnostics.ProcessThreadCollection</td><td>00:00:00.1718750</td><td>2203642421248</td><td>False</td><td></td><td></td><td></td><td>45023232</td><td></td><td></td></tr>
+<tr><td>lsass</td><td>720</td><td>Normal</td><td>10.0.17763.3532 (WinBuild.160101.0800)</td><td>11638</td><td>69734400</td><td>54706176</td><td>54706176</td><td>288419840</td><td>00:00:30.7031250</td><td>0</td><td>11638</td><td>2203606642688</td><td>69734400</td><td>54706176</td><td>166640</td><td>C:\Windows\system#174; Operating System</td><td>Process</td><td>9</td><td></td><td>False</td><td></td><td>3372</td><td>Microsoft.Win32.SafeHandles.SafeProcessHandle</td><td>.<
+/td><td>0</td><td></td><td>System.Diagnostics.ProcessModule (lsass.exe)</td><td>1413120</td><td>204800</td><td>System.Diagnostics.ProcessModuleCollection</td>
+<td>166640</td><td>166640</td><td>54706176</td><td>466352</td><td>466352</td><td>79978496</td><td>79978496</td><td>82239488</td><td>82239488</td><td>303173632
+</td><td>2203621396480</td><td>True</td><td>54706176</td><td>00:00:09.6093750</td><td>lsass</td><td>3</td><td>True</td><td>0</td><td>System.Diagnostics.Proces
+sStartInfo</td><td>11/29/2022 7:22:42 AM</td><td></td><td>System.Diagnostics.ProcessThreadCollection</td><td>00:00:21.0937500</td><td>2203606642688</td><td>Fa
+lse</td><td></td><td></td><td></td><td>69734400</td><td></td><td></td></tr>
+<tr><td>Microsoft.ActiveDirectory.WebServices</td><td>3320</td><td>Normal</td><td>10.0.17763.1</td><td>621</td><td>49782784</td><td>39280640</td><td>39280640<
+/td><td>650289152</td><td>00:00:00.5156250</td><td>0</td><td>621</td><td>4945256448</td><td>49782784</td><td>39280640</td><td>31160</td><td>C:\Windows\ADWS\Mi
+crosoft.ActiveDirectory.WebServices.exe</td><td>Microsoft Corporation</td><td>0.515625</td><td>10.0.17763.1</td><td>Microsoft.ActiveDirectory.WebServices</td>
+<td>Microsoft (R) Windows (R) Operating System</td><td>Process</td><td>8</td><td></td><td>False</td><td></td><td>3576</td><td>Microsoft.Win32.SafeHandles.Safe
+ProcessHandle</td><td>.</td><td>0</td><td></td><td>System.Diagnostics.ProcessModule (Microsoft.ActiveDirectory.WebServices.exe)</td><td>1413120</td><td>204800
+</td><td>System.Diagnostics.ProcessModuleCollection</td><td>31160</td><td>31160</td><td>39280640</td><td>396368</td><td>396368</td><td>39387136</td><td>393871
+36</td><td>49893376</td><td>49893376</td><td>656605184</td><td>4951572480</td><td>True</td><td>39280640</td><td>00:00:00.2187500</td><td>Microsoft.ActiveDirec
+tory.WebServices</td><td>3</td><td>True</td><td>0</td><td>System.Diagnostics.ProcessStartInfo</td><td>11/29/2022 7:23:02 AM</td><td></td><td>System.Diagnostic
+s.ProcessThreadCollection</td><td>00:00:00.2968750</td><td>4945256448</td><td>False</td><td></td><td></td><td></td><td>49782784</td><td></td><td></td></tr>
+<tr><td>msdtc</td><td>6056</td><td>Normal</td><td>2001.12.10941.16384 (WinBuild.160101.0800)</td><td>232</td><td>10608640</td><td>2887680</td><td>2887680</td>
+174; Windows&#174; Operating System</td><td>Process</td><td>8</td><td></td><td>False</td><td></td><td>1312</td><td>Microsoft.Win32.SafeHandles.SafeProcessHand
+le</td><td>.</td><td>0</td><td></td><td>System.Diagnostics.ProcessModule (msdtc.exe)</td><td>1413120</td><td>204800</td><td>System.Diagnostics.ProcessModuleCo
+llection</td><td>13352</td><td>13352</td><td>2887680</td><td>94800</td><td>94800</td><td>3842048</td><td>3842048</td><td>11653120</td><td>11653120</td><td>902
+06208</td><td>2203408429056</td><td>True</td><td>2887680</td><td>00:00:00.0312500</td><td>msdtc</td><td>3</td><td>True</td><td>0</td><td>System.Diagnostics.Pr
+ocessStartInfo</td><td>11/29/2022 7:25:05 AM</td><td></td><td>System.Diagnostics.ProcessThreadCollection</td><td>00:00:00.0156250</td><td>2203405807616</td><t
+d>False</td><td></td><td></td><td></td><td>10608640</td><td></td><td></td></tr>
+d><td>0</td><td>774</td><td>2203941298176</td><td>167489536</td><td>236683264</td><td>90672</td><td></td><td></td><td>97.25</td><td></td><td></td><td></td><td
+>Process</td><td>8</td><td></td><td></td><td></td><td></td><td></td><td>.</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>90672</td><td>90672</
+td><td>236683264</td><td>608768</td><td>608768</td><td>729108480</td><td>729108480</td><td>668344320</td><td>668344320</td><td>1068376064</td><td>220438659891
+2</td><td></td><td>236683264</td><td>00:00:23.1718750</td><td>MsMpEng</td><td></td><td>True</td><td>0</td><td>System.Diagnostics.ProcessStartInfo</td><td>11/2
+9/2022 7:23:02 AM</td><td></td><td>System.Diagnostics.ProcessThreadCollection</td><td>00:01:14.0937500</td><td>2203941298176</td><td>False</td><td></td><td></
+td><td></td><td>167489536</td><td></td><td></td></tr>
+<tr><td>NisSrv</td><td>4964</td><td></td><td></td><td>214</td><td>11632640</td><td>4452352</td><td>4452352</td><td>113647616</td><td>00:00:00.8750000</td><td>
+0</td><td>214</td><td>2203431870464</td><td>11632640</td><td>4452352</td><td>10968</td><td></td><td></td><td>0.875</td><td></td><td></td><td></td><td>Process<
+/td><td>8</td><td></td><td></td><td></td><td></td><td></td><td>.</td><td>0</td><td></td><td></td><td></td><td></td><td></td><td>10968</td><td>10968</td><td>44
+52352</td><td>147496</td><td>147496</td><td>5402624</td><td>5402624</td><td>12021760</td><td>12021760</td><td>121024512</td><td>2203439247360</td><td></td><td
+>4452352</td><td>00:00:00.2812500</td><td>NisSrv</td><td></td><td>True</td><td>0</td><td>System.Diagnostics.ProcessStartInfo</td><td>11/29/2022 7:23:13 AM</td
+><td></td><td>System.Diagnostics.ProcessThreadCollection</td><td>00:00:00.5937500</td><td>2203431870464</td><td>False</td><td></td><td></td><td></td><td>11632
+640</td><td></td><td></td></tr>
+PS Microsoft.PowerShell.Core\FileSystem::C:\Users\jsystemuser1> Get-Process | Select -First 5 | ConvertTo-HTML -Property Name,Id
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>HTML TABLE</title>
+</head><body>
+<table>
+<colgroup><col/><col/></colgroup>
+<tr><th>Name</th><th>Id</th></tr>
+<tr><td>Code</td><td>4392</td></tr>
+<tr><td>Code</td><td>5132</td></tr>
+<tr><td>Code</td><td>5624</td></tr>
+<tr><td>Code</td><td>6148</td></tr>
+<tr><td>Code</td><td>6172</td></tr>
+</table>
+</body></html>
+PS Microsoft.PowerShell.Core\FileSystem::C:\Users\jsystemuser1> Get-Process | Select -First 5 | ConvertTo-HTML -Property Name,Id | Set-Content .\JS_2022-11_Au
+tomatyzacjaAdministracjiZWindowsPowershell\02_PIPELINES\reportProcess.html
+PS Microsoft.PowerShell.Core\FileSystem::C:\Users\jsystemuser1> Get-Process | select -First 5 | convertto-xml
+
+xml                            Objects
+---                            -------
+version="1.0" encoding="utf-8" Objects
+
+
+PS Microsoft.PowerShell.Core\FileSystem::C:\Users\jsystemuser1> get-command *-csv
+
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Cmdlet          ConvertFrom-Csv                                    3.1.0.0    Microsoft.PowerShell.Utility
+Cmdlet          ConvertTo-Csv                                      3.1.0.0    Microsoft.PowerShell.Utility
+Cmdlet          Export-Csv                                         3.1.0.0    Microsoft.PowerShell.Utility
+Cmdlet          Import-Csv                                         3.1.0.0    Microsoft.PowerShell.Utility
+
+
+PS Microsoft.PowerShell.Core\FileSystem::C:\Users\jsystemuser1>
