@@ -26,10 +26,10 @@
 
 # Metody
 
-#Get-CimClass Win32_Process | Get-Member
+Get-CimClass Win32_Process | Get-Member
 
 #(Get-CimClass Win32_Process).CimClassMethods["Create"].Parameters
 
 #Invoke-CimMethod -ClassName Win32_Process -MethodName 'Create' -Arguments @{CommandLine='notepad.exe'}
 
-Get-CimInstance -Query "SELECT * FROM Win32_PerfFormattedData_Counters_ThermalZoneInformation" -Namespace "root/CIMV2"
+#Get-CimInstance -Query "SELECT * FROM Win32_PerfFormattedData_Counters_ThermalZoneInformation" -Namespace "root/CIMV2"
